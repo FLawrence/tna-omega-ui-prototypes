@@ -1,0 +1,20 @@
+{
+  "wagtailkit_project_name": "tna-prototype",
+  "wagtailkit_project_description": "",
+  "wagtailkit_project_author": "Nick Lee",
+  "wagtailkit_repo_name": "tnaomegauiprototypes",
+  "wagtailkit_repo_url": "https://github.com/torchbox/tna-omega-ui-prototypes",
+  "wagtailkit_http_auth_password": "showmetnaomegauiprototypes",
+  "use_people_app": false,
+  "use_events_app": false,
+  "use_news_app": false,
+  "use_standardpages_app": false,
+  "use_inlineindex_app": false,
+  "use_frontend_component_carousel": false,
+  "use_frontend_component_accordion": false,
+  "use_frontend_component_progress_bar": false,
+  "use_frontend_component_video_modal": false,
+  "use_frontend_component_tabs": false,
+  "use_react": false,
+  "use_vue": false
+}
