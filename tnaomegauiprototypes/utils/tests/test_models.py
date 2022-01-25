@@ -12,7 +12,7 @@ class TrackingTest(TestCase):
 
     def test_context_processor(self):
         request = RequestFactory().get("/")
-        request.site = self.tracking.site
+        current_site = self.tracking.site
         tracking = global_vars(request)
         self.assertEqual(
             tracking, {"GOOGLE_TAG_MANAGER_ID": "GTM-123456", "SEO_NOINDEX": False}
