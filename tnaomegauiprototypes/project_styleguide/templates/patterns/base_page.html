@@ -96,10 +96,15 @@
                     </span>
                 </span>
                 <span class="govuk-header__product-name">
-                    Road Freight Statistics Survey
+                    {% block product_name %}Road Freight Statistics Survey{% endblock %}
                 </span>
             </a>
         </div>
+        {% if not no_logout %}
+            <div class="app-header__logout">
+                <a class="app-header__logout-link" href="start.html">Logout</a>
+            </div>
+        {% endif %}
     </div>
 </header>
 
@@ -131,6 +136,8 @@
                         Privacy policy
                       </a>
                     </li>
+
+                    {% block bilingual %}{% endblock %}
 
                 </ul>
                 <svg role="presentation" focusable="false" class="govuk-footer__licence-logo"

@@ -1,10 +1,10 @@
-{% extends "patterns/base_page_v3.html" %}
+{% extends "patterns/base_page.html" %}
 
 
 
 {% block content %}
 <div class="app__width-container">
-    {% include "patterns/atoms-s3/back-link/back-link.html" %}
+    {% include "patterns/atoms/back-link/back-link.html" %}
 
     <main class="govuk-main-wrapper">
 
@@ -18,9 +18,9 @@
                 {% endif %}
 
                 <form class="form" action="{{ page.nextURL }}" method="get" novalidate>
-                    {% include "patterns/atoms-s3/date-input/date-input.html" with field=questionOne %}
+                    {% include "patterns/atoms/date-input/date-input.html" with field=questionOne %}
 
-                    {% include "patterns/atoms-s3/button/button.html" with field=action %}
+                    {% include "patterns/atoms/button/button.html" with field=action %}
 
                 </form>
 

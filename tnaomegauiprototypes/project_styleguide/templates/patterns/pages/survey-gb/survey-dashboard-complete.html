@@ -1,4 +1,4 @@
-{% extends "patterns/base_page_v3.html" %}
+{% extends "patterns/base_page.html" %}
 
 
 
@@ -16,7 +16,7 @@
                 <p class="govuk-body govuk-!-margin-bottom-8">{{ page.body }}</p>
                 {% endif %}
 
-                {% include "patterns/atoms-s3/summary-list/summary-list.html" with field=overview  %}
+                {% include "patterns/atoms/summary-list/summary-list.html" with field=overview  %}
 
                 <ol class=" app-task-list">
                     <li>
@@ -25,8 +25,8 @@
                         </h2>
 
                         <div class="govuk-!-margin-bottom-9" style="padding-left: 30px;">
-                            {% include "patterns/atoms-s3/details/details.html" with field=help %}
-                            {% include "patterns/atoms-s3/summary-list/summary-list.html" with field=tasklistFour nomargin="nomargin" %}
+                            {% include "patterns/atoms/details/details.html" with field=help %}
+                            {% include "patterns/atoms/summary-list/summary-list.html" with field=tasklistFour nomargin="nomargin" %}
                             <a class="govuk-link govuk-body" href="#">Bulk upload stops (CSV)</a>
 
                         </div>
