@@ -1,0 +1,17 @@
+context:
+  page:
+    title: 'Login'
+    introduction: False
+    nextURL: ../dashboard/contributor-dashboard.html
+  questionOne:
+    label: 'Username'
+    id: username
+    modifier: govuk-input--width-20
+  questionTwo:
+    label: 'Password'
+    id: password
+    modifier: govuk-input--width-10
+  action:
+    label: Login
+  actionTwo:
+    label: Forgotten your password?
