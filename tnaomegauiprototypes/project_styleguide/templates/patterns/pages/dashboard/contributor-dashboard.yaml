@@ -4,7 +4,7 @@ context:
     introduction: "Last visit you were editing <a href='#'>ABC Websites</a>, you’ve had <a href='#'>AD Websites series two</a> assign to you"
   filterSearch:
     label: 'Search edit sets'
-    id: username
+    id: search
     modifier: govuk-input--width-20
   selectOne:
     label: 'Assignee (me)'
@@ -22,13 +22,10 @@ context:
       - { label: 'Census 1921', id: projects }
       - { label: 'Project name', id: projects-2 }
   filter_summary: 24 edit sets with you as the contributor
-  badge:
-    title: Recent edit
-    link: '#'
-    modifier: badge-primary
   edit_sets:
     - item:
       title: FCO15(7165-7287)
+      link: '../edit-set/edit-set.html'
       badge:
         title: Recent edit
         link: '#'
@@ -43,6 +40,7 @@ context:
       comments: 2
     - item:
       title: AC Something else
+      link: '../edit-set/edit-set.html'
       badge:
         title: Overdue
         modifier: badge-primary
@@ -56,9 +54,9 @@ context:
       comments: 2
     - item:
       title: FCO15(7165-7287)
+      link: '../edit-set/edit-set.html'
       badge:
-        title: Recent edit
-        link: '#'
+        title: New
         modifier: badge-primary
       release_date: 24/02/22
       project:
@@ -70,10 +68,8 @@ context:
       comments: 2
     - item:
       title: FCO15(7165-7287)
-      badge:
-        title: Recent edit
-        link: '#'
-        modifier: badge-primary
+      link: '../edit-set/edit-set.html'
+      badge: false
       release_date: 24/02/22
       project:
         title: Census 1921
@@ -84,10 +80,8 @@ context:
       comments: 2
     - item:
       title: FCO15(7165-7287)
-      badge:
-        title: Recent edit
-        link: '#'
-        modifier: badge-primary
+      link: '../edit-set/edit-set.html'
+      badge: false
       release_date: 24/02/22
       project:
         title: Census 1921
@@ -98,10 +92,8 @@ context:
       comments: 2
     - item:
       title: FCO15(7165-7287)
-      badge:
-        title: Recent edit
-        link: '#'
-        modifier: badge-primary
+      link: '../edit-set/edit-set.html'
+      badge: false
       release_date: 24/02/22
       project:
         title: Census 1921

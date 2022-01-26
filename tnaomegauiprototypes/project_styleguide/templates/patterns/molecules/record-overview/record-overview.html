@@ -1,0 +1,29 @@
+<tr class="edit-set-overview">
+    <th scope="row">
+        <div class="edit-set-overview__title">
+            <h3 class="edit-set-overview__heading">
+                {% if item.link %}<a class="edit-set-overview__link" href="{{ item.link }}">{% endif %}
+                    {{ item.title }}
+                {% if item.link %}</a>{% endif %}
+            </h3>
+        </div>
+    </th>
+    <td>{{ item.description }}</td>
+    <td>{{ item.last_edit }}</td>
+    <td>{{ item.access }}</td>
+    <td>{{ item.date }}</td>
+    <td>
+        {% for item in item.record_sets %}
+            <a href="{{ item.link }}">{{ item.title }}</a>
+        {% endfor %}
+    </td>
+    <td>
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="select-all-{{ item.count }}" name="select-all" type="checkbox"
+            value="select-all">
+            <label class="govuk-label govuk-checkboxes__label" for="select-all">
+            Select
+            </label>
+        </div>
+    </td>
+</tr>

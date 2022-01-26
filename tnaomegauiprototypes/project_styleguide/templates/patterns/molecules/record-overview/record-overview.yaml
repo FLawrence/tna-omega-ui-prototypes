@@ -1,0 +1,12 @@
+context:
+  item:
+    title: FCO 15/17/7165
+    link: '../record/record.html'
+    description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+    last_edit: Yesterday
+    access: 2 sensitive records
+    date: 1943 Oct 1
+    record_sets:
+      - item:
+        title: Myanmar
+        link: '../record-set/record-set.html'

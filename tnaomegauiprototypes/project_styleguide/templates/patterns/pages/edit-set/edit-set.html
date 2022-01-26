@@ -1,0 +1,61 @@
+{% extends "patterns/base_page.html" %}
+
+{% block content %}
+<div class="app__width-container">
+    {% if page.back_link %}
+        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
+    {% endif %}
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                {% include "patterns/molecules/page-heading/page-heading.html" %}
+
+                <div class="filters">
+                    {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch %}
+                    {% include "patterns/atoms/select/select.html" with field=selectOne %}
+                    {% include "patterns/atoms/select/select.html" with field=selectTwo %}
+                </div>
+
+                {% if filter_summary %}
+                    <h2 class="filter-summary">{{ filter_summary }}</h2>
+                {% endif %}
+
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <table class="table table--sticky-header">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Last edited</th>
+                            <th scope="col">Access</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Parent record set(s)</th>
+                            <th scope="col">
+                                <div class="govuk-checkboxes__item">
+                                    <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
+                                      value="select-all">
+                                    <label class="govuk-label govuk-checkboxes__label" for="select-all">
+                                      Select all
+                                    </label>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in records %}
+                            {% include "patterns/molecules/record-overview/record-overview.html" with item=item %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+</div>
+{% endblock %}

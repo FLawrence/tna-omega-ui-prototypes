@@ -1,6 +1,7 @@
 context:
   item:
     title: FCO15(7165-7287)
+    link: '../edit-set/edit-set.html'
     badge:
       title: Recent edit
       link: '#'
