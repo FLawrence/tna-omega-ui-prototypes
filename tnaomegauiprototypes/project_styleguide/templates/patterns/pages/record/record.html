@@ -1,0 +1,20 @@
+{% extends "patterns/base_page.html" %}
+
+{% block content %}
+<div class="app__width-container">
+    {% if page.back_link %}
+        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
+    {% endif %}
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                {% include "patterns/molecules/page-heading/page-heading.html" %}
+
+            </div>
+        </div>
+
+    </main>
+</div>
+{% endblock %}

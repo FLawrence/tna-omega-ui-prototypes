@@ -2,4 +2,4 @@ context:
   field:
     title: Recent edit
     link: '#'
-    modifier: badge-primary
+    modifier: bg-secondary

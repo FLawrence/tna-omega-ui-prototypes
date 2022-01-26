@@ -1,0 +1,23 @@
+context:
+  page:
+    title: 'FCO 15/17/7165'
+    introduction: false
+    back_link: ../edit-set/edit-set.html
+  filterSearch:
+    label: 'Search edit set'
+    id: search
+    modifier: govuk-input--width-20
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Open', id: access }
+      - { label: 'Closed', id: access-2 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'FCO', id: record-set }
+      - { label: 'South East Asia', id: record-set-2 }
+      - { label: 'Myanmar', id: record-set-3 }
+      - { label: 'Cambodia', id: record-set-4 }

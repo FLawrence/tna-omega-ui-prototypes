@@ -5,7 +5,7 @@ context:
     badge:
       title: Recent edit
       link: '#'
-      modifier: badge-primary
+      modifier: bg-secondary
     release_date: 24/02/22
     project:
       title: Census 1921

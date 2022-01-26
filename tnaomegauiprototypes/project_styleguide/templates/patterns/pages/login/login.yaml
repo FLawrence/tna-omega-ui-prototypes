@@ -1,6 +1,6 @@
 context:
   page:
-    title: 'Login'
+    title: 'Please sign in'
     introduction: False
     nextURL: ../dashboard/contributor-dashboard.html
   questionOne:

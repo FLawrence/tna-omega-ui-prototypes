@@ -9,10 +9,17 @@
 
                 {% include "patterns/molecules/page-heading/page-heading.html"  %}
 
-                <div class="filters">
-                    {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch %}
-                    {% include "patterns/atoms/select/select.html" with field=selectOne %}
-                    {% include "patterns/atoms/select/select.html" with field=selectTwo %}
+                <div class="filters row mb-4">
+                    <h2 class="visually-hidden">Filter edit sets by:</h2>
+                    <div class="col">
+                        {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label=False %}
+                    </div>
+                    <div class="col">
+                        {% include "patterns/atoms/select/select.html" with field=selectOne label=False %}
+                    </div>
+                    <div class="col">
+                        {% include "patterns/atoms/select/select.html" with field=selectTwo label=False %}
+                    </div>
                 </div>
 
                 {% if filter_summary %}
@@ -27,8 +34,8 @@
 
 
         <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-                <table class="table table--sticky-header">
+            <div class="govuk-grid-column-two-thirds bg-white p-3">
+                <table class="table table-hover table--sticky-header">
                     <thead>
                         <tr>
                             <th scope="col">Edit set title</th>

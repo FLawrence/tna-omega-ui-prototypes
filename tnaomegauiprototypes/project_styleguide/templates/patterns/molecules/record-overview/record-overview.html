@@ -14,14 +14,14 @@
     <td>{{ item.date }}</td>
     <td>
         {% for item in item.record_sets %}
-            <a href="{{ item.link }}">{{ item.title }}</a>
+            <a class="badge bg-secondary" href="{{ item.link }}">{{ item.title }}</a>
         {% endfor %}
     </td>
     <td>
         <div class="govuk-checkboxes__item">
             <input class="govuk-checkboxes__input" id="select-all-{{ item.count }}" name="select-all" type="checkbox"
             value="select-all">
-            <label class="govuk-label govuk-checkboxes__label" for="select-all">
+            <label class="govuk-label govuk-checkboxes__label visually-hidden" for="select-all">
             Select
             </label>
         </div>

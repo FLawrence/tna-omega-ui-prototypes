@@ -26,10 +26,12 @@
                 </div>
 
                 {% if filter_summary %}
-                    <div class="mb-4">
+                    <div class="mb-4 d-flex">
                         <h2 class="filter-summary">{{ filter_summary }}</h2>
                         {% if filter_summary_action %}
-                            <button type="button" class="btn btn-primary">Edit record set</button>
+                            <div class="ms-auto">
+                                <button type="button" class="btn btn-primary">Edit record set</button>
+                            </div>
                         {% endif %}
                     </div>
                 {% endif %}

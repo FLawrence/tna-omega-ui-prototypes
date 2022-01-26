@@ -5,12 +5,12 @@ context:
   filterSearch:
     label: 'Search edit sets'
     id: search
-    modifier: govuk-input--width-20
+    placeholder: Search edit set
   selectOne:
     label: 'Assignee (me)'
     id: assignee
     options:
-      - { label: 'User 1', id: assignee }
+      - { label: 'Assignee (me)', id: assignee }
       - { label: 'User 2', id: assignee-2 }
       - { label: 'User 3', id: assignee-3 }
       - { label: 'User 4', id: assignee-4 }
@@ -29,7 +29,7 @@ context:
       badge:
         title: Recent edit
         link: '#'
-        modifier: badge-primary
+        modifier: bg-secondary
       release_date: 24/02/22
       project:
         title: Census 1921
@@ -43,7 +43,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge:
         title: Overdue
-        modifier: badge-primary
+        modifier: bg-secondary
       release_date: 24/02/22
       project:
         title: Census 1921
@@ -57,7 +57,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge:
         title: New
-        modifier: badge-primary
+        modifier: bg-secondary
       release_date: 24/02/22
       project:
         title: Census 1921
