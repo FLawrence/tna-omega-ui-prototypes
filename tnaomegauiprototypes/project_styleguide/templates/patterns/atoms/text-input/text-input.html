@@ -1,5 +1,5 @@
 <div class="govuk-form-group">
-  <label class="form-label {% if not label %}visually-hidden{% endif %}" for="{{ field.id }}">
+  <label class="form-label {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
     {% if field.hint %}<span class="govuk-hint">{{ field.hint }}</span>{% endif %}
   </label>

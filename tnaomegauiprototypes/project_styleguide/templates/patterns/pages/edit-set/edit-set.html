@@ -15,13 +15,13 @@
                 <div class="filters row mb-4">
                     <h2 class="visually-hidden">Filter records by:</h2>
                     <div class="col">
-                        {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label=False %}
+                        {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True %}
                     </div>
                     <div class="col">
-                        {% include "patterns/atoms/select/select.html" with field=selectOne label=False %}
+                        {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
                     </div>
                     <div class="col">
-                        {% include "patterns/atoms/select/select.html" with field=selectTwo label=False %}
+                        {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
                     </div>
                 </div>
 

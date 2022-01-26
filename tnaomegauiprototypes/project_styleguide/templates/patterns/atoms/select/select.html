@@ -1,5 +1,5 @@
 <div class="govuk-form-group">
-  <label class="govuk-label {% if not label %}visually-hidden{% endif %}" for="{{ field.id }}">
+  <label class="govuk-label {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
   </label>
   <select class="form-select" id="sort-{{ field.id }}" name="{{ field.id }}">
