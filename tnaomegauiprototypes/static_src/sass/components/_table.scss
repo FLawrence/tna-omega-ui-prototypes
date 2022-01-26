@@ -1,0 +1,12 @@
+.table {
+    &--sticky-header {
+        position: relative;
+
+        thead {
+            th {
+                position: sticky;
+                top: 0;
+            }
+        }
+    }
+}

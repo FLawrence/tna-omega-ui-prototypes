@@ -1,0 +1,15 @@
+context:
+  item:
+    title: FCO15(7165-7287)
+    badge:
+      title: Recent edit
+      link: '#'
+      modifier: badge-primary
+    release_date: 24/02/22
+    project:
+      title: Census 1921
+      link: '#'
+    records: 132
+    last_edit: Yesterday
+    access: 2 sensitive records
+    comments: 2

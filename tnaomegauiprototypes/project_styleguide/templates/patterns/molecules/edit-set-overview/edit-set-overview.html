@@ -1,0 +1,24 @@
+<tr class="edit-set-overview">
+    <th scope="row">
+        <div class="edit-set-overview__title">
+            <h3>{{ item.title }} {% if item.badge %}{% include "patterns/atoms/badge/badge.html" with field=item.badge %}{% endif %}</h3>
+        </div>
+        {% if item.release_date or item.project %}
+            <div class="edit-set-overview__meta">
+                {% if item.release_date %}
+                    <div class="meta-item">Release on {{ item.release_date }}</div>
+                {% endif %}
+                {% if item.project %}
+                    <div class="meta-item">Part of <a class="meta-item__link" href="{{ item.project.link }}">{{ item.project.title }}</a></div>
+                {% endif %}
+            </div>
+        {% endif %}
+    <td>{{ item.records }}</td>
+    <td>{{ item.last_edit }}</td>
+    <td>{{ item.access }}</td>
+    <td>{{ item.comments }}</td>
+    <td>
+        <a href="#"><span class="material-icons" role="presentation">history</span> History</a>
+        <a href="#"><span class="material-icons">more_vert</span></a>
+    </td>
+</tr>
