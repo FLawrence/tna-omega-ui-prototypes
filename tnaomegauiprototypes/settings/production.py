@@ -5,6 +5,9 @@ from .base import *  # noqa
 # Explicitly disable debug mode in production
 DEBUG = False
 
+# Enable FE component library
+PATTERN_LIBRARY_ENABLED = True
+
 # Security configuration
 
 # Ensure that the session cookie is only sent by browsers under an HTTPS connection.
