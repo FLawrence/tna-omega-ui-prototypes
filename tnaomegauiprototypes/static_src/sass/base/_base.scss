@@ -15,7 +15,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: $color--tertiary;
+    background-color: $color--background;
     scroll-behavior: smooth;
 
     @media (prefers-reduced-motion: reduce) {
@@ -47,11 +47,11 @@ textarea {
 }
 
 a {
-    color: $color--primary;
+    color: $color--link;
     transition: color $transition;
 
     &:hover {
-        color: darken($color--primary, 20%);
+        color: $color--primary;
         cursor: pointer;
     }
 }

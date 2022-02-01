@@ -1,0 +1,31 @@
+{% extends "patterns/base_page.html" %}
+
+{% block content %}
+<div class="app__width-container">
+    {% if page.back_link %}
+        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
+    {% endif %}
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+
+                {% include "patterns/molecules/page-heading/page-heading.html" %}
+                <form action="{{ page.next_page }}" class="mb-5">
+                    <div class="mb-5">
+                        <label for="formFileLg" class="form-label">Upload your document</label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file" />
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-primary me-3">Create edit set</button>
+                        <a href="#">I don’t have a document, create an empty edit set</a>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+    </main>
+</div>
+{% endblock %}

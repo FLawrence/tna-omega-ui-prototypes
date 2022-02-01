@@ -9,4 +9,16 @@
             }
         }
     }
+
+    &--space {
+        > :not(caption) > * > * {
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+        }
+
+        th {
+            padding-top: 0.5rem !important;
+            padding-bottom: 1rem !important;
+        }
+    }
 }

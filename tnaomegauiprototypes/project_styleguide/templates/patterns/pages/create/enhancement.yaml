@@ -1,0 +1,17 @@
+context:
+  page:
+    title: Create an enhancement
+    introduction: false
+    back_link: ../dashboard/contributor-dashboard.html
+    back_title: Dashboard
+    next_page: enhancement-file-upload.html
+  questionOne:
+    label: 'What is your data source?'
+    id: data-source
+    options:
+      - { label: 'Browse records', id: data-source }
+      - { label: 'From a file', id: data-source-2, checked: true }
+      - { label: 'None (empty edit set)', id: data-source-2 }
+  action:
+    label: Continue
+    modifier: btn-primary

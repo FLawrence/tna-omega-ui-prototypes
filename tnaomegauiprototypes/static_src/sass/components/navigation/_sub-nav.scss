@@ -58,7 +58,6 @@
 
         // back button for mobile
         &--back {
-            @include font-size(xs);
             text-transform: uppercase;
 
             @include media-query(medium) {

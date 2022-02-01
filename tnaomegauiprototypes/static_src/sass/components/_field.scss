@@ -41,21 +41,18 @@
 
     &__label,
     &__label--multiple {
-        @include font-size(m);
         display: block;
         margin-bottom: 5px;
         font-weight: $weight--bold;
     }
 
     &__errors {
-        @include font-size(s);
         margin-bottom: 10px;
         font-weight: $weight--bold;
         color: $color--red;
     }
 
     &__help {
-        @include font-size(s);
         margin-top: 5px;
         color: rgba($color--default, 0.6);
     }

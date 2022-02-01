@@ -23,6 +23,12 @@
                     <div class="col">
                         {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
                     </div>
+                    <div class="col d-flex align-items-center">
+                        <a href="../edit-set/edit-set.html" class="d-flex align-items-center text-decoration-none">
+                            <span class="material-icons">restart_alt</span>
+                            <span> Reset filters</span>
+                        </a>
+                    </div>
                 </div>
 
                 {% if filter_summary %}
@@ -54,7 +60,7 @@
                                 <div class="govuk-checkboxes__item">
                                     <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
                                       value="select-all">
-                                    <label class="govuk-label govuk-checkboxes__label visually-hidden" for="select-all">
+                                    <label class="fs-5 mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
                                       Select all
                                     </label>
                                 </div>

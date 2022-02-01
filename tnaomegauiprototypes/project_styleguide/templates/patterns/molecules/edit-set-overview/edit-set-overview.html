@@ -1,15 +1,15 @@
 <tr class="edit-set-overview">
-    <th scope="row">
-        <div class="edit-set-overview__title">
-            <h3 class="edit-set-overview__heading">
+    <td>
+        <div class="edit-set-overview__title d-flex align-items-center mb-2">
+            <h3 class="edit-set-overview__heading mb-0 me-1 h5">
                 {% if item.link %}<a class="edit-set-overview__link" href="{{ item.link }}">{% endif %}
                     {{ item.title }}
                 {% if item.link %}</a>{% endif %}
-                {% if item.badge %}{% include "patterns/atoms/badge/badge.html" with field=item.badge %}{% endif %}
             </h3>
+            {% if item.badge %}{% include "patterns/atoms/badge/badge.html" with field=item.badge %}{% endif %}
         </div>
         {% if item.release_date or item.project %}
-            <div class="edit-set-overview__meta">
+            <div class="edit-set-overview__meta fs-6">
                 {% if item.release_date %}
                     <div class="meta-item">Release on {{ item.release_date }}</div>
                 {% endif %}
@@ -18,13 +18,34 @@
                 {% endif %}
             </div>
         {% endif %}
-    </th>
+    </td>
     <td>{{ item.records }}</td>
     <td>{{ item.last_edit }}</td>
     <td>{{ item.access }}</td>
-    <td>{{ item.comments }}</td>
+    <td>{% if item.comments %}<a href="#" data-bs-toggle="modal" data-bs-target="#commentModal">{{ item.comments }}</a>{% else %}0{% endif %}</td>
     <td>
-        <a href="#"><span class="material-icons" role="presentation">history</span> History</a>
-        <a href="#"><span class="material-icons">more_vert</span></a>
+        <ul class="d-flex align-items-center">
+            <li>
+                <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
+                    <span class="material-icons me-1" role="presentation">history</span>
+                    <span>History</span>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-icons">more_vert</span>
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">Move to next stage</a></li>
+                    <li><a class="dropdown-item" href="#">Add comment</a></li>
+                    <li><a class="dropdown-item" href="#">Add contributor</a></li>
+                    <li><a class="dropdown-item" href="#">Add/edit project</a></li>
+                    <li><a class="dropdown-item" href="#">Split edit set</a></li>
+                    <li><a class="dropdown-item" href="#">Abandon edit set</a></li>
+                 </ul>
+            </li>
+        </ul>
     </td>
 </tr>
+
+

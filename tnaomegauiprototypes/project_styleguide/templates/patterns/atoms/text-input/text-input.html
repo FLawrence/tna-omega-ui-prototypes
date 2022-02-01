@@ -1,7 +1,7 @@
-<div class="govuk-form-group">
-  <label class="form-label {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+<div class="mb-3">
+  <label class="fs-5 mb-2 {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
-    {% if field.hint %}<span class="govuk-hint">{{ field.hint }}</span>{% endif %}
+    {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
   </label>
   <input class="form-control {% if field.modifier %}{{ field.modifier }}{% endif %}" id="{{ field.id }}"
     name="{{ field.id }}" type="text" {% if field.placeholder %}placeholder="{{ field.placeholder }}" {% endif %}>

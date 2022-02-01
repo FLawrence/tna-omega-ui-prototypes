@@ -1,12 +1,13 @@
 // Vendor
 @import 'vendor/normalize';
-@import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-@import '../../../node_modules/@glidejs/glide/src/assets/sass/glide.core';
 
 // Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
+
+// Call bootstrap css after variables to override
+@import '~bootstrap/scss/bootstrap';
 
 // Base
 @import 'base/base';
@@ -14,6 +15,7 @@
 @import 'base/fonts';
 
 // Components
+@import 'components/badge';
 @import 'components/button';
 @import 'components/blockquote';
 @import 'components/card';
@@ -45,6 +47,3 @@
 @import 'layout/footer';
 @import 'layout/header';
 @import 'layout/sidebar';
-
-// Utilities
-@import 'utilities/utilities';

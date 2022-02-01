@@ -1,5 +1,5 @@
-<div class="govuk-form-group">
-  <label class="govuk-label {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+<div class="mb-3">
+  <label class="fs-5 mb-2 {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
   </label>
   <select class="form-select" id="sort-{{ field.id }}" name="{{ field.id }}">
@@ -7,4 +7,5 @@
     <option value="{{ option.id }}">{{ option.label }}</option>
     {% endfor %}
   </select>
+  {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
 </div>

@@ -1,5 +1,5 @@
 
-{% if field.link %}<a class="badge {% if field.modifier %}{{ field.modifier }}{% endif %}" href="{{ field.link }}">{% else %}<span class="badge {% if field.modifier %}{{ field.modifier }}{% endif %}">{% endif %}
+{% if field.link %}<a class="badge {% if field.modifier %}{{ field.modifier }}{% endif %} text-decoration-none" href="{{ field.link }}">{% else %}<span class="badge {% if field.modifier %}{{ field.modifier }}{% endif %}">{% endif %}
     {{ field.title }}
 {% if field.link %}</a>{% else %}</span>{% endif %}
 

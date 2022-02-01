@@ -22,13 +22,38 @@ context:
       - { label: 'Census 1921', id: projects }
       - { label: 'Project name', id: projects-2 }
   filter_summary: 24 edit sets with you as the contributor
+  history:
+    - item:
+      change: Date
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      change: Title
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      change: Title and description
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
   edit_sets:
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'
       badge:
         title: Recent edit
-        link: '#'
         modifier: bg-secondary
       release_date: 24/02/22
       project:
@@ -51,7 +76,7 @@ context:
       records: 13
       last_edit: Yesterday
       access: 2 sensitive records
-      comments: 2
+      comments: False
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'
@@ -77,7 +102,7 @@ context:
       records: 132
       last_edit: Yesterday
       access: 2 sensitive records
-      comments: 2
+      comments: 5
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'
@@ -89,7 +114,7 @@ context:
       records: 132
       last_edit: Yesterday
       access: 2 sensitive records
-      comments: 2
+      comments: False
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'

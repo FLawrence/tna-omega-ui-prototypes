@@ -1,0 +1,30 @@
+<div class="modal fade" id="historyModal" tabindex="-1" aria-labelledby="Edit set history" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title h3">History</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table--space table--sticky-header">
+                    <thead>
+                        <tr>
+                            <th class="bg-white" scope="col">What's changed</th>
+                            <th class="bg-white" scope="col">Date</th>
+                            <th class="bg-white" scope="col">Author</th>
+                            <th class="bg-white" scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in history %}
+                            {% include "patterns/molecules/history-item/history-item.html" with item=item %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

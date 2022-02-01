@@ -3,6 +3,7 @@ context:
     title: 'FCO159(7165-7287)'
     introduction: false
     back_link: ../edit-set/edit-set.html
+    back_title: Edit set
   filterSearch:
     label: 'Search edit set'
     placeholder: Search edit set
@@ -37,6 +38,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7166
@@ -48,6 +50,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7167
@@ -59,6 +62,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7168
@@ -70,6 +74,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7169
@@ -81,6 +86,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7170
@@ -92,6 +98,7 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7171
@@ -103,4 +110,5 @@ context:
       record_sets:
         - item:
           title: Myanmar
+          modifier: bg-primary
           link: '../record-set/record-set.html'

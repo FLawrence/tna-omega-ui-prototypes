@@ -6,7 +6,7 @@
       </h1>
     </legend>
   {% if field.hint %}
-    <span id="{{ id }}-hint" class="govuk-hint">
+    <span id="{{ id }}-hint" class="fs-6">
       {{ field.hint }}
     </span>
     {% endif %}
@@ -15,7 +15,7 @@
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="yes"
           {% if option.checked %}checked{% endif %}>
-        <label class="govuk-label govuk-radios__label" for="{{ option.id }}">
+        <label class="fs-5 mb-2 govuk-radios__label" for="{{ option.id }}">
           {{ option.label }}
         </label>
       </div>

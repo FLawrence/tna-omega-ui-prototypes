@@ -1,7 +1,7 @@
 <div class="govuk-form-group govuk-form-group--error">
-  <label class="govuk-label" for="{{ field.id }}">
+  <label class="fs-5 mb-2" for="{{ field.id }}">
     {{ field.label }}
-    {% if field.hint %}<span class="govuk-hint" id="{{ field.id }}-hint">{{ field.hint }}</span>{% endif %}
+    {% if field.hint %}<span class="fs-6" id="{{ field.id }}-hint">{{ field.hint }}</span>{% endif %}
   </label>
   <span id="{{ field.id }}-error" class="govuk-error-message" style="max-width: 400px;">
     <span class="govuk-visually-hidden">Error:</span> {{ field.errormessage }}

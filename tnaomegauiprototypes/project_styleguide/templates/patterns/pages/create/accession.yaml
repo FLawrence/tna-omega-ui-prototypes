@@ -1,0 +1,7 @@
+context:
+  page:
+    title: Create from accession
+    introduction: false
+    back_link: ../dashboard/contributor-dashboard.html
+    back_title: Dashboard
+    next_page: data-set.html

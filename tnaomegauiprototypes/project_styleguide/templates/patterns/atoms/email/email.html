@@ -1,7 +1,7 @@
 <div class="govuk-form-group">
-  <label class="govuk-label" for="{{ field.id }}">
+  <label class="fs-5 mb-2" for="{{ field.id }}">
     {{ field.label }}
-    {% if field.hint %}<span class="govuk-hint">{{ field.hint }}</span>{% endif %}
+    {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
   </label>
   <input class="govuk-input {% if field.modifier %}{{ field.modifier }}{% endif %}" id="{{ field.id }}"
     name="{{ field.id }}" type="email">

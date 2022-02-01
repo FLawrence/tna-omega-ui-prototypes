@@ -1,0 +1,30 @@
+<div class="modal fade" id="commentModal" tabindex="-1" aria-labelledby="Comments" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title h3">Edit set comments</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <table class="table table-hover table--space table--sticky-header">
+                    <thead>
+                        <tr>
+                            <th class="bg-white" scope="col">Author</th>
+                            <th class="bg-white" scope="col">Date</th>
+                            <th class="bg-white" scope="col">Comment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in comments %}
+                            {% include "patterns/molecules/comment-item/comment-item.html" with item=item %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add comment</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
