@@ -1,12 +1,12 @@
-<div class="govuk-form-group">
-  <h2 class="govuk-heading-m">{{ field.label }}</h2>
+<div class="mb-3">
+  <h2 class="fs-5 mb-1">{{ field.label }}</h2>
       {% if field.hint %}
-        <span id="passport-issued-hint" class="fs-6">
+        <span class="fs-6 mb-3">
           {{ field.hint }}
         </span>
       {% endif %}
-      <div class="govuk-date-input" id="{{ field.id }}">
-        <div class="govuk-date-input__item">
+      <div class="d-flex" id="{{ field.id }}">
+        <div class="govuk-date-input__item me-3">
           <div class="govuk-form-group">
             <label class="fs-5 mb-2 govuk-date-input__label" for="passport-issued-day">
               Day
@@ -14,7 +14,7 @@
             <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
           </div>
         </div>
-        <div class="govuk-date-input__item">
+        <div class="govuk-date-input__item me-3">
           <div class="govuk-form-group">
             <label class="fs-5 mb-2 govuk-date-input__label" for="passport-issued-month">
               Month
@@ -22,7 +22,7 @@
             <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
           </div>
         </div>
-        <div class="govuk-date-input__item">
+        <div class="govuk-date-input__item me-3">
           <div class="govuk-form-group">
             <label class="fs-5 mb-2 govuk-date-input__label" for="passport-issued-year">
               Year

@@ -1,0 +1,4 @@
+context:
+  add_comment:
+    label: Your comment
+    id: comment

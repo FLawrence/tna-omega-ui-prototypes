@@ -4,5 +4,5 @@
     {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
   </label>
   <input class="form-control {% if field.modifier %}{{ field.modifier }}{% endif %}" id="{{ field.id }}"
-    name="{{ field.id }}" type="text" {% if field.placeholder %}placeholder="{{ field.placeholder }}" {% endif %}>
+    name="{{ field.id }}" {% if field.value %}value="{{ field.value }}"{% endif %} type="text" {% if field.placeholder %}placeholder="{{ field.placeholder }}" {% endif %}>
 </div>

@@ -8,16 +8,22 @@ context:
     label: 'Search edit set'
     placeholder: Search edit set
     id: search
-    modifier: govuk-input--width-20
   questionOne:
     label: Title
     id: title
   questionTwo:
     label: Series
     id: series
+    options:
+      - { label: 'Series one' }
+      - { label: 'Series two' }
+      - { label: 'Series three' }
+      - { label: 'Series Four' }
   questionThree:
     label: Department code / name
     id: title
+    options:
+      - { label: 'Minstry of Defense' }
   questionFour:
     label: 'Contributor'
     id: 'contributor'
@@ -33,6 +39,18 @@ context:
     id: timed-release
     options:
       - { label: 'Is a timed release', id: timed-release }
+  questionSix:
+    label: Target date
+    hint: Optional
+    id: target-date
+  questionSeven:
+    label: False
+    id: project
+    options:
+      - { label: 'This is part of a project', id: project }
+  questionEight:
+    label: Can you provide more detail?
+    id: more-details
   action:
     label: Create edit set
     modifier: btn-primary

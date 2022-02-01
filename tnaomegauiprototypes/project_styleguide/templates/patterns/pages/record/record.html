@@ -1,20 +1,44 @@
 {% extends "patterns/base_page.html" %}
 
 {% block content %}
-<div class="app__width-container">
-    {% if page.back_link %}
-        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
-    {% endif %}
-    <main class="govuk-main-wrapper">
+    <div>
+        {% include "patterns/molecules/page-heading/page-heading.html" %}
 
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
-
-                {% include "patterns/molecules/page-heading/page-heading.html" %}
-
+        <div class="row">
+            <div class="col-4">
+                <div id="record-index" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Content</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Access</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Context</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Admin History</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Index terms</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#record-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">Content</h4>
+                        <p>...</p>
+                        <h4 id="list-item-2">Access</h4>
+                        <p>...</p>
+                        <h4 id="list-item-3">Context</h4>
+                        <p>...</p>
+                        <h4 id="list-item-4">Admin History</h4>
+                        <p>...</p>
+                        <h4 id="list-item-5">Index terms</h4>
+                        <p>...</p>
+                </div>
             </div>
         </div>
 
-    </main>
-</div>
+
+
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#record-index'
+        })
+    </script>
 {% endblock %}

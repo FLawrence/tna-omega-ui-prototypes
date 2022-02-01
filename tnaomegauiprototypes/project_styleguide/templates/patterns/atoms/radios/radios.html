@@ -1,25 +1,23 @@
 <div class="mb-5">
-  <fieldset class="govuk-fieldset" aria-describedby="{{ id }}-hint">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-      <h2 class="govuk-fieldset__heading">
-        {{ field.label }}
-      </h2>
-    </legend>
-    {% if field.hint %}
-    <span id="{{ id }}-hint" class="fs-6">
-      {{ field.hint }}
-    </span>
-    {% endif %}
-    <div class="govuk-radios {% if field.modifier %}{{ field.modifier }}{% endif %}">
-      {% for option in field.options %}
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="yes"
-          {% if option.checked %}checked{% endif %}>
-        <label class="fs-5 mb-2 govuk-radios__label" for="{{ option.id }}">
-          {{ option.label }}
-        </label>
-      </div>
-      {% endfor %}
-    </div>
-  </fieldset>
+    <fieldset class="govuk-fieldset" aria-describedby="{{ id }}-hint">
+        <legend class="govuk-fieldset__legend">
+            <h2 class="h3">{{ field.label }}</h2>
+        </legend>
+        {% if field.hint %}
+        <span id="{{ id }}-hint" class="fs-6">
+            {{ field.hint }}
+        </span>
+        {% endif %}
+        <div class="{% if field.modifier %}{{ field.modifier }}{% endif %}">
+            {% for option in field.options %}
+            <div class="form-check">
+                <input class="form-check-input" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="yes"
+                    {% if option.checked %}checked{% endif %}>
+                <label class="form-check-label" for="{{ option.id }}">
+                    {{ option.label }}
+                </label>
+            </div>
+            {% endfor %}
+        </div>
+    </fieldset>
 </div>

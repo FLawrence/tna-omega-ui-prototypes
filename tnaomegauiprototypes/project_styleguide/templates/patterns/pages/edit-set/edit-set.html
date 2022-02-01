@@ -1,73 +1,79 @@
 {% extends "patterns/base_page.html" %}
 
 {% block content %}
-<div class="app__width-container">
-    {% if page.back_link %}
-        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
-    {% endif %}
-    <main class="govuk-main-wrapper">
+<div>
 
-        <div class="govuk-grid-row">
-            <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
 
-                {% include "patterns/molecules/page-heading/page-heading.html" %}
+            {% include "patterns/molecules/page-heading/page-heading.html" %}
 
-                <div class="filters row mb-4">
-                    <h2 class="visually-hidden">Filter records by:</h2>
-                    <div class="col">
-                        {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True %}
-                    </div>
-                    <div class="col">
-                        {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
-                    </div>
-                    <div class="col">
-                        {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
-                    </div>
+            <div class="filters row mb-4">
+                <h2 class="visually-hidden">Filter records by:</h2>
+                <div class="col">
+                    {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True %}
                 </div>
-
-                {% if filter_summary %}
-                    <div class="mb-4">
-                        <h2 class="filter-summary">{{ filter_summary }}</h2>
-                        {% if filter_summary_action %}
-                            <button type="button" class="btn btn-primary">Edit record set</button>
-                        {% endif %}
-                    </div>
-                {% endif %}
-
+                <div class="col">
+                    {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
+                </div>
+                <div class="col">
+                    {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
+                </div>
             </div>
-        </div>
 
-        <div class="govuk-grid-row">
-            <div class="bg-white p-3 border mb-5">
-                <table class="table table-hover table--sticky-header">
-                    <thead>
-                        <tr>
-                            <th scope="col">Title</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Last edited</th>
-                            <th scope="col">Access</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Parent record set(s)</th>
-                            <th scope="col">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
-                                      value="select-all">
-                                    <label class="fs-5 mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
-                                      Select all
-                                    </label>
-                                </div>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for item in records %}
-                            {% include "patterns/molecules/record-overview/record-overview.html" with item=item %}
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+            {% if filter_summary %}
+                <div class="mb-4">
+                    <h2 class="filter-summary">{{ filter_summary }}</h2>
+                    {% if filter_summary_action %}
+                        <button type="button" class="btn btn-primary">Edit record set</button>
+                    {% endif %}
+                </div>
+            {% endif %}
 
-    </main>
+        </div>
+    </div>
+
+    <div>
+        <div class="bg-white p-3 border mb-5">
+            <table class="table table-hover table--sticky-header">
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Last edited</th>
+                        <th scope="col">Access</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Parent record set(s)</th>
+                        <th scope="col">
+                            <div class="govuk-checkboxes__item">
+                                <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
+                                    value="select-all">
+                                <label class="fs-5 mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                    Select all
+                                </label>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in records %}
+                        {% include "patterns/molecules/record-overview/record-overview.html" with item=item %}
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <nav class="mt-4 mb-3" aria-label="Pagination">
+                <ul class="pagination">
+                  <li class="page-item disabled"><a class="page-link" aria-disabled="true" tabindex="-1" href="#">Previous</a></li>
+                  <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+
 </div>
+
 {% endblock %}

@@ -1,11 +1,12 @@
-<div class="mb-3">
-  <label class="fs-5 mb-2 {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+<div {% if not label_hidden %}class="mb-3"{% endif %}>
+  <label class="fs-5 {% if not field.hint %}mb-2{% endif %} {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
   </label>
+  {% if field.hint %}<span class="d-block fs-6 mb-2">{{ field.hint }}</span>{% endif %}
   <select class="form-select" id="sort-{{ field.id }}" name="{{ field.id }}">
     {% for option in field.options %}
     <option value="{{ option.id }}">{{ option.label }}</option>
     {% endfor %}
   </select>
-  {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
+
 </div>

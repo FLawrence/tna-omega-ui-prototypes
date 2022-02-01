@@ -13,5 +13,6 @@ context:
     modifier: govuk-input--width-10
   action:
     label: Login
+    modifier: btn-primary
   actionTwo:
     label: Forgotten your password?

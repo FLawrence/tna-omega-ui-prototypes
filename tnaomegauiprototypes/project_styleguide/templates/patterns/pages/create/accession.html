@@ -2,9 +2,7 @@
 
 {% block content %}
 <div class="app__width-container">
-    {% if page.back_link %}
-        {% include "patterns/atoms/back-link/back-link.html" with back_link=page.back_link %}
-    {% endif %}
+
     <main class="govuk-main-wrapper">
 
         <div class="govuk-grid-row">
@@ -18,7 +16,7 @@
                     </div>
                     <div class="d-flex align-items-center">
                         <button class="btn btn-primary me-3">Create edit set</button>
-                        <a href="#">I don’t have a document, create an empty edit set</a>
+                        <a href="create-edit-set.html">I don’t have a document, create an empty edit set</a>
                     </div>
                 </form>
 

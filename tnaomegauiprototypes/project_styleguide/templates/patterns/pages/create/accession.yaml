@@ -4,4 +4,4 @@ context:
     introduction: false
     back_link: ../dashboard/contributor-dashboard.html
     back_title: Dashboard
-    next_page: data-set.html
+    next_page: create-edit-set.html

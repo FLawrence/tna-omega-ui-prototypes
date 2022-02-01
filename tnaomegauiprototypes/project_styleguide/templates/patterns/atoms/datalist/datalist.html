@@ -1,0 +1,13 @@
+<div class="mb-3">
+    <label class="fs-5 {% if not field.hint %}mb-2{% endif %} {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+    {{ field.label }}
+    </label>
+    {% if field.hint %}<span class="d-block fs-6 mb-2">{{ field.hint }}</span>{% endif %}
+    <input class="form-control" list="{{ field.id }}-list" id="{{ field.id }}" placeholder="Type to search...">
+    <datalist id="{{ field.id }}-list">
+        {% for option in field.options %}
+            <option value="{{ option.label }}">
+        {% endfor %}
+    </datalist>
+</div>
+
