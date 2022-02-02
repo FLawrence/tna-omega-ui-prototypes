@@ -2,8 +2,10 @@
     font-weight: 500;
     transition: background-color $transition;
 
-    &:hover {
-        background-color: $color--off-black !important;
-        color: $color--white !important;
+    &a {
+        &:hover {
+            background-color: $color--off-black !important;
+            color: $color--white !important;
+        }
     }
 }
