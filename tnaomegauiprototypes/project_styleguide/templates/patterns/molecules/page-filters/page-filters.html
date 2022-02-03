@@ -3,12 +3,16 @@
     <div class="me-2 w-50">
         {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True no_margin=True %}
     </div>
-    <div class="me-2">
-        {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
-    </div>
-    <div class="me-2">
-        {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
-    </div>
+    {% if selectOne %}
+        <div class="me-2">
+            {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
+        </div>
+    {% endif %}
+    {% if selectTwo %}
+        <div class="me-2">
+            {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
+        </div>
+    {% endif %}
     {% if reset %}
         <div class="me-2 d-flex align-items-center">
             <a href="../edit-set/edit-set.html" class="d-flex align-items-center text-decoration-none">
