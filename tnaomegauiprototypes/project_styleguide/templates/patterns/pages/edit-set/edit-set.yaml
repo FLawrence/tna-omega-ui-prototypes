@@ -7,7 +7,9 @@ context:
     records: 16
     comments: 1
     release_date: 24/02/22
-    project: Project name
+    project:
+      title: Project name
+      link: ../project/project.html
   move: True
   add: True
   filterSearch:

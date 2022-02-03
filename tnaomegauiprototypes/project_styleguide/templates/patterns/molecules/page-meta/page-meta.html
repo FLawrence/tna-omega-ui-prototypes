@@ -29,9 +29,9 @@
     {% endif %}
     {% if page.project %}
         <div class="me-4">
-            <a href="#" class="d-flex align-items-center me-2 text-decoration-none">
+            <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">
                 <span class="material-icons me-1" role="presentation">folder_special</span>
-                <span class="text-decoration-underline">Part of {{ page.project }}</span>
+                <span class="text-decoration-underline">Part of {{ page.project.title }}</span>
             </a>
         </div>
     {% endif %}
