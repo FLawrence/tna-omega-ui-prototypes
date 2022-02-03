@@ -4,6 +4,10 @@ context:
     introduction: false
     back_link: ../dashboard/contributor-dashboard.html
     back_title: Dashboard
+    records: 16
+    comments: 1
+    release_date: 24/02/22
+    project: Project name
   filterSearch:
     label: 'Search edit set'
     placeholder: Search edit set

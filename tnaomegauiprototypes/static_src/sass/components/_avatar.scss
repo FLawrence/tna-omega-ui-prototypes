@@ -1,0 +1,9 @@
+.avatar {
+    display: block;
+    border-radius: 50%;
+
+    &--small {
+        width: 30px;
+        height: 30px;
+    }
+}
