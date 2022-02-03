@@ -1,0 +1,44 @@
+{% load static %}
+
+<div class="meta d-flex align-items-center mb-4">
+    <div class="user me-4">
+        <img src="{% static 'images/avatar_1.jpg' %}" title="Nick Lee" alt="Nick Lee" class="rounded-circle avatar avatar--small" data-bs-toggle="tooltip" data-bs-placement="bottom">
+    </div>
+    <div class="user me-4">
+        {{ page.records }} records
+    </div>
+    <div class="me-2">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#commentModal">
+            <span class="material-icons me-1" role="presentation">insert_comment</span>
+            <span class="text-decoration-underline">Edit set comment ({{ page.comments }})</span>
+        </a>
+    </div>
+    <div class="me-4">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
+            <span class="material-icons me-1" role="presentation">history</span>
+            <span class="text-decoration-underline">Edit set history</span>
+        </a>
+    </div>
+    {% if page.release_date %}
+        <div class="me-4">
+            <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
+                <span class="material-icons me-1" role="presentation">timelapse</span>
+                <span class="text-decoration-underline">Release on {{ page.release_date }}</span>
+            </a>
+        </div>
+    {% endif %}
+    {% if page.project %}
+        <div class="me-4">
+            <a href="#" class="d-flex align-items-center me-2 text-decoration-none">
+                <span class="material-icons me-1" role="presentation">folder_special</span>
+                <span class="text-decoration-underline">Part of {{ page.project }}</span>
+            </a>
+        </div>
+    {% endif %}
+    <div class="me-4">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
+            <span class="material-icons me-1" role="presentation">delete</span>
+            <span class="text-decoration-underline">Abandon edit set</span>
+        </a>
+    </div>
+</div>

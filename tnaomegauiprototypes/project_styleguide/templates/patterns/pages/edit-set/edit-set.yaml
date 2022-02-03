@@ -12,7 +12,6 @@ context:
     label: 'Search edit set'
     placeholder: Search edit set
     id: search
-    modifier: govuk-input--width-20
   selectOne:
     label: 'Access'
     id: access
@@ -33,18 +32,22 @@ context:
     - item:
       title: FCO
       records: 16
+      modifier: btn-primary
       link: '../record-set/record-set.html'
     - item:
       title: South East Asia
       records: 16
+      modifier: btn-primary
       link: '../record-set/record-set.html'
     - item:
       title: Myanmar
       records: 10
+      modifier: btn-primary
       link: '../record-set/record-set.html'
     - item:
       title: Cambodia
       records: 6
+      modifier: btn-primary
       link: '../record-set/record-set.html'
   records:
     - item:

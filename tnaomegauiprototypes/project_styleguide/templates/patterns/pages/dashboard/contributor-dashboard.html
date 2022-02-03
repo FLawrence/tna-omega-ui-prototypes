@@ -2,49 +2,36 @@
 
 {% block content %}
 <div>
-    <main>
 
-        <div>
+        {% include "patterns/molecules/page-heading/page-heading.html" %}
 
-            {% include "patterns/molecules/page-heading/page-heading.html" %}
-
-            <div class="filters row mb-4">
-                <h2 class="visually-hidden">Filter edit sets by:</h2>
-                <div class="col">
-                    {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True %}
-                </div>
-                <div class="col">
-                    {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
-                </div>
-                <div class="col">
-                    {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
-                </div>
-            </div>
+        <div class="bg-white border mb-5 rounded-1 overflow-hidden">
+            {% include "patterns/molecules/page-filters/page-filters.html" %}
 
             {% if filter_summary %}
-                <h2 class="filter-summary h4">{{ filter_summary }}</h2>
+                <h2 class="filter-summary h3 ms-4 me-4">{{ filter_summary }}</h2>
             {% endif %}
 
-        </div>
+            <div class="mb-5">
+                <table class="table table-hover table--edge-to-edge table--space table--sticky-header">
+                    <thead>
+                        <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Records</th>
+                            <th scope="col">Last edited</th>
+                            <th scope="col">Access</th>
+                            <th scope="col">Comments</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in edit_sets %}
+                            {% include "patterns/molecules/edit-set-overview/edit-set-overview.html" with item=item %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
 
-        <div class="bg-white p-3 border mb-5">
-            <table class="table table-hover table--space table--sticky-header">
-                <thead>
-                    <tr>
-                        <th class="bg-white" scope="col">Title</th>
-                        <th class="bg-white" scope="col">Records</th>
-                        <th class="bg-white" scope="col">Last edited</th>
-                        <th class="bg-white" scope="col">Access</th>
-                        <th class="bg-white" scope="col">Comments</th>
-                        <th class="bg-white" scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {% for item in edit_sets %}
-                        {% include "patterns/molecules/edit-set-overview/edit-set-overview.html" with item=item %}
-                    {% endfor %}
-                </tbody>
-            </table>
         </div>
 
         {% include "patterns/organisms/modal/history-modal.html" %}
@@ -55,8 +42,8 @@
             {% include "patterns/molecules/toast/toast.html" %}
         {% endif %}
 
-    </main>
 </div>
+
 {% endblock %}
 
 {% block extra_js %}
