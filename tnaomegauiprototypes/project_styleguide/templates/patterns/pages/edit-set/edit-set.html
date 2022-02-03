@@ -1,5 +1,8 @@
 {% extends "patterns/base_page.html" %}
 
+{% load static %}
+
+
 {% block content %}
 <div>
 
@@ -7,6 +10,49 @@
         <div class="govuk-grid-column-two-thirds">
 
             {% include "patterns/molecules/page-heading/page-heading.html" %}
+
+            <div class="meta d-flex align-items-center mb-4">
+                <div class="user me-4">
+                    <img src="{% static 'images/avatar_1.jpg' %}" title="Nick Lee" alt="Nick Lee" class="avatar avatar--small" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                </div>
+                <div class="user me-4">
+                    {{ page.records }} records
+                </div>
+                <div class="me-2">
+                    <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#commentModal">
+                        <span class="material-icons me-1" role="presentation">insert_comment</span>
+                        <span class="text-decoration-underline">Edit set comment ({{ page.comments }})</span>
+                    </a>
+                </div>
+                <div class="me-4">
+                    <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
+                        <span class="material-icons me-1" role="presentation">history</span>
+                        <span class="text-decoration-underline">Edit set history</span>
+                    </a>
+                </div>
+                {% if page.release_date %}
+                    <div class="me-4">
+                        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
+                            <span class="material-icons me-1" role="presentation">timelapse</span>
+                            <span class="text-decoration-underline">Release on {{ page.release_date }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+                {% if page.project %}
+                    <div class="me-4">
+                        <a href="#" class="d-flex align-items-center me-2 text-decoration-none">
+                            <span class="material-icons me-1" role="presentation">folder_special</span>
+                            <span class="text-decoration-underline">Part of {{ page.project }}</span>
+                        </a>
+                    </div>
+                {% endif %}
+                <div class="me-4">
+                    <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
+                        <span class="material-icons me-1" role="presentation">delete</span>
+                        <span class="text-decoration-underline">Abandon edit set</span>
+                    </a>
+                </div>
+            </div>
 
             <div class="filters row mb-4">
                 <h2 class="visually-hidden">Filter records by:</h2>
@@ -20,6 +66,17 @@
                     {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
                 </div>
             </div>
+
+            {% if record_sets %}
+                <div class="recod-sets d-flex align-items-center mb-4">
+                    <div class="me-3">Records sets within this edit set:</div>
+                    {% for item in record_sets %}
+                        <div class="me-3">
+                            <a href="{{ item.link }}">{{ item.title }} ({{ item.records }})</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
 
             {% if filter_summary %}
                 <div class="mb-4">
@@ -74,6 +131,22 @@
         </div>
     </div>
 
+    {% include "patterns/organisms/modal/history-modal.html" %}
+    {% include "patterns/organisms/modal/comment-modal.html" %}
+    {% include "patterns/organisms/modal/time-modal.html" %}
+    {% include "patterns/organisms/modal/add-comment-modal.html" %}
+    {% include "patterns/organisms/modal/abandon-modal.html" %}
+
 </div>
 
+{% endblock %}
+
+
+{% block extra_js %}
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 {% endblock %}

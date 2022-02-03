@@ -1,11 +1,12 @@
 .badge {
+    $root: &;
     font-weight: 500;
     transition: background-color $transition;
+}
 
-    &a {
-        &:hover {
-            background-color: $color--off-black !important;
-            color: $color--white !important;
-        }
+a.badge {
+    &:hover {
+        background-color: $color--off-black !important;
+        color: $color--white !important;
     }
 }
