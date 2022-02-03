@@ -70,7 +70,7 @@ fab migrate
 fab start
 ```
 
-This will start the containers in the background, but not Django. To do this, connect to the web container with `fab ssh` and run `honcho start` to start both Django and the Webpack dev server in the foreground.
+This will start the containers in the background, but not Django. To do this, connect to the web container with `fab sh` and run `honcho start` to start both Django and the Webpack dev server in the foreground.
 
 Then, connect to the running container again (`fab sh`) and:
 
