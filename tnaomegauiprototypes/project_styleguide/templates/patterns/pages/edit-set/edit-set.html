@@ -67,14 +67,16 @@
                 </div>
             </div>
 
-            <div class="recod-sets d-flex align-items-center">
-                <div>Records sets within this edit set:</div>
-                {% for item in record_sets %}
-                    <div>
-                        <a href="{{ item.link }}">{{ item.title }} ({{ item.records }})</a>
-                    </div>
-                {% endfor %}
-            </div>
+            {% if record_sets %}
+                <div class="recod-sets d-flex align-items-center mb-4">
+                    <div class="me-3">Records sets within this edit set:</div>
+                    {% for item in record_sets %}
+                        <div class="me-3">
+                            <a href="{{ item.link }}">{{ item.title }} ({{ item.records }})</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
 
             {% if filter_summary %}
                 <div class="mb-4">
