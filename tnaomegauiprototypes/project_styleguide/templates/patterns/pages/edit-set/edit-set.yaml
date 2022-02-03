@@ -8,6 +8,8 @@ context:
     comments: 1
     release_date: 24/02/22
     project: Project name
+  move: True
+  add: True
   filterSearch:
     label: 'Search edit set'
     placeholder: Search edit set
