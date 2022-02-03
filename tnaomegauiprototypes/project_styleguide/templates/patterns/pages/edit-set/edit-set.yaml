@@ -29,6 +29,23 @@ context:
       - { label: 'South East Asia', id: record-set-3 }
       - { label: 'Myanmar', id: record-set-4 }
       - { label: 'Cambodia', id: record-set-5 }
+  record_sets:
+    - item:
+      title: FCO
+      records: 16
+      link: '../record-set/record-set.html'
+    - item:
+      title: South East Asia
+      records: 16
+      link: '../record-set/record-set.html'
+    - item:
+      title: Myanmar
+      records: 10
+      link: '../record-set/record-set.html'
+    - item:
+      title: Cambodia
+      records: 6
+      link: '../record-set/record-set.html'
   records:
     - item:
       title: FCO 15/17/7165
