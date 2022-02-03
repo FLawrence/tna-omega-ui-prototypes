@@ -12,6 +12,7 @@ context:
       link: ../project/project.html
   move: True
   add: True
+  pagination: True
   filterSearch:
     label: 'Search edit set'
     placeholder: Search edit set

@@ -6,8 +6,9 @@
         {% include "patterns/molecules/page-heading/page-heading.html" %}
 
         <div class="bg-white border mb-5 rounded-1 overflow-hidden">
-            {% include "patterns/molecules/page-filters/page-filters.html" %}
-
+            <div class="mb-4">
+                {% include "patterns/molecules/page-filters/page-filters.html" %}
+            </div>
             {% if filter_summary %}
                 <h2 class="filter-summary h3 ms-4 me-4">{{ filter_summary }}</h2>
             {% endif %}
