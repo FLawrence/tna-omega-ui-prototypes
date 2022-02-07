@@ -69,7 +69,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge:
         title: Overdue
-        modifier: bg-secondary
+        modifier: bg-danger
       release_date: 24/02/22
       project:
         title: Census 1921
