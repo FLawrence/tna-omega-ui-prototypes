@@ -2,3 +2,4 @@ context:
   user:
     full_name: Nick Lee
     modifier: avatar--small
+    tooltip: True
