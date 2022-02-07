@@ -28,6 +28,7 @@
                                 <a href="#" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
             {% endif %}
@@ -54,8 +55,8 @@
                             <th scope="col">Parent record set(s)</th>
                             <th scope="col">
                                 <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
-                                        value="select-all">
+                                    <input id="select-all" name="select-all" type="checkbox"
+                                        value="select-all" data-bulk-select-all>
                                     <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
                                         Select all
                                     </label>
@@ -93,6 +94,7 @@
                                 <a href="#" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
 
