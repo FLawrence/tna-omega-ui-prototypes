@@ -1,8 +1,6 @@
-{% load static %}
-
 <div class="meta d-flex align-items-center mb-4">
     <div class="user me-4">
-        <img src="{% static 'images/avatar_1.jpg' %}" title="Nick Lee" alt="Nick Lee" class="rounded-circle avatar avatar--small" data-bs-toggle="tooltip" data-bs-placement="bottom">
+        {% include "patterns/atoms/avatar/avatar.html" %}
     </div>
     <div class="user me-4">
         {{ page.records }} records
