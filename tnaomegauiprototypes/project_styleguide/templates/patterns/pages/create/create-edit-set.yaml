@@ -10,10 +10,13 @@ context:
     id: search
   questionOne:
     label: Title
+    placeholder: For example FCO-102-205
     id: title
+    modifier: w-50
   questionTwo:
     label: Series
     id: series
+    modifier: w-50
     options:
       - { label: 'Series one' }
       - { label: 'Series two' }
@@ -22,12 +25,14 @@ context:
   questionThree:
     label: Department code / name
     id: title
+    modifier: w-50
     options:
       - { label: 'Minstry of Defense' }
   questionFour:
     label: 'Contributor'
     id: 'contributor'
     hint: The user who will recieve the edit set in their dashboard
+    modifier: w-25
     options:
       - { label: 'You (Nick Lee)', id: contributor }
       - { label: 'Jay Spanton', id: contributor-2 }
@@ -36,21 +41,22 @@ context:
       - { label: 'Jay Spanton', id: contributor-5 }
   questionFive:
     label: False
-    id: timed-release
-    options:
-      - { label: 'Is a timed release', id: timed-release }
-  questionSix:
-    label: Target date
-    hint: Optional
-    id: target-date
-  questionSeven:
-    label: False
     id: project
     options:
       - { label: 'This is part of a project', id: project }
+  questionSix:
+    label: Target date
+    hint: For example, 27 3 2007 (Optional)
+    id: target-date
+  questionSeven:
+    label: False
+    id: timed-release
+    options:
+      - { label: 'Is a timed release', id: timed-release }
   questionEight:
-    label: Can you provide more detail?
+    label: Comments
     id: more-details
+    hint: Notes that the assignee might find useful to help them with their task
   action:
     label: Create edit set
     modifier: btn-primary

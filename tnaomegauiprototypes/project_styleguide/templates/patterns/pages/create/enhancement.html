@@ -9,9 +9,12 @@
 
                 {% include "patterns/molecules/page-heading/page-heading.html" %}
 
-                <form class="form" action="{{ page.next_page }}" method="get" novalidate>
+                <form class="form w-75 mb-5" action="{{ page.next_page }}" method="get" novalidate>
 
-                    {% include "patterns/atoms/radios/radios.html" with field=questionOne %}
+                    <div class="bg-white mb-5 rounded-1 overflow-hidden p-4 pb-0">
+                        {% include "patterns/atoms/radios/radios.html" with field=questionOne %}
+                    </div>
+
                     {% include "patterns/atoms/button/button.html" with field=action %}
 
                 </form>
