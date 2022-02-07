@@ -26,17 +26,17 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="utility-nav d-flex align-items-center">
+                <ul class="utility-nav d-flex align-items-center fs-6">
                 {% if not no_logout %}
                     <li class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-4">
                         <div class="d-flex align-items-center">
-                            <div class="me-3">
+                            <div class="me-2">
                                 {% include "patterns/atoms/avatar/avatar.html" %}
                             </div>
-                            <div class="me-2">
+                            <div class="me-1">
                                 {{ user.full_name }}
                             </div>
-                            <a class="link-light text-decoration-none" href="../login/login.html">(Logout)</a>
+                            (<a class="link-light" href="../login/login.html">Logout</a>)
                         </div>
                     </li>
                 {% endif %}
