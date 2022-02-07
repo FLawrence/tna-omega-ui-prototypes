@@ -4,6 +4,9 @@ context:
     introduction: false
     back_link: ../edit-set/edit-set.html
     back_title: Edit set
+  move: True
+  add: True
+  pagination: False
   filterSearch:
     label: 'Search edit set'
     placeholder: Search edit set

@@ -1,16 +1,16 @@
-<div class="mb-3">
-  {% if field.label %} <h2 class="govuk-heading-m">{{ field.label }}</h2>{% endif %}
+<div class="mb-4">
+  {% if field.label %} <h2>{{ field.label }}</h2>{% endif %}
   {% if field.hint %}
   <span id="{{ id }}-hint" class="fs-6">
     {{ field.hint }}
   </span>
   {% endif %}
-  <div class="govuk-checkboxes {% if field.modifier %}{{ field.modifier }}{% endif %}">
+  <div class="{% if field.modifier %}{{ field.modifier }}{% endif %}">
     {% for option in field.options %}
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="{{ option.id }}" name="{{ field.id }}" type="checkbox"
+    <div class="">
+      <input class="me-1" id="{{ option.id }}" name="{{ field.id }}" type="checkbox"
         value="{{ option.label }}" {% if option.checked %}checked{% endif %}>
-      <label class="fs-5 mb-2 govuk-checkboxes__label" for="{{ option.id }}">
+      <label class="mb-2" for="{{ option.id }}">
         {{ option.label }}
       </label>
     </div>

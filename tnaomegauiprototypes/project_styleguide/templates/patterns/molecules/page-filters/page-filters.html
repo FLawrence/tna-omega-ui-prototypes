@@ -1,0 +1,24 @@
+<div class="filters d-flex align-items-center p-3 ps-4 pe-4 border-bottom">
+    <h2 class="visually-hidden">Filter records by:</h2>
+    <div class="me-2 w-50">
+        {% include "patterns/atoms/text-input/text-input.html" with field=filterSearch label_hidden=True no_margin=True %}
+    </div>
+    {% if selectOne %}
+        <div class="me-2">
+            {% include "patterns/atoms/select/select.html" with field=selectOne label_hidden=True %}
+        </div>
+    {% endif %}
+    {% if selectTwo %}
+        <div class="me-2">
+            {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
+        </div>
+    {% endif %}
+    {% if reset %}
+        <div class="me-2 d-flex align-items-center">
+            <a href="../edit-set/edit-set.html" class="d-flex align-items-center text-decoration-none">
+                <span class="material-icons">restart_alt</span>
+                <span> Reset filters</span>
+            </a>
+        </div>
+    {% endif %}
+</div>

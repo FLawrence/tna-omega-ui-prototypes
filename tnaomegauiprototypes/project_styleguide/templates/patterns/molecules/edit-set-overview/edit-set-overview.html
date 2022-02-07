@@ -1,4 +1,4 @@
-<tr class="edit-set-overview">
+<tr class="edit-set-overview text-muted">
     <td>
         <div class="edit-set-overview__title d-flex align-items-center mb-2">
             <h3 class="edit-set-overview__heading mb-0 me-1 h5">
@@ -11,10 +11,10 @@
         {% if item.release_date or item.project %}
             <div class="edit-set-overview__meta fs-6">
                 {% if item.release_date %}
-                    <div class="meta-item">Release on {{ item.release_date }}</div>
+                    <div class="meta-item text-muted">Release on {{ item.release_date }}</div>
                 {% endif %}
                 {% if item.project %}
-                    <div class="meta-item">Part of <a class="meta-item__link" href="{{ item.project.link }}">{{ item.project.title }}</a></div>
+                    <div class="meta-item text-muted">Part of <a class="meta-item__link" href="{{ item.project.link }}">{{ item.project.title }}</a></div>
                 {% endif %}
             </div>
         {% endif %}
@@ -24,11 +24,11 @@
     <td>{{ item.access }}</td>
     <td>{% if item.comments %}<a href="#" data-bs-toggle="modal" data-bs-target="#commentModal">{{ item.comments }}</a>{% else %}0{% endif %}</td>
     <td>
-        <ul class="d-flex align-items-center">
+        <ul class="d-flex align-items-center justify-content-end">
             <li>
                 <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
                     <span class="material-icons me-1" role="presentation">history</span>
-                    <span>History</span>
+                    <span class="text-decoration-underline">History</span>
                 </a>
             </li>
             <li class="dropdown">
@@ -41,7 +41,7 @@
                     <li><a class="dropdown-item" href="#">Add contributor</a></li>
                     <li><a class="dropdown-item" href="#">Add/edit project</a></li>
                     <li><a class="dropdown-item" href="#">Split edit set</a></li>
-                    <li><a class="dropdown-item" href="#">Abandon edit set</a></li>
+                    <li><a class="dropdown-item" href="#">Abandon</a></li>
                  </ul>
             </li>
         </ul>

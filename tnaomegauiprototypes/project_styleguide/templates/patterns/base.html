@@ -28,7 +28,7 @@
     </head>
 
 
-    <body class="app govuk-template__body {% block body_class %}app--{{ page.get_verbose_name|slugify }}{% endblock %}">
+    <body class="app {% block body_class %}app--{{ page.get_verbose_name|slugify }}{% endblock %}">
 
         {% block body_top %}{% endblock %}
 

@@ -1,0 +1,76 @@
+<header class="header text-white {% if not page.back_link %}mb-5{% endif %}" role="banner">
+    <div class="px-3 py-2">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 me-2 mb-lg-0 text-dark text-decoration-none text-white">
+                        <span class="govuk-header__logotype">
+                            <svg class="header__logo" role="presentation" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 200 200" height="70" width="70" style="fill: currentColor; enable-background:new 0 0 200 200" xml:space="preserve"><path class="st0" d="M21.86 127.27h156.27v50.81H21.86v-50.81zm0-52.68H178.13v50.81H21.86V74.59zm0-52.67h77.2v50.81h-77.2V21.92zm79.07 0h77.2v50.81h-77.2V21.92zm0-1.86H20v159.87h160V20.06h-79.07z"/><path class="st0" d="M41.32 39.61h-5.41v-3.04H50.2v3.04h-5.4v18.38h-3.48zM51.56 36.57h3.48v9.03h8.33v-9.03h3.48v21.42h-3.48v-9.32h-8.33v9.32h-3.48zM70.86 36.57h12.27v3.01h-8.79v6.05h7.36v3.01h-7.36v6.3h8.79v3.05H70.86zM39.71 89.29h3.76l6.4 12.54c.56 1.09 1.15 2.73 1.65 4.03h.22c-.22-1.74-.34-3.57-.34-4.78v-11.8h3.45v21.42h-3.73l-6.31-12.32c-.68-1.37-1.18-2.67-1.74-4.19h-.22c.16 1.37.34 3.35.34 5v11.52h-3.48V89.29zM67.75 102.61l-1.68-6.27c-.31-1.12-.56-2.2-.87-3.79h-.19c-.31 1.55-.5 2.58-.84 3.79l-1.71 6.27h5.29zm-4.76-13.32h4.22l6.18 21.42h-3.54l-1.46-5.21H61.8l-1.43 5.21h-3.6l6.22-21.42zM77.16 92.33h-5.41v-3.04h14.29v3.04h-5.41v18.38h-3.47zM87.81 89.29h3.48v21.42h-3.48zM107.52 100.03c0-5.28-1.65-8.01-4.81-8.01-3.2 0-4.81 2.73-4.81 8.01 0 5.25 1.62 7.95 4.81 7.95 3.16 0 4.81-2.7 4.81-7.95m-13.29 0c0-6.98 3.04-11.05 8.48-11.05 5.4 0 8.45 4.07 8.45 11.05 0 6.95-3.04 10.99-8.45 10.99-5.44 0-8.48-4.04-8.48-10.99M114.28 89.29h3.76l6.4 12.54c.56 1.09 1.15 2.73 1.65 4.03h.22c-.22-1.74-.34-3.57-.34-4.78v-11.8h3.45v21.42h-3.73l-6.31-12.32c-.68-1.37-1.18-2.67-1.74-4.19h-.22c.16 1.37.34 3.35.34 5v11.52h-3.48V89.29zM142.4 102.61l-1.68-6.27c-.31-1.12-.56-2.2-.87-3.79h-.19c-.31 1.55-.5 2.58-.84 3.79l-1.71 6.27h5.29zm-4.76-13.32h4.22l6.18 21.42h-3.54l-1.46-5.21h-6.59l-1.43 5.21h-3.6l6.22-21.42zM149.93 89.29h3.48v18.38h8.36v3.04h-11.84zM46.88 155.22l-1.68-6.27c-.31-1.12-.56-2.2-.87-3.79h-.19c-.31 1.55-.5 2.58-.84 3.79l-1.71 6.27h5.29zm-4.76-13.32h4.22l6.18 21.42h-3.54l-1.46-5.21h-6.59l-1.43 5.21h-3.6l6.22-21.42zM59.93 152.55c2.52 0 3.39-1.61 3.39-3.85 0-2.17-.96-3.85-3.39-3.85h-2.67v7.7h2.67zm-6.12-10.65h6.4c4.54 0 6.71 2.45 6.71 6.58 0 3.1-1.49 5.59-3.7 6.27v.19c1.02 1.15 3.98 7.54 4.78 7.88v.5h-3.76c-.99-.56-3.63-7.2-4.44-7.76h-2.52v7.76H53.8V141.9zM72.87 152.55c0 5.34 1.86 8.04 4.75 8.04 2.86 0 4.01-2.02 3.98-5.18l3.48.12c.03.16.06.43.06.59 0 4.41-2.14 7.51-7.48 7.51-5.16 0-8.48-3.88-8.48-11.08 0-7.05 3.32-10.96 8.48-10.96 6.43 0 7.52 4.62 7.52 7.2 0 .31-.03.71-.06.9l-3.51.12c.03-3.29-1.15-5.18-3.98-5.18-2.87 0-4.76 2.77-4.76 7.92M87.98 141.9h3.48v9.04h8.32v-9.04h3.48v21.42h-3.48v-9.31h-8.32v9.31h-3.48zM107.86 141.9h3.48v21.42h-3.48zM114.16 141.9h3.63l3.23 12.32c.5 1.92.78 3.63 1.12 5.62h.25c.34-2.02.62-3.69 1.12-5.62l3.2-12.32h3.63l-6.06 21.42h-4.07l-6.05-21.42zM132.72 141.9h12.27v3.01h-8.79v6.06h7.36v3.01h-7.36v6.3h8.79v3.04h-12.27zM150.42 156.06c-.03.25-.06.53-.06.78 0 1.92.78 3.72 3.42 3.72 2.14 0 3.29-1.18 3.29-2.89 0-1.55-.68-2.45-2.24-3.01l-3.45-1.27c-2.42-.9-4.22-2.45-4.22-5.74 0-3.54 2.33-6.05 6.62-6.05 5.47 0 6.43 3.6 6.43 5.87 0 .34-.03.71-.09 1.06l-3.42.06c.03-.22.06-.53.06-.74 0-1.68-.59-3.17-3.04-3.17-2.08 0-3.01 1.24-3.01 2.82 0 1.74.93 2.48 2.21 2.95l3.51 1.27c2.64.96 4.26 2.64 4.26 5.77 0 3.6-2.39 6.15-6.99 6.15-5.87 0-6.83-3.91-6.83-6.46 0-.31.03-.65.09-.99l3.46-.13z"/></svg>
+                            <span class="visually-hidden">
+                                The National Archives
+                            </span>
+                        </span>
+                    </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li class="dropdown text-end">
+                        <a href="#" class="nav-link d-block link-light text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Create
+                        </a>
+                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item" href="../create/enhancement.html">Create enhancement</a></li>
+                            <li><a class="dropdown-item" href="../create/accession.html">Create accession</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-light">
+                        Export
+                        </a>
+                    </li>
+                </ul>
+                <ul class="utility-nav d-flex align-items-center">
+                {% if not no_logout %}
+                    <li class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-4">
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                {% include "patterns/atoms/avatar/avatar.html" %}
+                            </div>
+                            <div class="me-2">
+                                {{ user.full_name }}
+                            </div>
+                            <a class="link-light text-decoration-none" href="../login/login.html">(Logout)</a>
+                        </div>
+                    </li>
+                {% endif %}
+                    <li>
+                        <a class="link-light text-decoration-none d-flex align-items-center" href="#" data-bs-toggle="offcanvas" data-bs-target="#adminMenu" aria-controls="adminMenu">
+                            <span class="me-2">Admin</span>
+                            <span class="material-icons me-1" role="presentation">menu</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="adminMenu" aria-labelledby="adminMenuLabel" data-bs-backdrop="false" data-bs-scroll="true">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-dark" id="adminMenuLabel">Admin options</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">User management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">User management</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">User management</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</header>

@@ -1,6 +1,10 @@
 .avatar {
     display: block;
-    border-radius: 50%;
+
+    &--medium {
+        height: 35px;
+        width: 35px;
+    }
 
     &--small {
         width: 30px;

@@ -1,5 +1,5 @@
-<div class="mb-3">
-  <label class="fs-5 mb-2 {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+<div class="{% if not no_margin %}mb-4{% endif %}">
+  <label class="mb-2 fw-bold {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
     {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
   </label>

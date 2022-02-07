@@ -11,7 +11,7 @@
         <div class="{% if field.modifier %}{{ field.modifier }}{% endif %}">
             {% for option in field.options %}
             <div class="form-check">
-                <input class="form-check-input" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="yes"
+                <input class="form-check-input me-1" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="yes"
                     {% if option.checked %}checked{% endif %}>
                 <label class="form-check-label" for="{{ option.id }}">
                     {{ option.label }}

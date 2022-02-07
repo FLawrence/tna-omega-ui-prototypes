@@ -1,0 +1,21 @@
+context:
+  filterSearch:
+    label: 'Search edit set'
+    placeholder: Search edit set
+    id: search
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Access', id: access }
+      - { label: 'Open', id: access-2 }
+      - { label: 'Closed', id: access-3 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'Record set', id: record-set }
+      - { label: 'FCO', id: record-set-2 }
+      - { label: 'South East Asia', id: record-set-3 }
+      - { label: 'Myanmar', id: record-set-4 }
+      - { label: 'Cambodia', id: record-set-5 }
