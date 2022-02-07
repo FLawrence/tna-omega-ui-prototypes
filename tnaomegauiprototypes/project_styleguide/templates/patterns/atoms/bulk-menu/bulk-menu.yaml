@@ -4,14 +4,18 @@ context:
     id: 'bulk-edit'
     hint: False
     modifier: False
+    datatag: data-bulk-action
     options:
-      - { label: '–– Bulk update selected', id: bulk-edit }
-      - { label: 'Duplicate record', id: bulk-edit-1 }
-      - { label: 'Change access', id: bulk-edit-2 }
-      - { label: 'Search & replace', id: bulk-edit-3 }
-      - { label: 'Add/edit record sets', id: bulk-edit-4 }
-      - { label: 'Split and move to new edit set', id: bulk-edit-5 }
-      - { label: 'Move records to next stage', id: bulk-edit-6 }
-      - { label: 'Export records', id: bulk-edit-7 }
-      - { label: 'Abandon records', id: bulk-edit-8 }
-      - { label: 'Create project', id: bulk-edit-9 }
+      - { label: '–– Bulk update selected', id: '' }
+      - { label: 'Duplicate record', id: '' }
+      - { label: 'Change access', id: '' }
+      - { label: 'Search & replace', id: '' }
+      - {
+          label: 'Add/edit record sets',
+          id: '../edit-record-set/edit-record-set.html',
+        }
+      - { label: 'Split and move to new edit set', id: '' }
+      - { label: 'Move records to next stage', id: '' }
+      - { label: 'Export records', id: '' }
+      - { label: 'Abandon records', id: '' }
+      - { label: 'Create project', id: '' }

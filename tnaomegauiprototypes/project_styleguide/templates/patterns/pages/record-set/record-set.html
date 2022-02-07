@@ -29,6 +29,7 @@
                                 <a href="#" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
             {% endif %}
@@ -45,10 +46,10 @@
                             <th scope="col">Date</th>
                             <th scope="col">Parent record set(s)</th>
                             <th scope="col">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
-                                        value="select-all">
-                                    <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                <div>
+                                    <input id="select-all" name="select-all" type="checkbox"
+                                        value="select-all" data-bulk-select-all data-bulk-update>
+                                    <label class="mb-2 visually-hidden" for="select-all">
                                         Select all
                                     </label>
                                 </div>
@@ -86,6 +87,7 @@
                                 <a href="#" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
             </div>
@@ -96,6 +98,7 @@
         {% include "patterns/organisms/modal/time-modal.html" %}
         {% include "patterns/organisms/modal/add-comment-modal.html" %}
         {% include "patterns/organisms/modal/abandon-modal.html" %}
+        {% include "patterns/organisms/modal/record-set-modal.html" %}
 
     </div>
 
