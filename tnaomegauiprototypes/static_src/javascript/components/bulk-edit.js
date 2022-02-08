@@ -5,14 +5,19 @@ class BulkEdit {
 
     constructor(node) {
         this.node = node;
+        this.checkboxes = document.querySelectorAll('[data-bulk-update]');
         this.bulkMenu = document.querySelectorAll('[data-bulk-menu]');
         this.hiddenClass = 'd-none';
         this.bindEvents(node);
     }
 
+    atLeastOneCheckboxIsChecked() {
+        const checkboxes = Array.from(this.checkboxes);
+        return checkboxes.reduce((acc, curr) => acc || curr.checked, false);
+    }
+
     checkActive() {
-        const isChecked = this.node.checked;
-        if (isChecked) {
+        if (this.atLeastOneCheckboxIsChecked() === true) {
             this.displayBulkEdit();
         } else {
             this.hideBulkEdit();
@@ -32,8 +37,9 @@ class BulkEdit {
     }
 
     bindEvents(node) {
-        node.addEventListener('change', (e) => {
-            this.checkActive(e);
+        node.addEventListener('change', () => {
+            this.atLeastOneCheckboxIsChecked();
+            this.checkActive();
         });
     }
 }

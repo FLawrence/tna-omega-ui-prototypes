@@ -6,7 +6,7 @@ context:
     modifier: False
     datatag: data-bulk-action
     options:
-      - { label: '–– Bulk update selected', id: '' }
+      - { label: '–– Bulk update', id: '' }
       - { label: 'Duplicate record', id: '' }
       - { label: 'Change access', id: '' }
       - { label: 'Search & replace', id: '' }
