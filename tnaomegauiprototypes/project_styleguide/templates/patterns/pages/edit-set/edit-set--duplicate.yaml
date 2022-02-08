@@ -1,3 +1,161 @@
 context:
   toast:
     message: Record duplicated
+
+  records:
+    - item:
+      title: Duplicate of FCO 15/17/7165
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7165
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7166
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7167
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7168
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7169
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/17/7170
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/18/7171
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/18/7172
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/18/7173
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/18/7174
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/18/7175
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7177
+      link: '../record/record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: 2 sensitive records
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: '?'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'
