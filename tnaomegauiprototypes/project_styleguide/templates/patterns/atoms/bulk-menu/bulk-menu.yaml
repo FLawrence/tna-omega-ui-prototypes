@@ -7,7 +7,7 @@ context:
     datatag: data-bulk-action
     options:
       - { label: '–– Bulk update', id: '' }
-      - { label: 'Duplicate record', id: '' }
+      - { label: 'Duplicate record', id: '../edit-set/edit-set-duplicate.html' }
       - { label: 'Change access', id: '' }
       - { label: 'Search & replace', id: '' }
       - {
