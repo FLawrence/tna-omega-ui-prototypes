@@ -4,8 +4,10 @@ context:
     introduction: false
     back_link: ../edit-set/edit-set.html
     back_title: Edit set
-  move: True
-  add: True
+  move:
+    link: ../edit-set/edit-set--move.html
+  add:
+    link: ../record/add.html
   pagination: False
   filterSearch:
     label: 'Search edit set'

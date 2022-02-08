@@ -19,14 +19,14 @@
                                 <button type="button" class="btn btn-primary">Edit record set</button>
                             </div>
                         {% endif %}
-                        {% if add %}
+                        {% if add.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Add record</a>
+                                <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move %}
+                        {% if move.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Move edit set on</a>
+                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
@@ -77,14 +77,14 @@
                         </nav>
                     {% endif %}
                     <div class="d-flex align-items-center ms-auto">
-                        {% if add %}
+                        {% if add.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Add record</a>
+                                <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move %}
+                        {% if move.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Move edit set on</a>
+                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}

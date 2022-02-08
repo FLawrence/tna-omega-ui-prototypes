@@ -10,8 +10,10 @@ context:
     project:
       title: Project name
       link: ../project/project.html
-  move: True
-  add: True
+  move:
+    link: ../edit-set/edit-set--move.html
+  add:
+    link: ../record/add.html
   pagination: True
   filterSearch:
     label: 'Search edit set'
