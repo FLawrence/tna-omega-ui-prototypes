@@ -23,5 +23,8 @@ context:
       - { label: 'Split and move to new edit set', id: '' }
       - { label: 'Move records to next stage', id: '' }
       - { label: 'Export records', id: '' }
-      - { label: 'Abandon records', id: '../edit-set/edit-set--abandon.html' }
+      - {
+          label: 'Abandon records',
+          id: '../edit-set/edit-set--abandon-confirm.html',
+        }
       - { label: 'Create project', id: '' }
