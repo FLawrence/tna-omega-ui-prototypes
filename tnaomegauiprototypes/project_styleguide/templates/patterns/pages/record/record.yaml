@@ -1,24 +1,175 @@
 context:
   page:
+    pac: res.3pw.19.wa.66.d
     title: 'FCO 15/17/7165'
     introduction: false
     back_link: ../edit-set/edit-set.html
     back_title: FCO159(7165-7287)
-  filterSearch:
-    label: 'Search edit set'
-    id: search
-    modifier: govuk-input--width-20
-  selectOne:
-    label: 'Access'
-    id: access
+    record_sets:
+      - item:
+        title: FCO
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: South East Asia
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: Myanmar
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: Cambodia
+        records: false
+        modifier: btn-primary
+        link: False
+  fieldOne:
+    label: 'Former reference (department)'
+    id: form-ref-dept
+  fieldTwo:
+    label: 'Former Reference (PRO)'
+    id: form-ref-pro
+  fieldThree:
+    label: Creator name(s)
+    id: creator
+    modifier: w-50
     options:
-      - { label: 'Open', id: access }
-      - { label: 'Closed', id: access-2 }
-  selectTwo:
-    label: 'Record set'
-    id: record-set
+      - { label: 'Creator one' }
+      - { label: 'Creator two' }
+      - { label: 'Creator three' }
+      - { label: 'Creator Four' }
+  fieldFour:
+    label: 'Start date'
+    id: start-date
+    modifier: w-25
+  fieldFive:
+    label: 'End date'
+    id: end-date
+    modifier: w-25
+  fieldSix:
+    label: Creator name(s)
+    id: creator
+    modifier: w-50
     options:
-      - { label: 'FCO', id: record-set }
-      - { label: 'South East Asia', id: record-set-2 }
-      - { label: 'Myanmar', id: record-set-3 }
-      - { label: 'Cambodia', id: record-set-4 }
+      - { label: 'Creator one' }
+      - { label: 'Creator two' }
+      - { label: 'Creator three' }
+      - { label: 'Creator Four' }
+  fieldSeven:
+    label: 'Physical description, extent'
+    id: physical-decription-extent
+  fieldEight:
+    label: 'Physical description, form'
+    id: physical-decription-form
+  fieldNine:
+    label: 'Physical condition'
+    id: physical-condition
+  fieldTen:
+    label: Language
+    id: language
+    modifier: w-50
+    options:
+      - { label: 'English (en)' }
+      - { label: 'Welsh (cym)' }
+      - { label: 'French (fr)' }
+      - { label: 'Spanish (es)' }
+  fieldEleven:
+    label: Held by
+    id: held-by
+    modifier: w-50
+    options:
+      - { label: 'The National Archives, Kew' }
+      - { label: 'Torchbox, Bristol' }
+      - { label: 'Torchbox, Charlbury' }
+      - { label: 'Torchbox, Devon' }
+      - { label: 'Torchbox, Cornwall' }
+  fieldTwelve:
+    label: 'Note'
+    id: note
+  mapFieldOne:
+    label: 'Map designation'
+    id: map-designation
+  mapFieldTwo:
+    label: 'Dimensions'
+    id: map-dimensions
+  mapFieldThree:
+    label: 'Map scale number'
+    id: map-designation
+    modifier: w-50
+    options:
+      - { label: '1:1200' }
+      - { label: '1:200' }
+      - { label: '1:6000' }
+      - { label: '1:1' }
+  accessOne:
+    label: 'Access conditions'
+    id: access-1
+  accessTwo:
+    label: 'Closure type'
+    id: access-2
+  accessThree:
+    label: 'Closure code'
+    id: access-3
+  accessFour:
+    label: 'Record opening date'
+    id: access-4
+  accessFive:
+    label: 'Closure status'
+    id: access-5
+  accessSix:
+    label: 'Restrictions on use'
+    id: access-6
+  accessSeven:
+    label: 'Date of Accession'
+    id: access-7
+  accessEight:
+    label: 'Immediate source of acquisition'
+    id: access-8
+  accessNine:
+    label: 'Custodial history'
+    id: access-9
+  accessTen:
+    label: 'Accumulation dates'
+    id: access-10
+  accessEleven:
+    label: 'Appraisal / destruction information'
+    id: access-11
+  accessTwelve:
+    label: 'Accruals'
+    id: access-12
+  accessThirteen:
+    label: 'Location of originals'
+    id: access-13
+  accessFourteen:
+    label: 'Copies information'
+    id: access-14
+  fieldScope:
+    label: 'Scope and content'
+    id: scope
+  fieldCoverageStart:
+    label: 'Coverage start date'
+    id: scope
+  fieldCoverageEnd:
+    label: 'Coverage end date'
+    id: scope
+  fieldArrangement:
+    label: 'Arrangement'
+    id: arrangement
+  fieldPublicationnote:
+    label: 'Publication note'
+    id: publication-note
+  fieldUnpublishedfindingaids:
+    label: 'Unpublished finding aids'
+    id: unpublished-finding-aids
+  fieldUnpublishedfindingaids:
+    label: 'Unpublished finding aids'
+    id: unpublished-finding-aids
+  fieldRelatedmaterial:
+    label: 'Related material'
+    id: related-material
+  fieldSeparatedmaterial:
+    label: 'Separated material'
+    id: separated-material
