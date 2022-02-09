@@ -46,7 +46,6 @@ context:
       comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
       date: 2021 January 4th - 9:02am
       author: Jay Spanton
-
   fieldOne:
     label: 'Former reference - Department'
     id: form-ref-dept
@@ -143,15 +142,19 @@ context:
   accessTwo:
     label: 'Closure type'
     id: access-2
+    modifier: w-25
   accessThree:
     label: 'Closure code'
     id: access-3
+    modifier: w-25
   accessFour:
     label: 'Record opening date'
     id: access-4
+    modifier: w-25
   accessFive:
     label: 'Closure status'
     id: access-5
+    modifier: w-25
   accessSix:
     label: 'Restrictions on use'
     id: access-6
@@ -160,6 +163,7 @@ context:
     label: 'Date of Accession'
     id: access-7
     hint: (optional)
+    modifier: w-25
   accessEight:
     label: 'Immediate source of acquisition'
     id: access-8

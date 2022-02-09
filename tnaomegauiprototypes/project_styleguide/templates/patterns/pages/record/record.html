@@ -25,15 +25,19 @@
                 <div class="col-10">
                     <div data-bs-spy="scroll" data-bs-target="#record-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                         <div id="content" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Content</h2>
+                            <h2 class="mb-5">Content</h2>
 
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldScope %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldTwo %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldThree %}
-                            <div class="d-flex align-items-center">
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                            <div class="row">
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
+                                </div>
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                                </div>
                             </div>
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldSix %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldSeven %}
@@ -41,9 +45,13 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldNine %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldTen %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
-                            <div class="d-flex align-items-center">
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                            <div class="row">
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
+                                </div>
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                                </div>
                             </div>
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldArrangement %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldPublicationnote %}
@@ -70,7 +78,7 @@
                         </div>
 
                         <div id="access" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Access</h2>
+                            <h2 class="mb-5">Access</h2>
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessTwo %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThree %}
@@ -86,18 +94,18 @@
 
                         {% if page.context %}
                             <div id="context" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                                <h2>Context</h2>
+                                <h2 class="mb-5">Context</h2>
                                 {{ page.context }}
                             </div>
                         {% endif %}
 
                         <div id="history" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Admin History</h2>
+                            <h2 class="mb-5">Admin History</h2>
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldAdminHistory %}
                         </div>
 
                         <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Index terms</h2>
+                            <h2 class="mb-5">Index terms</h2>
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsOne %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsTwo %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsThree %}
@@ -137,9 +145,18 @@
 {% endblock %}
 
 {% block extra_js %}
+    <script src="https://cdn.tiny.cloud/1/hnsrp0hxpa6j2nodznhqfz1kc8peudd89zzg2bhbxnfrzeod/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#record-index'
-        })
+        });
+        tinymce.init({
+            selector: '#scope',
+            plugins: 'a11ychecker advcode casechange export formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter pageembed permanentpen table',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
     </script>
 {% endblock %}
