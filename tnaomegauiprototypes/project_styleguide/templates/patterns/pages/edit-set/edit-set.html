@@ -18,16 +18,17 @@
                         </div>
                     {% endfor %}
                     <div class="d-flex align-items-center ms-auto">
-                        {% if add %}
+                        {% if add.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Add record</a>
+                                <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move %}
+                        {% if move.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Move edit set on</a>
+                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
             {% endif %}
@@ -46,17 +47,17 @@
                 <table class="table table-hover table--sticky-header table--edge-to-edge">
                     <thead>
                         <tr>
-                            <th scope="col">Title</th>
+                            <th scope="col">Reference</th>
                             <th scope="col">Description</th>
                             <th scope="col">Last edited</th>
                             <th scope="col">Access</th>
                             <th scope="col">Date</th>
                             <th scope="col">Parent record set(s)</th>
                             <th scope="col">
-                                <div class="govuk-checkboxes__item">
-                                    <input class="govuk-checkboxes__input" id="select-all" name="select-all" type="checkbox"
-                                        value="select-all">
-                                    <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                <div>
+                                    <input id="select-all" name="select-all" type="checkbox"
+                                        value="select-all" data-bulk-select-all data-bulk-update>
+                                    <label class="mb-2 visually-hidden" for="select-all">
                                         Select all
                                     </label>
                                 </div>
@@ -83,16 +84,17 @@
                         </nav>
                     {% endif %}
                     <div class="d-flex align-items-center ms-auto">
-                        {% if add %}
+                        {% if add.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Add record</a>
+                                <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move %}
+                        {% if move.link %}
                             <div class="me-2">
-                                <a href="#" class="btn btn-outline-primary">Move edit set on</a>
+                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
                             </div>
                         {% endif %}
+                        {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
 
@@ -106,6 +108,12 @@
         {% include "patterns/organisms/modal/time-modal.html" %}
         {% include "patterns/organisms/modal/add-comment-modal.html" %}
         {% include "patterns/organisms/modal/abandon-modal.html" %}
+        {% include "patterns/organisms/modal/move-modal.html" %}
+        {% include "patterns/organisms/modal/search-replace-modal.html" %}
+
+        {% if toast %}
+            {% include "patterns/molecules/toast/toast.html" with item=toast %}
+        {% endif %}
 
     </div>
 
@@ -114,9 +122,17 @@
 
 {% block extra_js %}
     <script>
+        // Tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+        // Toast
+        document.addEventListener("DOMContentLoaded", function(){
+            var element = document.getElementById("toast");
+            // Create toast instance
+            var myToast = new bootstrap.Toast(element);
+            myToast.show();
+        });
     </script>
 {% endblock %}

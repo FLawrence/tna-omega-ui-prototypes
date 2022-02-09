@@ -1,0 +1,8 @@
+{% extends "patterns/pages/record-set/record-set.html" %}
+
+{% block extra_js %}
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('recordSetModal'), {})
+    myModal.show()
+</script>
+{% endblock %}
