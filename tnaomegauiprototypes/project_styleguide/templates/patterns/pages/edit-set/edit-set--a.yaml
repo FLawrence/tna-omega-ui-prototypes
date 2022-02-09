@@ -78,7 +78,7 @@ context:
   records:
     - item:
       title: FCO 15/17/7168
-      link: '../record/record.html'
+      link: '../record/record--a8.html'
       description: Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, January 1992.
       last_edit: 
       access: 
@@ -102,7 +102,7 @@ context:
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7169
-      link: '../record/record.html'
+      link: '../record/record--a1.html'
       description: Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991
       last_edit: Yesterday
       access: 
@@ -114,7 +114,7 @@ context:
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7170
-      link: '../record/record.html'
+      link: '../record/record--a2.html'
       description: Leading personalities in Burma (Myanmar)
       last_edit: Yesterday
       access: Restrictions
@@ -126,7 +126,7 @@ context:
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/17/7171
-      link: '../record/record.html'
+      link: '../record/record--a3.html'
       description: Internal political situation in Burma (Myanmar)
       last_edit: 
       access: Restrictions
@@ -162,7 +162,7 @@ context:
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/18/7174
-      link: '../record/record.html'
+      link: '../record/record--a7.html'
       description: Number not used
       last_edit: 
       access: 
@@ -210,7 +210,7 @@ context:
           link: '../record-set/record-set.html'
     - item:
       title: FCO 15/19/7178
-      link: '../record/record.html'
+      link: '../record/record--a5.html'
       description: UK policy on Cambodia
       last_edit: 
       access: 
@@ -306,7 +306,7 @@ context:
           link: '../record-set/record-set.html'  
     - item:
       title: FCO 15/19/7186
-      link: '../record/record.html'
+      link: '../record/record--a4.html'
       description: Relations between Indonesia '&' Japan. Missing at transfer
       last_edit: 
       access: 
@@ -353,8 +353,8 @@ context:
           modifier: bg-secondary
           link: '../record-set/record-set.html'
     - item:
-      title: FCO 15/19/7189
-      link: '../record/record.html'
+      title: FCO 15/19/7190
+      link: '../record/record--a6.html'
       description: Closed extracts Folios 1-30
       last_edit: 
       access: 
