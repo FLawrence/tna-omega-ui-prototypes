@@ -225,13 +225,145 @@ context:
       link: '../record/record.html'
       description: UK policy on Cambodia
       last_edit: 
-      access: Restricted
+      access: 
       date: 1999 Dec 31
       record_sets:
         - item:
           title: '?'
           modifier: bg-secondary
           link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7180
+      link: '../record/record.html'
+      description: Internal political situation in Singapore
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html' 
+    - item:
+      title: FCO 15/19/7181
+      link: '../record/record.html'
+      description: Singapore annual review for 1990
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7182
+      link: '../record/record.html'
+      description: Singapore annual review for 1990
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'   
+    - item:
+      title: FCO 15/19/7183
+      link: '../record/record.html'
+      description: Leading personalities in Malaysia
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html' 
+    - item:
+      title: FCO 15/19/7184
+      link: '../record/record.html'
+      description: Malaysia environmental issues
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'  
+    - item:
+      title: FCO 15/19/7185
+      link: '../record/record.html'
+      description: Malaysia and the BBC
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'  
+    - item:
+      title: FCO 15/19/7186
+      link: '../record/record.html'
+      description: Relations between Indonesia '&' Japan. Missing at transfer
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Indonesia'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html' 
+    - item:
+      title: FCO 15/19/7187
+      link: '../record/record.html'
+      description: Relations between Indonesia and the UK
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Indonesia'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7188
+      link: '../record/record.html'
+      description: East Timor
+      last_edit: 
+      access: Restrictions
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7189
+      link: '../record/record.html'
+      description: East Timor
+      last_edit: 
+      access: 
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'
+    - item:
+      title: FCO 15/19/7189
+      link: '../record/record.html'
+      description: Closed extracts Folios 1-30
+      last_edit: 
+      access: 
+      date: 1752
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-secondary
+          link: '../record-set/record-set.html'        
   history:
     - item:
       change: Date
