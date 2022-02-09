@@ -1,5 +1,5 @@
 <tr class="edit-set-overview text-muted">
-    <th scope="row">
+    <th scope="row" style="min-width: 15%;">
         <div class="edit-set-overview__title">
             <h3 class="edit-set-overview__heading h5">
                 {% if item.link %}<a class="edit-set-overview__link" href="{{ item.link }}">{% endif %}
@@ -8,7 +8,7 @@
             </h3>
         </div>
     </th>
-    <td>{{ item.description }}</td>
+    <td style="max-width: 35%; min-width: 35%">{{ item.description }}</td>
     <td>{{ item.last_edit }}</td>
     <td>{{ item.access }}</td>
     <td>{{ item.date }}</td>

@@ -13,6 +13,7 @@ context:
     placeholder: For example FCO-102-205
     id: title
     modifier: w-50
+    value: FCO-102-205
   questionTwo:
     label: Series
     id: series
@@ -26,8 +27,10 @@ context:
     label: Department code / name
     id: title
     modifier: w-50
+    value: Foreign & Commonwealth Office
     options:
       - { label: 'Minstry of Defense' }
+      - { label: 'Foreign & Commonwealth Office' }
   questionFour:
     label: 'Contributor'
     id: 'contributor'
@@ -43,7 +46,7 @@ context:
     label: False
     id: project
     options:
-      - { label: 'This is part of a project', id: project }
+      - { label: 'This edit set forms part of a larger accession', id: project }
   questionSix:
     label: Target date
     hint: For example, 27 3 2007 (Optional)

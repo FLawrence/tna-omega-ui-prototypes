@@ -4,6 +4,7 @@
     <div class="page">
 
         <div class="page__header">
+            {% if page.record_sets %}
             <div class="d-flex align-items-center mb-4">
                 {% for item in page.record_sets %}
                     <div class="me-2">
@@ -11,7 +12,10 @@
                     </div>
                 {% endfor %}
             </div>
-            {% include "patterns/molecules/page-heading/page-heading.html" %}
+            {% endif %}
+            <div class="page-heading mb-4">
+                {% if page.title %}<h1 class="page-heading__heading">{{ page.title }}</h1>{% else %}<h1>Add a record</h1>{% endif %}
+            </div>
             {% if page.pac %}<p class="mb-4 fw">PAC-ID: {{ page.pac }}</p>{% endif %}
         </div>
 
@@ -21,15 +25,19 @@
                 <div class="col-10">
                     <div data-bs-spy="scroll" data-bs-target="#record-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                         <div id="content" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Content</h2>
+                            <h2 class="mb-5">Content</h2>
 
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldScope %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldTwo %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldThree %}
-                            <div class="d-flex align-items-center">
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                            <div class="row">
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
+                                </div>
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                                </div>
                             </div>
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldSix %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldSeven %}
@@ -37,9 +45,13 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldNine %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldTen %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
-                            <div class="d-flex align-items-center">
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
-                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                            <div class="row">
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
+                                </div>
+                                <div class="col-4">
+                                    {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                                </div>
                             </div>
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldArrangement %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldPublicationnote %}
@@ -66,7 +78,7 @@
                         </div>
 
                         <div id="access" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Access</h2>
+                            <h2 class="mb-5">Access</h2>
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessTwo %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThree %}
@@ -76,27 +88,24 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessSeven %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessNine %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessTen %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessEleven %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessTwelve %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThirteen %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %}
                         </div>
 
                         {% if page.context %}
                             <div id="context" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                                <h2>Context</h2>
+                                <h2 class="mb-5">Context</h2>
                                 {{ page.context }}
                             </div>
                         {% endif %}
 
                         <div id="history" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Admin History</h2>
+                            <h2 class="mb-5">Admin History</h2>
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldAdminHistory %}
                         </div>
 
                         <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2>Index terms</h2>
+                            <h2 class="mb-5">Index terms</h2>
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsOne %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsTwo %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsThree %}
@@ -136,9 +145,24 @@
 {% endblock %}
 
 {% block extra_js %}
+    <script src="https://cdn.tiny.cloud/1/hnsrp0hxpa6j2nodznhqfz1kc8peudd89zzg2bhbxnfrzeod/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#record-index'
-        })
+        });
+        tinymce.init({
+            selector: '#scope',
+            height: 300,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+            'bold italic backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist outdent indent | ' +
+            'removeformat | help',
+        });
     </script>
 {% endblock %}

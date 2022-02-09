@@ -1,8 +1,8 @@
 <div class="mb-4">
     <label class="mb-2 d-block fw-bold" for="more-detail">
       {{ field.label }}
+      {% if field.hint %}<span class="fs-6 fw-normal text-muted">{{ field.hint }}</span>{% endif %}
     </label>
-    {% if field.hint %}<span class="d-block fs-6 mb-2 text-muted">{{ field.hint }}</span>{% endif %}
     <textarea class="form-control{% if field.modifier %}{{ field.modifier }}{% endif %}" id="{{ field.id }}"
-    name="{{ field.id }}" rows="5"></textarea>
+    name="{{ field.id }}" rows="5">{% if field.value %}{{ field.value }}{% endif %}</textarea>
 </div>

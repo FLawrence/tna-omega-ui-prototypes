@@ -4,3 +4,8 @@ context:
     introduction: false
     back_link: accession.html
     back_title: File upload
+  questionFive:
+    label: False
+    id: project
+    options:
+      - { label: 'This edit set forms part of a wider project', id: project }

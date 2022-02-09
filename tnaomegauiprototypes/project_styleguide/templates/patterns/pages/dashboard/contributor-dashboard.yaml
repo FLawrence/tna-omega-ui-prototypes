@@ -16,10 +16,10 @@ context:
       - { label: 'User 4', id: assignee-4 }
       - { label: 'User 5', id: assignee-5 }
   selectTwo:
-    label: 'Projects'
+    label: 'Linked edit sets'
     id: projects
     options:
-      - { label: 'Projects', id: projects }
+      - { label: 'Linked edit sets', id: projects }
       - { label: 'Census 1921', id: projects-2 }
       - { label: 'Project name', id: projects-3 }
   filter_summary: 24 edit sets with you as the contributor
