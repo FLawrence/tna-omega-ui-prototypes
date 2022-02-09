@@ -3,7 +3,7 @@
 {% block content %}
     <div class="page">
 
-        <div class="page__header border-bottom mb-5">
+        <div class="page__header">
             <div class="d-flex align-items-center mb-4">
                 {% for item in page.record_sets %}
                     <div class="me-2">
@@ -18,34 +18,29 @@
         <div class="page__content">
 
             <div class="row">
-                <div class="col-4">
-                    <div id="record-index" class="list-group">
-                        <a class="list-group-item list-group-item-action" href="#list-item-1">Content</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-2">Access</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-3">Context</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-4">Admin History</a>
-                        <a class="list-group-item list-group-item-action" href="#list-item-5">Index terms</a>
-                    </div>
-                </div>
-                <div class="col-8">
+                <div class="col-10">
                     <div data-bs-spy="scroll" data-bs-target="#record-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-                            <h4 id="list-item-1">Content</h4>
+                        <div id="content" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                            <h2>Content</h2>
 
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldScope %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldTwo %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldThree %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                            <div class="d-flex align-items-center">
+                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
+                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldFive %}
+                            </div>
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldSix %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldSeven %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldNine %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldTen %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
-
-                            {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                            <div class="d-flex align-items-center">
+                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
+                                {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
+                            </div>
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldArrangement %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldPublicationnote %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldUnpublishedfindingaids %}
@@ -54,11 +49,11 @@
 
                             <div class="accordion mb-5" id="maps">
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
+                                    <h3 class="accordion-header" id="headingOne">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                             Map content
                                         </button>
-                                    </h2>
+                                    </h3>
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#maps">
                                         <div class="accordion-body">
                                             {% include "patterns/atoms/text-input/text-input.html" with field=mapFieldOne %}
@@ -68,8 +63,10 @@
                                     </div>
                                 </div>
                               </div>
+                        </div>
 
-                            <h4 id="list-item-2">Access</h4>
+                        <div id="access" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                            <h2>Access</h2>
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessTwo %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThree %}
@@ -84,18 +81,53 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessTwelve %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThirteen %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %}
+                        </div>
 
-                            <h4 id="list-item-3">Context</h4>
-                            <p>...</p>
-                            <h4 id="list-item-4">Admin History</h4>
-                            <p>...</p>
-                            <h4 id="list-item-5">Index terms</h4>
-                            <p>...</p>
+                        {% if page.context %}
+                            <div id="context" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                                <h2>Context</h2>
+                                {{ page.context }}
+                            </div>
+                        {% endif %}
+
+                        <div id="history" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                            <h2>Admin History</h2>
+                            {% include "patterns/atoms/textarea/textarea.html" with field=fieldAdminHistory %}
+                        </div>
+
+                        <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                            <h2>Index terms</h2>
+                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsOne %}
+                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsTwo %}
+                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsThree %}
+                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsFour %}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="sticky-top" style="top: 30px;">
+                        <div id="record-index" class="list-group mb-4">
+                            <a class="list-group-item list-group-item-action" href="#content">Content</a>
+                            <a class="list-group-item list-group-item-action" href="#access">Access</a>
+                            {% if page.context %}<a class="list-group-item list-group-item-action" href="#context">Context</a>{% endif %}
+                            <a class="list-group-item list-group-item-action" href="#history">Admin History</a>
+                            <a class="list-group-item list-group-item-action" href="#terms">Index terms</a>
+                        </div>
+
+                        {% include "patterns/molecules/record-meta/record-meta.html" %}
+
+                        <a class="btn btn-outline-primary" href="{{ page.save_link }}">Save changes</a>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        {% include "patterns/organisms/modal/history-modal.html" %}
+        {% include "patterns/organisms/modal/comment-modal.html" %}
+        {% include "patterns/organisms/modal/add-comment-modal.html" %}
+        {% include "patterns/organisms/modal/abandon-modal.html" %}
+
     </div>
 {% endblock %}
 
