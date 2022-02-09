@@ -1,7 +1,7 @@
 <div class="{% if not no_margin %}mb-4{% endif %}">
   <label class="mb-2 fw-bold {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
     {{ field.label }}
-    {% if field.hint %}<span class="fs-6">{{ field.hint }}</span>{% endif %}
+    {% if field.hint %}<span class="fs-6 fw-normal text-muted">{{ field.hint }}</span>{% endif %}
   </label>
   <input class="form-control {% if field.modifier %}{{ field.modifier }}{% endif %}" id="{{ field.id }}"
     name="{{ field.id }}" {% if field.value %}value="{{ field.value }}"{% endif %} type="text" {% if field.placeholder %}placeholder="{{ field.placeholder }}" {% endif %}>

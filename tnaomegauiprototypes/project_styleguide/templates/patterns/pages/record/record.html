@@ -4,6 +4,7 @@
     <div class="page">
 
         <div class="page__header">
+            {% if page.record_sets %}
             <div class="d-flex align-items-center mb-4">
                 {% for item in page.record_sets %}
                     <div class="me-2">
@@ -11,7 +12,10 @@
                     </div>
                 {% endfor %}
             </div>
-            {% include "patterns/molecules/page-heading/page-heading.html" %}
+            {% endif %}
+            <div class="page-heading mb-4">
+                {% if page.title %}<h1 class="page-heading__heading">{{ page.title }}</h1>{% else %}<h1>Add a record</h1>{% endif %}
+            </div>
             {% if page.pac %}<p class="mb-4 fw">PAC-ID: {{ page.pac }}</p>{% endif %}
         </div>
 
@@ -76,9 +80,6 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessSeven %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessNine %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessTen %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessEleven %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessTwelve %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThirteen %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %}
                         </div>

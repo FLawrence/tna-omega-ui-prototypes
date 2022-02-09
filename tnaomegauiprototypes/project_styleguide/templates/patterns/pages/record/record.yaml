@@ -1,7 +1,7 @@
 context:
   page:
-    pac: res.3pw.19.wa.66.d
-    title: 'FCO 15/17/7165'
+    pac: res.7gh.19.wa.66.d
+    title: 'WA 19/103'
     introduction: false
     back_link: ../edit-set/edit-set.html
     back_title: FCO159(7165-7287)
@@ -9,25 +9,20 @@ context:
     save_text: Save changes
     record_sets:
       - item:
-        title: FCO
+        title: WA Welsh Assembly
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: South East Asia
+        title: Websites
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: Myanmar
+        title: Websites of Associated Agencies and Bodies
         records: false
         modifier: btn-primary
         link: false
-      - item:
-        title: Cambodia
-        records: false
-        modifier: btn-primary
-        link: False
     context: '<p>WO Records created or inherited by the War Office, Armed Forces, Judge Advocate General and related bodies</p><p>Division within WA Welsh Assembly: Websites, and Websites of Associated Agencies and Bodies</p>'
   history:
     - item:
@@ -53,35 +48,42 @@ context:
       author: Jay Spanton
 
   fieldOne:
-    label: 'Former reference (department)'
+    label: 'Former reference - Department'
     id: form-ref-dept
+    hint: (optional)
+    modifier: w-25
+    value: PAA-08-09-269
   fieldTwo:
-    label: 'Former Reference (PRO)'
+    label: 'Former Reference - Pro'
     id: form-ref-pro
+    hint: (optional)
+    modifier: w-25
   fieldThree:
     label: Creator name(s)
     id: creator
     modifier: w-50
+    value: National Assembly for Wales, 1999-
     options:
       - { label: 'Creator one' }
       - { label: 'Creator two' }
       - { label: 'Creator three' }
-      - { label: 'Creator Four' }
+      - { label: 'National Assembly for Wales, 1999-' }
   fieldFour:
     label: 'Start date'
     id: start-date
+    value: 1999 Jan 1
   fieldFive:
     label: 'End date'
     id: end-date
+    value: 1999 Dec 31
   fieldSix:
-    label: Creator name(s)
-    id: creator
+    label: Legal status
+    id: legal-status
     modifier: w-50
+    value: Public Record(s)
     options:
-      - { label: 'Creator one' }
-      - { label: 'Creator two' }
-      - { label: 'Creator three' }
-      - { label: 'Creator Four' }
+      - { label: 'Public record' }
+      - { label: 'Welsh public record' }
   fieldSeven:
     label: 'Physical description, extent'
     id: physical-decription-extent
@@ -91,9 +93,11 @@ context:
   fieldNine:
     label: 'Physical condition'
     id: physical-condition
+    hint: (optional)
   fieldTen:
     label: Language
     id: language
+    hint: (optional)
     modifier: w-50
     options:
       - { label: 'English (en)' }
@@ -104,6 +108,7 @@ context:
     label: Held by
     id: held-by
     modifier: w-50
+    value: The National Archives, Kew
     options:
       - { label: 'The National Archives, Kew' }
       - { label: 'Torchbox, Bristol' }
@@ -113,16 +118,20 @@ context:
   fieldTwelve:
     label: 'Note'
     id: note
+    hint: (optional)
   mapFieldOne:
     label: 'Map designation'
     id: map-designation
+    hint: (optional)
   mapFieldTwo:
     label: 'Dimensions'
     id: map-dimensions
+    hint: (optional)
   mapFieldThree:
     label: 'Map scale number'
     id: map-designation
     modifier: w-50
+    hint: (optional)
     options:
       - { label: '1:1200' }
       - { label: '1:200' }
@@ -146,64 +155,67 @@ context:
   accessSix:
     label: 'Restrictions on use'
     id: access-6
+    hint: (optional)
   accessSeven:
     label: 'Date of Accession'
     id: access-7
+    hint: (optional)
   accessEight:
     label: 'Immediate source of acquisition'
     id: access-8
   accessNine:
     label: 'Custodial history'
     id: access-9
-  accessTen:
-    label: 'Accumulation dates'
-    id: access-10
-  accessEleven:
-    label: 'Appraisal / destruction information'
-    id: access-11
-  accessTwelve:
-    label: 'Accruals'
-    id: access-12
+    hint: (optional)
   accessThirteen:
     label: 'Location of originals'
+    hint: (optional)
     id: access-13
   accessFourteen:
     label: 'Copies information'
+    hint: (optional)
     id: access-14
   fieldScope:
     label: 'Scope and content'
     id: scope
+    value: 'Wales Millennium Centre (WMC): planning policy; ministerial briefing for meeting between WMC, the National Assembly for Wales and the Millennium Commission'
   fieldCoverageStart:
     label: 'Coverage start date'
     id: scope
+    hint: (optional)
   fieldCoverageEnd:
     label: 'Coverage end date'
     id: scope
+    hint: (optional)
   fieldArrangement:
     label: 'Arrangement'
     id: arrangement
+    hint: (optional)
   fieldPublicationnote:
     label: 'Publication note'
     id: publication-note
+    hint: (optional)
   fieldUnpublishedfindingaids:
     label: 'Unpublished finding aids'
     id: unpublished-finding-aids
-  fieldUnpublishedfindingaids:
-    label: 'Unpublished finding aids'
-    id: unpublished-finding-aids
+    hint: (optional)
   fieldRelatedmaterial:
     label: 'Related material'
     id: related-material
+    hint: (optional)
   fieldSeparatedmaterial:
     label: 'Separated material'
     id: separated-material
+    hint: (optional)
   fieldAdminHistory:
     label: 'Administrative / biographical background'
     id: admin-history
+    hint: (optional)
   fieldIndexTermsOne:
     label: 'Corporate names'
     id: corporate-names
     modifier: w-50
+    hint: (optional)
     options:
       - { label: 'Corporate name one' }
       - { label: 'Corporate name two' }
@@ -213,6 +225,7 @@ context:
     label: 'Personal names'
     id: personal-names
     modifier: w-50
+    hint: (optional)
     options:
       - { label: 'Personal name one' }
       - { label: 'Personal name two' }
@@ -222,6 +235,7 @@ context:
     label: 'Places'
     id: places
     modifier: w-50
+    hint: (optional)
     options:
       - { label: 'London' }
       - { label: 'Oxford' }
@@ -231,6 +245,7 @@ context:
     label: 'Subjects'
     id: subject
     modifier: w-50
+    hint: (optional)
     options:
       - { label: 'Subject name one' }
       - { label: 'Subject name two' }

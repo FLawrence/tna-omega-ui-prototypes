@@ -16,7 +16,7 @@ context:
       - { label: 'User 4', id: assignee-4 }
       - { label: 'User 5', id: assignee-5 }
   selectTwo:
-    label: 'Projects'
+    label: 'Linked edit sets'
     id: projects
     options:
       - { label: 'Census 1921', id: projects }

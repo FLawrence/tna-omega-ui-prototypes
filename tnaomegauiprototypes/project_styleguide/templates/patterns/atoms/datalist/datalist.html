@@ -3,7 +3,7 @@
     {{ field.label }}
     </label>
     {% if field.hint %}<span class="d-block fs-6 mb-2 text-muted">{{ field.hint }}</span>{% endif %}
-    <input class="form-control {% if field.modifier %}{{ field.modifier }}{% endif %}" list="{{ field.id }}-list" id="{{ field.id }}" placeholder="Type to search...">
+    <input class="form-control {% if field.modifier %}{{ field.modifier }}{% endif %}" list="{{ field.id }}-list" id="{{ field.id }}" placeholder="Type to search..." {% if field.value %}value="{{ field.value }}"{% endif %}>
     <datalist id="{{ field.id }}-list">
         {% for option in field.options %}
             <option value="{{ option.label }}">
