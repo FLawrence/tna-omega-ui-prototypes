@@ -116,15 +116,19 @@
 
                         {% include "patterns/molecules/record-meta/record-meta.html" %}
 
-                        <a class="btn btn-outline-primary" href="{{ page.save_link }}">Save changes</a>
+                        <a class="btn btn-outline-primary" href="{{ page.save_link }}">{{ page.save_text }}</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        {% include "patterns/organisms/modal/history-modal.html" %}
-        {% include "patterns/organisms/modal/comment-modal.html" %}
+        {% if history %}
+            {% include "patterns/organisms/modal/history-modal.html" %}
+        {% endif %}
+        {% if comments %}
+            {% include "patterns/organisms/modal/comment-modal.html" %}
+        {% endif %}
         {% include "patterns/organisms/modal/add-comment-modal.html" %}
         {% include "patterns/organisms/modal/abandon-modal.html" %}
 

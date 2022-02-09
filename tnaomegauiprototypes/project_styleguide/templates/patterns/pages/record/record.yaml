@@ -6,6 +6,7 @@ context:
     back_link: ../edit-set/edit-set.html
     back_title: FCO159(7165-7287)
     save_link: ../edit-set/edit-set--record-save.html
+    save_text: Save changes
     record_sets:
       - item:
         title: FCO
