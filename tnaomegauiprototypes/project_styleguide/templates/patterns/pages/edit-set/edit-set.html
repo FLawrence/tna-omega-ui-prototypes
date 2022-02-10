@@ -25,11 +25,9 @@
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move.link %}
-                            <div class="me-2">
-                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
-                            </div>
-                        {% endif %}
+                        <div class="me-2">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Move edit set on</a>
+                        </div>
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
@@ -91,11 +89,9 @@
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move.link %}
-                            <div class="me-2">
-                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
-                            </div>
-                        {% endif %}
+                        <div class="me-2">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Move edit set on</a>
+                        </div>
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
