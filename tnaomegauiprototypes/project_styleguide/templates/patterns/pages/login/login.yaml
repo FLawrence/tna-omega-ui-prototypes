@@ -1,6 +1,6 @@
 context:
   page:
-    title: 'Please sign in'
+    title: false
     introduction: False
     nextURL: ../dashboard/contributor-dashboard.html
   questionOne:
@@ -13,6 +13,6 @@ context:
     modifier: govuk-input--width-10
   action:
     label: Log in
-    modifier: btn-primary
+    modifier: btn-primary btn-lg
   actionTwo:
     label: Forgotten your password?
