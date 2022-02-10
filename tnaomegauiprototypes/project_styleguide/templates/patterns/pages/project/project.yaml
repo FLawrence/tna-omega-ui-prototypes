@@ -21,11 +21,9 @@ context:
     label: '-'
     id: assignee
     options:
-      - { label: '-', id: assignee }
-      - { label: 'User 2', id: assignee-2 }
-      - { label: 'User 3', id: assignee-3 }
-      - { label: 'User 4', id: assignee-4 }
-      - { label: 'User 5', id: assignee-5 }
+      - { label: 'All stages', id: stage }
+      - { label: 'Editorial', id: stage-2 }
+      - { label: 'Contribution', id: stage-3 }
   filter_summary: 8 edit sets
   history:
     - item:
@@ -61,7 +59,7 @@ context:
       release_date: 24/02/22
       records: 132
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: 2
     - item:
       title: Census1921-2
@@ -70,7 +68,7 @@ context:
       release_date: 24/02/22
       records: 13
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: False
     - item:
       title: Census1921-3
@@ -79,7 +77,7 @@ context:
       release_date: 24/02/22
       records: 132
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: 2
     - item:
       title: Census1921-4
@@ -88,7 +86,7 @@ context:
       release_date: 24/02/22
       records: 132
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: 5
     - item:
       title: FCO15(7165-7287)
@@ -97,7 +95,7 @@ context:
       release_date: 24/02/22
       records: 132
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: False
     - item:
       title: FCO15(7165-7287)
@@ -106,5 +104,5 @@ context:
       release_date: 24/02/22
       records: 132
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: 2

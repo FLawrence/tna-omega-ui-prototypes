@@ -2,5 +2,5 @@
     <td>{{ item.change }}</td>
     <td>{{ item.date }}</td>
     <td>{{ item.author }}</td>
-    <td><a href="#">View revision</a></td>
+    <td><a href="#">{% if item.action %}{{ item.action }}{% else %}View revision{% endif %}</a></td>
 </tr>

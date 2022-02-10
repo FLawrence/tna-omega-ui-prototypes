@@ -13,7 +13,7 @@
                 <div class="d-flex align-items-center mb-3 pt-3 pb-3 ps-4 pe-4 border-bottom">
                     <h2 class="filter-summary h4 m-0">{{ filter_summary }}</h2>
 
-                    <div class="d-flex align-items-center ms-auto">
+                    <div class="d-flex align-items-center justify-content-end ms-auto" style="min-width: 630px; max-width: 630px;">
                         {% if filter_summary_action %}
                             <div class="me-2">
                                 <button type="button" class="btn btn-primary">Edit record set</button>
@@ -76,7 +76,7 @@
                             </ul>
                         </nav>
                     {% endif %}
-                    <div class="d-flex align-items-center ms-auto">
+                    <div class="d-flex align-items-center justify-content-end ms-auto" style="min-width: 630px; max-width: 630px;">
                         {% if add.link %}
                             <div class="me-2">
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>

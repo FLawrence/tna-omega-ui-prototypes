@@ -1,7 +1,7 @@
 context:
   page:
     title: 'Edit sets'
-    introduction: "Last visit you were editing <a href='../edit-set/edit-set.html'>FCO15(7165-7287)</a>, you’ve had <a href='../edit-set/edit-set.html'>AD Websites series two</a> assign to you"
+    introduction: "Last visit you were editing <a href='../edit-set/edit-set.html'>FCO16(102-205)</a>, you’ve had <a href='../edit-set/edit-set.html'>AD Websites series 2</a> assigned to you. View all <a href='#'>linked edit sets</a>"
   filterSearch:
     label: 'Search edit sets'
     id: search
@@ -19,8 +19,9 @@ context:
     label: 'Linked edit sets'
     id: projects
     options:
-      - { label: 'Census 1921', id: projects }
-      - { label: 'Project name', id: projects-2 }
+      - { label: 'Linked edit sets', id: projects }
+      - { label: 'Census 1921', id: projects-2 }
+      - { label: 'Project name', id: projects-3 }
   filter_summary: 24 edit sets with you as the contributor
   history:
     - item:
@@ -50,7 +51,7 @@ context:
       author: Nick Lee
   edit_sets:
     - item:
-      title: FCO15(7165-7287)
+      title: FCO16(102-205)
       link: '../edit-set/edit-set.html'
       badge:
         title: Recent edit
@@ -58,50 +59,44 @@ context:
       release_date: 24/02/22
       project:
         title: Census 1921
-        link: '#'
-      records: 132
+        link: '../project/project.html'
+      records: 16
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       comments: 2
     - item:
-      title: AC Something else
+      title: AD Websites series 2
       link: '../edit-set/edit-set.html'
       badge:
         title: Overdue
-        modifier: bg-secondary
-      release_date: 24/02/22
-      project:
-        title: Census 1921
-        link: '#'
+        modifier: bg-danger
+      release_date: false
+      project: false
       records: 13
-      last_edit: Yesterday
-      access: 2 sensitive records
+      last_edit: 07/02/22
+      access: 1 restricted
       comments: False
     - item:
-      title: FCO15(7165-7287)
-      link: '../edit-set/edit-set.html'
+      title: FCO15(7168-7190)
+      link: '../edit-set/edit-set--a.html'
       badge:
         title: New
         modifier: bg-secondary
       release_date: 24/02/22
-      project:
-        title: Census 1921
-        link: '#'
+      project: false
       records: 132
-      last_edit: Yesterday
-      access: 2 sensitive records
+      last_edit: '-'
+      access: 2 restricted
       comments: 2
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'
       badge: false
       release_date: 24/02/22
-      project:
-        title: Census 1921
-        link: '#'
-      records: 132
-      last_edit: Yesterday
-      access: 2 sensitive records
+      project: false
+      records: 180
+      last_edit: '-'
+      access: '-'
       comments: 5
     - item:
       title: FCO15(7165-7287)
@@ -109,21 +104,83 @@ context:
       badge: false
       release_date: 24/02/22
       project:
-        title: Census 1921
+        title: Project name
         link: '#'
       records: 132
-      last_edit: Yesterday
-      access: 2 sensitive records
+      last_edit: '-'
+      access: 2 restricted
       comments: False
+    - item:
+      title: FCO15(7165-7287)
+      link: '../edit-set/edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 132
+      last_edit: '-'
+      access: '-'
+      comments: 2
+    - item:
+      title: FCO16(102-205)
+      link: '../edit-set/edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project:
+        title: Census 1921
+        link: '../project/project.html'
+      records: 16
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: AD Websites series 2
+      link: '../edit-set/edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 1 restricted
+      comments: False
+    - item:
+      title: FCO15(7168-7190)
+      link: '../edit-set/edit-set--a.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: FCO15(7165-7287)
+      link: '../edit-set/edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 132
+      last_edit: '-'
+      access: '-'
+      comments: 5
     - item:
       title: FCO15(7165-7287)
       link: '../edit-set/edit-set.html'
       badge: false
       release_date: 24/02/22
       project:
-        title: Census 1921
+        title: Project name
         link: '#'
-      records: 132
-      last_edit: Yesterday
-      access: 2 sensitive records
+      records: 62
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: FCO15(7165-7287)
+      link: '../edit-set/edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 259
+      last_edit: '-'
+      access: '-'
       comments: 2

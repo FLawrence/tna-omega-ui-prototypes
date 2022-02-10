@@ -13,13 +13,14 @@ context:
     placeholder: For example FCO-102-205
     id: title
     modifier: w-50
-    value: FCO-102-205
+    value: FCO-15(7168-7190)
   questionTwo:
     label: Series
     id: series
     modifier: w-50
+    value: FCO-15
     options:
-      - { label: 'Series one' }
+      - { label: 'FCO-15' }
       - { label: 'Series two' }
       - { label: 'Series three' }
       - { label: 'Series Four' }
@@ -49,7 +50,7 @@ context:
       - { label: 'This edit set forms part of a larger accession', id: project }
   questionSix:
     label: Target date
-    hint: For example, 27 3 2007 (Optional)
+    hint: (Optional)
     id: target-date
   questionSeven:
     label: False
@@ -59,7 +60,7 @@ context:
   questionEight:
     label: Comments
     id: more-details
-    hint: Notes that the assignee might find useful to help them with their task
+    hint: (optional) Notes that editors and contributors might find useful
   action:
     label: Create edit set
     modifier: btn-primary
