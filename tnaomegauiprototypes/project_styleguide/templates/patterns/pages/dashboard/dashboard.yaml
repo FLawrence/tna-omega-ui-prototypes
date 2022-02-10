@@ -102,10 +102,12 @@ context:
       title: FCO15(6288-6327)
       link: '../edit-set/edit-set.html'
       badge: false
-      release_date: 24/02/22
-      project:
-        title: Project name
-        link: '#'
+      release_date: false
+      moved_to: Jenna Bellchambers
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      project: false
       records: 132
       last_edit: '-'
       access: 2 restricted
