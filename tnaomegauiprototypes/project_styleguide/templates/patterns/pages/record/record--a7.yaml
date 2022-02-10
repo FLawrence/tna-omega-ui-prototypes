@@ -46,9 +46,9 @@ context:
     id: form-ref-dept
     hint: (optional)
     modifier: w-25
-    value: 
+    value:
   fieldTwo:
-    label: 'Former Reference - Pro'
+    label: 'Former Reference - PRO'
     id: form-ref-pro
     hint: (optional)
     modifier: w-25
@@ -65,11 +65,11 @@ context:
   fieldFour:
     label: 'Start date'
     id: start-date
-    value: 
+    value:
   fieldFive:
     label: 'End date'
     id: end-date
-    value: 
+    value:
   fieldSix:
     label: Legal status
     id: legal-status

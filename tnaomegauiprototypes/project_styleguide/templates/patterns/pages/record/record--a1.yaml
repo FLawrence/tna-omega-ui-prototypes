@@ -53,7 +53,7 @@ context:
     modifier: w-25
     value: FA 027/6 PART B
   fieldTwo:
-    label: 'Former Reference - Pro'
+    label: 'Former Reference - PRO'
     id: form-ref-pro
     hint: (optional)
     modifier: w-25

@@ -19,7 +19,7 @@ context:
         modifier: btn-primary
         link: false
       - item:
-        title: 
+        title:
         records: false
         modifier: btn-primary
         link: false
@@ -53,7 +53,7 @@ context:
     modifier: w-25
     value: FAC 020/4 PART A
   fieldTwo:
-    label: 'Former Reference - Pro'
+    label: 'Former Reference - PRO'
     id: form-ref-pro
     hint: (optional)
     modifier: w-25

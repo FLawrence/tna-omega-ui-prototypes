@@ -53,7 +53,7 @@ context:
     modifier: w-25
     value: FA 026/1
   fieldTwo:
-    label: 'Former Reference - Pro'
+    label: 'Former Reference - PRO'
     id: form-ref-pro
     hint: (optional)
     modifier: w-25
