@@ -8,10 +8,13 @@
             </h3>
             {% if item.badge %}{% include "patterns/atoms/badge/badge.html" with field=item.badge %}{% endif %}
         </div>
-        {% if item.release_date or item.project %}
+        {% if item.release_date or item.project or item.stage %}
             <div class="edit-set-overview__meta fs-6">
                 {% if item.release_date %}
                     <div class="meta-item text-muted">Release on {{ item.release_date }}</div>
+                {% endif %}
+                {% if item.stage %}
+                    <div class="meta-item text-muted"> {{ item.stage }} stage</div>
                 {% endif %}
                 {% if item.project %}
                     <div class="meta-item text-muted">Part of <a class="meta-item__link" href="{{ item.project.link }}">{{ item.project.title }}</a></div>
