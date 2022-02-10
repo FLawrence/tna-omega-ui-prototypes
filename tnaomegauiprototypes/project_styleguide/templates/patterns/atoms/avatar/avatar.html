@@ -1,3 +1,3 @@
 {% load static %}
 
-<img src="{% static 'images/avatar_1.jpg' %}" title="{{ user.full_name }}" alt="{{ user.full_name }}" class="rounded-circle avatar {% if user.modifier %}{{ user.modifier }}{% endif %}" {% if user.tooltip %}data-bs-toggle="tooltip" data-bs-placement="bottom"{% endif %}>
+<img src="{% if user.image %}{{ user.image }}%{% else %}{% static 'images/avatar_1.jpg' %}{% endif %}" title="{{ user.full_name }}" alt="{{ user.full_name }}" class="rounded-circle avatar {% if user.modifier %}{{ user.modifier }}{% endif %}" {% if user.tooltip %}data-bs-toggle="tooltip" data-bs-placement="bottom"{% endif %}>
