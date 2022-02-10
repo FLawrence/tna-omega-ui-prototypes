@@ -12,7 +12,7 @@ context:
           label: 'Duplicate record',
           id: '../edit-set/edit-set--duplicate.html',
         }
-      - { label: 'Change access', id: '' }
+      - { label: 'Change access', id: '../edit-set/edit-set--access.html' }
       - {
           label: 'Search & replace',
           id: '../edit-set/edit-set--search-replace.html',
