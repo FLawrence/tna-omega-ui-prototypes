@@ -1,7 +1,7 @@
 context:
   page:
     title: 'Edit sets'
-    introduction: "Last visit you were editing <a href='../edit-set/edit-set.html'>FCO15(7165-7287)</a>, you’ve had <a href='../edit-set/edit-set.html'>AD Websites series two</a> assign to you"
+    introduction: "Last visit you were editing <a href='../edit-set/edit-set.html'>FCO16(102-205)</a>, you’ve had <a href='../edit-set/edit-set.html'>AD Websites series 2</a> assigned to you"
   filterSearch:
     label: 'Search edit sets'
     id: search
@@ -51,7 +51,7 @@ context:
       author: Nick Lee
   edit_sets:
     - item:
-      title: FCO15(7165-7287)
+      title: FCO16(102-205)
       link: '../edit-set/edit-set.html'
       badge:
         title: Recent edit
@@ -65,7 +65,7 @@ context:
       access: 2 sensitive records
       comments: 2
     - item:
-      title: AC Something else
+      title: AD Websites series 2
       link: '../edit-set/edit-set.html'
       badge:
         title: Overdue
@@ -79,8 +79,8 @@ context:
       access: 2 sensitive records
       comments: False
     - item:
-      title: FCO15(7165-7287)
-      link: '../edit-set/edit-set.html'
+      title: FCO15(7168-7190)
+      link: '../edit-set/edit-set--a.html'
       badge:
         title: New
         modifier: bg-secondary
