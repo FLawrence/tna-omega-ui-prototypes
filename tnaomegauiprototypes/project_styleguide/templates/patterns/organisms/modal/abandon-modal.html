@@ -2,14 +2,14 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title h3 mb-0">Abandon edit set</h1>
+                <h1 class="modal-title h3 mb-0">{% if type == "record" %}Remove from edit set{% else %}Abandon{% endif %}</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Are you sure you want to abandon {{ page.title }}?
+                Are you sure you want to {% if type == "record" %}remove{% else %}abandon{% endif %} {{ page.title }}?
             </div>
             <div class="modal-footer">
-                <a href="edit-set--abandon.html" class="btn btn-danger">Abandon</a>
+                <a href="edit-set--abandon.html" class="btn btn-danger">{% if type == "record"%}Remove from edit set{% else %}Abandon{% endif %}</a>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>

@@ -184,11 +184,11 @@ context:
     id: scope
     value: 'Relations between Indonesia & Japan. Missing at transfer'
   fieldCoverageStart:
-    label: 'Coverage start date'
+    label: 'Record coverage start date'
     id: scope
     hint: (optional)
   fieldCoverageEnd:
-    label: 'Coverage end date'
+    label: 'Record coverage end date'
     id: scope
     hint: (optional)
   fieldArrangement:

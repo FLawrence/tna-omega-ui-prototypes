@@ -188,11 +188,11 @@ context:
     id: scope
     value: 'Wales Millennium Centre (WMC): planning policy; ministerial briefing for meeting between WMC, the National Assembly for Wales and the Millennium Commission'
   fieldCoverageStart:
-    label: 'Coverage start date'
+    label: 'Record coverage start date'
     id: scope
     hint: (optional)
   fieldCoverageEnd:
-    label: 'Coverage end date'
+    label: 'Record coverage end date'
     id: scope
     hint: (optional)
   fieldArrangement:

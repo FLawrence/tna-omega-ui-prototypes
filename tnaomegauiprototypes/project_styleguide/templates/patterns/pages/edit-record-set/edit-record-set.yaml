@@ -24,7 +24,7 @@ context:
     id: record-set
     options:
       - { label: 'Record set: Myanmar', id: record-set }
-      - { label: 'FCO', id: record-set-2 }
+      - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
       - { label: 'South East Asia', id: record-set-3 }
       - { label: 'Myanmar', id: record-set-4 }
       - { label: 'Cambodia', id: record-set-5 }

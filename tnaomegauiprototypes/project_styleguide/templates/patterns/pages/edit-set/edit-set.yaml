@@ -31,7 +31,7 @@ context:
     id: record-set
     options:
       - { label: 'Record set', id: record-set }
-      - { label: 'FCO', id: record-set-2 }
+      - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
       - { label: 'South East Asia', id: record-set-3 }
       - { label: 'Regional Cooperation', id: record-set-4 }
       - { label: 'Myanmar', id: record-set-5 }

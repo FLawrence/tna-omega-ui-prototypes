@@ -184,11 +184,11 @@ context:
     id: scope
     value: 'Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991'
   fieldCoverageStart:
-    label: 'Coverage start date'
+    label: 'Record coverage start date'
     id: scope
     hint: (optional)
   fieldCoverageEnd:
-    label: 'Coverage end date'
+    label: 'Record coverage end date'
     id: scope
     hint: (optional)
   fieldArrangement:

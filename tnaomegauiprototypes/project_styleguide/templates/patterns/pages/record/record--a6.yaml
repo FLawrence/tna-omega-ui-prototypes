@@ -184,11 +184,11 @@ context:
     id: scope
     value: 'Closed extracts: Folios 1-30'
   fieldCoverageStart:
-    label: 'Coverage start date'
+    label: 'Record coverage start date'
     id: scope
     hint: (optional)
   fieldCoverageEnd:
-    label: 'Coverage end date'
+    label: 'Record coverage end date'
     id: scope
     hint: (optional)
   fieldArrangement:
