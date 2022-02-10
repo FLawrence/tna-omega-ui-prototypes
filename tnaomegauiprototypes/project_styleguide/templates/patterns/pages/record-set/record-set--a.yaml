@@ -4,6 +4,13 @@ context:
     introduction: false
     back_link: ../edit-set/edit-set--a.html
     back_title: Edit set
+    reset_url: ../edit-set/edit-set--a.html
+    records: 25
+    comments: 2
+    release_date: false
+    project:
+      title: Project name
+      link: ../project/project.html
   move:
     link: ../edit-set/edit-set--move.html
   add:

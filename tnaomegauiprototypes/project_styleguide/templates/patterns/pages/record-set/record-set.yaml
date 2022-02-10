@@ -4,6 +4,7 @@ context:
     introduction: false
     back_link: ../edit-set/edit-set.html
     back_title: Edit set
+    reset_url: ../record-set/record-set.html
   move:
     link: ../edit-set/edit-set--move.html
   add:

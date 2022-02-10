@@ -13,9 +13,9 @@
             {% include "patterns/atoms/select/select.html" with field=selectTwo label_hidden=True %}
         </div>
     {% endif %}
-    {% if reset %}
+    {% if page.reset_url %}
         <div class="me-2 d-flex align-items-center">
-            <a href="../edit-set/edit-set.html" class="d-flex align-items-center text-decoration-none">
+            <a href="{% if page.reset_url %}{{ page.reset_url }}{% else %}../edit-set/edit-set.html{% endif %}" class="d-flex align-items-center text-decoration-none">
                 <span class="material-icons">restart_alt</span>
                 <span> Reset filters</span>
             </a>

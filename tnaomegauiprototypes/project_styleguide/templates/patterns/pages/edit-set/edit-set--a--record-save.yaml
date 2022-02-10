@@ -105,7 +105,7 @@ context:
       title: FCO 15/17/7168/1
       link: '../record/record.html'
       description: South East Asia visit minutes
-      last_edit:
+      last_edit: '-'
       access: '-'
       date: 1997 Jan 1
       record_sets:
@@ -141,7 +141,7 @@ context:
       title: FCO 15/17/7171
       link: '../record/record--a3.html'
       description: Internal political situation in Burma (Myanmar)
-      last_edit:
+      last_edit: '-'
       access: Restrictions
       date: 1998 Jan 1
       record_sets:
@@ -153,7 +153,7 @@ context:
       title: FCO 15/17/7172
       link: '../record/record.html'
       description: Internal political situation in Burma (Myanmar)
-      last_edit:
+      last_edit: '-'
       access: Restrictions
       date: 1998 Jan 1
       record_sets:
@@ -189,8 +189,8 @@ context:
       title: FCO 15/18/7175
       link: '../record/record.html'
       description: Leading personalities in Cambodia, 1988
-      last_edit:
-      access:
+      last_edit: '-'
+      access: '-'
       date: 1999 Dec 31
       record_sets:
         - item:
@@ -345,7 +345,7 @@ context:
       title: FCO 15/19/7188
       link: '../record/record.html'
       description: East Timor
-      last_edit:
+      last_edit: '-'
       access: Restrictions
       date: 1999 Dec 31
       record_sets:
@@ -357,8 +357,8 @@ context:
       title: FCO 15/19/7189
       link: '../record/record.html'
       description: East Timor
-      last_edit:
-      access:
+      last_edit: '-'
+      access: '-'
       date: 1999 Dec 31
       record_sets:
         - item:
@@ -369,8 +369,8 @@ context:
       title: FCO 15/19/7190
       link: '../record/record--a6.html'
       description: Closed extracts Folios 1-30
-      last_edit:
-      access:
+      last_edit: '-'
+      access: '-'
       date: 1752
       record_sets:
         - item:
