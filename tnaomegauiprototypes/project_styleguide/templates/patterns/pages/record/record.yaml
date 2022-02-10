@@ -66,7 +66,7 @@ context:
       - { label: 'Creator one' }
       - { label: 'Creator two' }
       - { label: 'Creator three' }
-      - { label: 'National Assembly for Wales, 1999-' }
+      - { label: 'National Assembly for Wales, 1999-', selected: True }
   fieldFour:
     label: 'Start date'
     id: start-date
@@ -99,7 +99,7 @@ context:
     hint: (optional)
     modifier: w-50
     options:
-      - { label: 'English (en)' }
+      - { label: 'English (en)', selected: True }
       - { label: 'Welsh (cym)' }
       - { label: 'French (fr)' }
       - { label: 'Spanish (es)' }

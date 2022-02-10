@@ -1,0 +1,12 @@
+<div class="mb-4">
+    <label class="fw-bold {% if not field.hint %}mb-2{% endif %} {% if label_hidden %}visually-hidden{% endif %}" for="{{ field.id }}">
+    {{ field.label }}
+    </label>
+    {% if field.hint %}<span class="d-block fs-6 mb-2 text-muted">{{ field.hint }}</span>{% endif %}
+    <select class="form-control" data-autocomplete id="{{ field.id }}-list" multiple>
+        {% for option in field.options %}
+            <option value="{{ option.label }}" {% if option.selected %}selected{% endif %}>{{ option.label }}</option>
+        {% endfor %}
+    </select>
+</div>
+

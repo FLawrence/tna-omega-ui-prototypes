@@ -30,7 +30,7 @@
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldScope %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldTwo %}
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldThree %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldThree %}
                             <div class="row">
                                 <div class="col-4">
                                     {% include "patterns/atoms/text-input/text-input.html" with field=fieldFour %}
@@ -43,7 +43,7 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldSeven %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldNine %}
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldTen %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldTen %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
                             <div class="row">
                                 <div class="col-4">
@@ -106,10 +106,10 @@
 
                         <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
                             <h2 class="mb-5">Index terms</h2>
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsOne %}
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsTwo %}
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsThree %}
-                            {% include "patterns/atoms/datalist/datalist.html" with field=fieldIndexTermsFour %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsOne %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsTwo %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsThree %}
+                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsFour %}
                         </div>
                     </div>
                 </div>
@@ -144,12 +144,21 @@
     </div>
 {% endblock %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+{% endblock %}
+
+{% block extra_js_lib %}
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+{% endblock %}
+
 {% block extra_js %}
     <script src="https://cdn.tiny.cloud/1/hnsrp0hxpa6j2nodznhqfz1kc8peudd89zzg2bhbxnfrzeod/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#record-index'
         });
+
         tinymce.init({
             selector: '#scope',
             height: 300,

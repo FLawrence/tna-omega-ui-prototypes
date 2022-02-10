@@ -4,6 +4,8 @@ import BulkSelectAll from './components/bulk-select-all';
 import BulkEdit from './components/bulk-edit';
 import BulkAction from './components/bulk-action';
 
+import './components/autocomplete';
+
 import '../sass/main.scss';
 
 document.addEventListener('DOMContentLoaded', () => {

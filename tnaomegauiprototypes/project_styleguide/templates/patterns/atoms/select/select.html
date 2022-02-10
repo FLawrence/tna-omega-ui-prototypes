@@ -5,7 +5,7 @@
   {% if field.hint %}<span class="d-block fs-6 mb-2 text-muted">{{ field.hint }}</span>{% endif %}
   <select class="form-select {% if field.modifier %}{{ field.modifier }}{% endif %}" id="sort-{{ field.id }}" name="{{ field.id }}" {% if field.datatag %}{{ field.datatag }}{% endif %}>
     {% for option in field.options %}
-    <option value="{{ option.id }}">{{ option.label }}</option>
+        <option value="{{ option.id }}" {% if option.selected %}selected{% endif %}>{{ option.label }}</option>
     {% endfor %}
   </select>
 
