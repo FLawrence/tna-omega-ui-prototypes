@@ -28,7 +28,7 @@
                 </ul>
                 <ul class="utility-nav d-flex align-items-center fs-6 ">
                 {% if not no_logout %}
-                    <li class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-4">
+                    <li class="me-4">
                         <div class="d-flex align-items-center">
                             <div class="me-2">
                                 {% include "patterns/atoms/avatar/avatar.html" %}
@@ -40,10 +40,16 @@
                         </div>
                     </li>
                 {% endif %}
-                    <li>
+                    <li class="me-4">
                         <a class="link-light text-decoration-none d-flex align-items-center" href="#" data-bs-toggle="offcanvas" data-bs-target="#adminMenu" aria-controls="adminMenu">
                             <span class="me-2">Admin</span>
                             <span class="material-icons me-1" role="presentation">menu</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link-light text-decoration-none d-flex align-items-center" href="#">
+                            <span class="me-2">Search catalog</span>
+                            <span class="material-icons me-1" role="presentation">search</span>
                         </a>
                     </li>
                 </ul>

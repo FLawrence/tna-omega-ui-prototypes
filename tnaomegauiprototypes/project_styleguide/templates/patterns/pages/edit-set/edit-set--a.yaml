@@ -4,7 +4,7 @@ context:
     introduction: false
     back_link: ../dashboard/contributor-dashboard.html
     back_title: Dashboard
-    records: 132
+    records: 25
     comments: 2
     release_date: false
     project:
@@ -42,7 +42,7 @@ context:
       - { label: 'Portuguese Timor East Timor', id: record-set-10 }
   record_sets:
     - item:
-      title: FCO
+      title: Foreign & Commonwealth Office
       records: 25
       modifier: btn-primary
       link: '../record-set/record-set--a.html'

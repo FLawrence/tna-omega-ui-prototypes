@@ -35,7 +35,7 @@ context:
   questionFour:
     label: 'Contributor'
     id: 'contributor'
-    hint: The user who will recieve the edit set in their dashboard
+    hint: The user who will receive the edit set in their dashboard
     modifier: w-25
     options:
       - { label: 'You (Nick Lee)', id: contributor }
