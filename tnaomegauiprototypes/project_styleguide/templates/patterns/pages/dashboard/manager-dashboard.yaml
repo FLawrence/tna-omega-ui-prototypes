@@ -64,6 +64,7 @@ context:
         title: Recent edit
         modifier: bg-secondary
       release_date: 24/02/22
+      stage: Editorial
       project:
         title: Census 1921
         link: '../project/project.html'
@@ -88,6 +89,7 @@ context:
         title: Overdue
         modifier: bg-danger
       release_date: false
+      stage: Editorial
       project: false
       records: 13
       last_edit: 07/02/22
@@ -110,6 +112,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: false
+      stage: Editorial
       project: false
       records: 25
       last_edit: '-'
@@ -132,6 +135,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: false
+      stage: Contribution
       project: false
       records: 180
       last_edit: '-'
@@ -154,6 +158,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: 24/02/22
+      stage: Editorial
       project:
         title: Project name
         link: '#'
@@ -178,6 +183,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: false
+      stage: Contribution
       project: false
       records: 132
       last_edit: '-'
@@ -195,6 +201,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: 24/02/22
+      stage: Editorial
       project:
         title: Census 1921
         link: '../project/project.html'
@@ -219,6 +226,7 @@ context:
         title: New
         modifier: bg-secondary
       release_date: false
+      stage: Editorial
       project: false
       records: 13
       last_edit: '-'
@@ -234,6 +242,7 @@ context:
       link: '../edit-set/edit-set--a.html'
       badge: false
       release_date: 24/02/22
+      stage: Editorial
       project: false
       records: 13
       last_edit: '-'
@@ -254,6 +263,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge: false
       release_date: 24/02/22
+      stage: Editorial
       project: false
       records: 132
       last_edit: '-'
@@ -274,6 +284,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge: false
       release_date: 24/02/22
+      stage: Editorial
       project:
         title: Project name
         link: '#'
@@ -292,6 +303,7 @@ context:
       link: '../edit-set/edit-set.html'
       badge: false
       release_date: false
+      stage: Contribution
       project: false
       records: 259
       last_edit: '-'
