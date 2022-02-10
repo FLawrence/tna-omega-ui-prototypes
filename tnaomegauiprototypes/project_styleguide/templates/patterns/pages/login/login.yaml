@@ -12,7 +12,7 @@ context:
     id: password
     modifier: govuk-input--width-10
   action:
-    label: Login
+    label: Log in
     modifier: btn-primary
   actionTwo:
     label: Forgotten your password?

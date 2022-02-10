@@ -82,7 +82,7 @@ context:
       badge:
         title: New
         modifier: bg-secondary
-      release_date: 24/02/22
+      release_date: false
       project: false
       records: 25
       last_edit: '-'
@@ -92,7 +92,7 @@ context:
       title: FCO15(6165-6287)
       link: '../edit-set/edit-set.html'
       badge: false
-      release_date: 24/02/22
+      release_date: false
       project: false
       records: 180
       last_edit: '-'
