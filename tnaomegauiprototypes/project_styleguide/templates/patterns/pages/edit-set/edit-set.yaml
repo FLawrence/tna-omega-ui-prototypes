@@ -31,6 +31,11 @@ context:
     id: record-set
     options:
       - { label: 'Record set', id: record-set }
+      - { label: 'FCO', id: record-set-2 }
+      - { label: 'South East Asia', id: record-set-3 }
+      - { label: 'Regional Cooperation', id: record-set-4 }
+      - { label: 'Myanmar', id: record-set-5 }
+      - { label: 'Cambodia', id: record-set-6 }
   record_sets:
     - item:
       title: FCO
@@ -57,33 +62,13 @@ context:
       records: 6
       modifier: btn-primary
       link: '../record-set/record-set.html'
-    - item:
-      title: Singapore
-      records: 2
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Malyasia
-      records: 3
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Indonesia
-      records: 2
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Portuguese Timor East Timor
-      records: 3
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
   records:
     - item:
       title: FCO 15/17/7165
       link: '../record/record.html'
       description: South East Asia, meetings of the European Community Asia Working Group
-      last_edit: 
-      access: 
+      last_edit:
+      access:
       date: 1997 Jan 1
       record_sets:
         - item:
