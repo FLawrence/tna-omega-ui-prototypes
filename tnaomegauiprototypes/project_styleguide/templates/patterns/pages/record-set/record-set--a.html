@@ -5,21 +5,20 @@
         {% include "patterns/molecules/page-heading/page-heading.html" %}
         {% include "patterns/molecules/page-meta/page-meta.html" %}
 
-        <div class="bg-white border mb-5 rounded-1">
+        <div class="bg-white border mb-5 rounded-1 overflow-hidden">
 
-            {% include "patterns/molecules/page-filters/page-filters.html" %}
+            {% include "patterns/molecules/page-filters/page-filters.html" with reset=True %}
 
-            {% if record_sets %}
-                <div class="record-sets d-flex align-items-center mb-3 pt-3 pb-3 ps-4 pe-4 border-bottom">
-                    <div class="me-3"><h2 class="h6 m-0">Records sets within this edit set:</h2></div>
-                    <div class="record-set-items d-flex flex-wrap align-items-center">
-                        {% for item in record_sets %}
+            {% if filter_summary %}
+                <div class="d-flex align-items-center mb-3 pt-3 pb-3 ps-4 pe-4 border-bottom">
+                    <h2 class="filter-summary h4 m-0">{{ filter_summary }}</h2>
+
+                    <div class="d-flex align-items-center ms-auto">
+                        {% if filter_summary_action %}
                             <div class="me-2">
-                                {% include "patterns/atoms/badge/badge.html" with field=item %}
+                                <button type="button" class="btn btn-primary">Edit record set</button>
                             </div>
-                        {% endfor %}
-                    </div>
-                    <div class="d-flex align-items-center ms-auto" style="min-width: 280px; max-width: 280px;">
+                        {% endif %}
                         {% if add.link %}
                             <div class="me-2">
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
@@ -32,15 +31,6 @@
                         {% endif %}
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
-                </div>
-            {% endif %}
-
-            {% if filter_summary %}
-                <div class="mb-4">
-                    <h2 class="filter-summary">{{ filter_summary }}</h2>
-                    {% if filter_summary_action %}
-                        <button type="button" class="btn btn-primary">Edit record set</button>
-                    {% endif %}
                 </div>
             {% endif %}
 
@@ -73,6 +63,7 @@
                     </tbody>
                 </table>
 
+
                 <div class="footer-actions d-flex justify-content-between mt-4 ms-4 me-4">
                     {% if pagination %}
                         <nav class="" aria-label="Pagination">
@@ -85,7 +76,7 @@
                             </ul>
                         </nav>
                     {% endif %}
-                    <div class="d-flex align-items-center ms-auto" style="min-width: 280px; max-width: 280px;">
+                    <div class="d-flex align-items-center ms-auto">
                         {% if add.link %}
                             <div class="me-2">
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
@@ -99,10 +90,7 @@
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
-
             </div>
-
-
         </div>
 
         {% include "patterns/organisms/modal/history-modal.html" %}
@@ -110,31 +98,8 @@
         {% include "patterns/organisms/modal/time-modal.html" %}
         {% include "patterns/organisms/modal/add-comment-modal.html" %}
         {% include "patterns/organisms/modal/abandon-modal.html" %}
-        {% include "patterns/organisms/modal/move-modal.html" %}
-        {% include "patterns/organisms/modal/search-replace-modal.html" %}
-
-        {% if toast %}
-            {% include "patterns/molecules/toast/toast.html" with item=toast %}
-        {% endif %}
+        {% include "patterns/organisms/modal/record-set-modal.html" %}
 
     </div>
 
-{% endblock %}
-
-
-{% block extra_js %}
-    <script>
-        // Tooltip
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-        // Toast
-        document.addEventListener("DOMContentLoaded", function(){
-            var element = document.getElementById("toast");
-            // Create toast instance
-            var myToast = new bootstrap.Toast(element);
-            myToast.show();
-        });
-    </script>
 {% endblock %}

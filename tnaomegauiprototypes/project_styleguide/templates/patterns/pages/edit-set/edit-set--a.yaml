@@ -34,47 +34,47 @@ context:
       title: FCO
       records: 25
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: South East Asia
       records: 25
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Regional Cooperation
       records: 5
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Myanmar
       records: 4
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Cambodia
       records: 6
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Singapore
       records: 2
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Malaysia
       records: 3
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Indonesia
       records: 2
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
     - item:
       title: Portuguese Timor East Timor
       records: 3
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: '../record-set/record-set--a.html'
   records:
     - item:
       title: FCO 15/17/7168
@@ -87,7 +87,7 @@ context:
         - item:
           title: Regional Cooperation
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/17/7168/1
       link: '../record/record.html'
@@ -99,7 +99,7 @@ context:
         - item:
           title: Regional Cooperation
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/17/7169
       link: '../record/record--a1.html'
@@ -111,7 +111,7 @@ context:
         - item:
           title: Regional Cooperation
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/17/7170
       link: '../record/record--a2.html'
@@ -123,7 +123,7 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/17/7171
       link: '../record/record--a3.html'
@@ -135,7 +135,7 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/17/7172
       link: '../record/record.html'
@@ -147,7 +147,7 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/18/7173
       link: '../record/record.html'
@@ -159,7 +159,7 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/18/7174
       link: '../record/record--a7.html'
@@ -171,7 +171,7 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/18/7175
       link: '../record/record.html'
@@ -183,7 +183,7 @@ context:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/18/7176
       link: '../record/record.html'
@@ -195,7 +195,7 @@ context:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/18/7177
       link: '../record/record.html'
@@ -207,7 +207,7 @@ context:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7178
       link: '../record/record--a5.html'
@@ -219,7 +219,7 @@ context:
         - item:
           title: '?'
           modifier: bg-secondary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7179
       link: '../record/record.html'
@@ -231,7 +231,7 @@ context:
         - item:
           title: '?'
           modifier: bg-secondary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7180
       link: '../record/record.html'
@@ -243,7 +243,7 @@ context:
         - item:
           title: 'Singapore'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7181
       link: '../record/record.html'
@@ -255,7 +255,7 @@ context:
         - item:
           title: 'Singapore'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7182
       link: '../record/record.html'
@@ -267,7 +267,7 @@ context:
         - item:
           title: 'Singapore'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7183
       link: '../record/record.html'
@@ -279,7 +279,7 @@ context:
         - item:
           title: 'Malaysia'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7184
       link: '../record/record.html'
@@ -291,7 +291,7 @@ context:
         - item:
           title: 'Malaysia'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7185
       link: '../record/record.html'
@@ -303,7 +303,7 @@ context:
         - item:
           title: 'Malaysia'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7186
       link: '../record/record--a4.html'
@@ -315,7 +315,7 @@ context:
         - item:
           title: 'Indonesia'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7187
       link: '../record/record.html'
@@ -327,7 +327,7 @@ context:
         - item:
           title: 'Indonesia'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7188
       link: '../record/record.html'
@@ -339,7 +339,7 @@ context:
         - item:
           title: 'East Timor'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7189
       link: '../record/record.html'
@@ -351,7 +351,7 @@ context:
         - item:
           title: 'East Timor'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
     - item:
       title: FCO 15/19/7190
       link: '../record/record--a6.html'
@@ -363,7 +363,7 @@ context:
         - item:
           title: 'East Timor'
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: '../record-set/record-set--a.html'
   history:
     - item:
       change: Date
