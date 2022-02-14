@@ -1,0 +1,188 @@
+context:
+  page:
+    title: 'Edit sets'
+    introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had <a href='edit-set.html'>AD Websites series 2</a> assigned to you. View all <a href='#'>linked edit sets</a>"
+  filterSearch:
+    label: 'Search edit sets'
+    id: search
+    placeholder: Search edit set
+  selectOne:
+    label: 'Assignee (me)'
+    id: assignee
+    options:
+      - { label: 'Assignee (me)', id: assignee }
+      - { label: 'User 2', id: assignee-2 }
+      - { label: 'User 3', id: assignee-3 }
+      - { label: 'User 4', id: assignee-4 }
+      - { label: 'User 5', id: assignee-5 }
+  selectTwo:
+    label: 'Linked edit sets'
+    id: projects
+    options:
+      - { label: 'Linked edit sets', id: projects }
+      - { label: 'Census 1921', id: projects-2 }
+      - { label: 'Project name', id: projects-3 }
+  filter_summary: <b>12</b> edit sets with you as the <b>contributor</b>
+  history:
+    - item:
+      change: Date
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      change: Title
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      change: Title and description
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  edit_sets:
+    - item:
+      title: FCO16(102-205)
+      link: 'edit-set.html'
+      badge:
+        title: Recent edit
+        modifier: bg-secondary
+      release_date: 24/02/22
+      project:
+        title: Census 1921
+        link: '../project/project.html'
+      records: 16
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: AD Websites series 2
+      link: 'edit-set.html'
+      badge:
+        title: Overdue
+        modifier: bg-danger
+      release_date: false
+      project: false
+      records: 13
+      last_edit: 07/02/22
+      access: 1 restricted
+      comments: False
+    - item:
+      title: FCO15(7168-7190)
+      link: 'edit-set.html'
+      badge:
+        title: New
+        modifier: bg-secondary
+      release_date: false
+      project: false
+      records: 25
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: FCO15(6165-6287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 180
+      last_edit: '-'
+      access: '-'
+      comments: 5
+    - item:
+      title: FCO15(6288-6327)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      moved_to: Jenna Bellchambers
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      project: false
+      records: 132
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: FCO15(6328-6427)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 132
+      last_edit: '-'
+      access: '-'
+      comments: 2
+    - item:
+      title: FCO16(102-205)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project:
+        title: Census 1921
+        link: '../project/project.html'
+      records: 16
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: AD Websites series 2
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 1 restricted
+      comments: False
+    - item:
+      title: FCO15(7168-7190)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 132
+      last_edit: '-'
+      access: '-'
+      comments: 5
+    - item:
+      title: FCO15(7288-7350)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project:
+        title: Project name
+        link: '#'
+      records: 62
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: FCO15(7351-7402)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 259
+      last_edit: '-'
+      access: '-'
+      comments: 2

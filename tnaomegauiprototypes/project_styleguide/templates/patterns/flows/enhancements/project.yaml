@@ -1,0 +1,364 @@
+context:
+  dashboard: False
+  page:
+    title: 'Census 1921'
+    introduction: 'Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.'
+    back_link: dashboard.html
+    back_title: Dashboard
+  ongoing_projects:
+    - item:
+      id: chart-1
+      title: false
+      link: 'project.html'
+      status: 3/15 ready for release
+      date: Due 25/02/22
+  filterSearch:
+    label: 'Search edit sets'
+    id: search
+    placeholder: Search edit set
+  selectOne:
+    label: 'Assignee (me)'
+    id: assignee
+    options:
+      - { label: 'All users', id: assignee }
+      - { label: 'User 2', id: assignee-2 }
+      - { label: 'User 3', id: assignee-3 }
+      - { label: 'User 4', id: assignee-4 }
+      - { label: 'User 5', id: assignee-5 }
+  selectTwo:
+    label: '-'
+    id: Stage
+    options:
+      - { label: 'All stages', id: stage }
+      - { label: 'Editorial', id: stage-2 }
+      - { label: 'Contribution', id: stage-3 }
+      - { label: 'Release', id: stage-4 }
+  selectThree: False
+  filter_summary: 15 edit sets
+  history:
+    - item:
+      change: Date
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      change: Title
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      change: Title and description
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  edit_sets:
+    - item:
+      title: Census1921-1
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Release
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: Census1921-2
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 13
+      stage: Editorial
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: Census1921-3
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Editorial
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: Census1921-4
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Release
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 5
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Editorial
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Release
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Editorial
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Release
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg
+    - item:
+      title: FCO15(7165-7287)
+      link: 'edit-set.html'
+      badge: false
+      release_date: 25/02/22
+      records: 132
+      stage: Contribution
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_2.jpg

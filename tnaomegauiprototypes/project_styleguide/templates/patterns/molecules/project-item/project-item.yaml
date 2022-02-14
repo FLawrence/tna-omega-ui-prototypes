@@ -1,0 +1,7 @@
+context:
+  item:
+    id: chart-1
+    title: Census 1921
+    link: '#'
+    status: 25/30 ready for release
+    date: Due 25/02/22
