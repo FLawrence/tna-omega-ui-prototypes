@@ -3,4 +3,4 @@ context:
     full_name: Nick Lee
     modifier: avatar--medium
     tooltip: False
-  user_home_link: '/pattern-library/render-pattern/patterns/pages/dashboard/contributor-dashboard.html'
+  user_home_link: 'dashboard.html'

@@ -1,7 +1,21 @@
 context:
+  dashboard: True
   page:
-    title: 'Edit sets'
+    title: 'Projects & edit sets'
     introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had 10 edit sets assigned to you. View all <a href='#'>linked edit sets</a>"
+  ongoing_projects:
+    - item:
+      id: chart-1
+      title: Census 1921
+      link: 'project.html'
+      status: 3/15 ready for release
+      date: Due 25/02/22
+    - item:
+      id: chart-2
+      title: Project name
+      link: 'project.html'
+      status: 6/87 ready for release
+      date: Target date 13/04/22
   filterSearch:
     label: 'Search edit sets'
     id: search

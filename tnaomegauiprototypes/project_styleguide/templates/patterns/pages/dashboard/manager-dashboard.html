@@ -5,6 +5,17 @@
 
         {% include "patterns/molecules/page-heading/page-heading.html" %}
 
+        <div class="projects">
+            {% if dashboard %}
+                <h2 class="mb-4 h4">Your ongoing projects (2)</h2>
+            {% endif %}
+            <div class="d-flex">
+                {% for item in ongoing_projects %}
+                    {% include "patterns/molecules/project-item/project-item.html" with item=item %}
+                {% endfor %}
+            </div>
+        </div>
+
         <div class="bg-white border mb-5 rounded-1 overflow-hidden">
             {% include "patterns/molecules/page-filters/page-filters.html" %}
             {% if filter_summary %}
@@ -53,12 +64,114 @@
 {% endblock %}
 
 {% block extra_js %}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
     <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function(){
-        var element = document.getElementById("toast");
-        // Create toast instance
-        var myToast = new bootstrap.Toast(element);
-        myToast.show();
-    });
+        // document.addEventListener("DOMContentLoaded", function(){
+        //     var element = document.getElementById("toast");
+        //     // Create toast instance
+        //     var myToast = new bootstrap.Toast(element);
+        //     myToast.show();
+        // });
+
+        // Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        Highcharts.chart('chart-1', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ecf2fa',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 3
+                }, {
+                    name: 'Editorial',
+                    y: 10
+                }, {
+                    name: 'Contribution',
+                    y: 2
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-2', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ecf2fa',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 6
+                }, {
+                    name: 'Editorial',
+                    y: 21
+                }, {
+                    name: 'Contribution',
+                    y: 60
+                }]
+            }]
+        });
     </script>
 {% endblock %}
