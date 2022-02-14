@@ -3,9 +3,9 @@ context:
     pac: res.7gh.15.fc.66.d
     title: 'FCO 15/17/7168'
     introduction: false
-    back_link: ../edit-set/edit-set--a.html
+    back_link: edit-set.html
     back_title: FCO15(7168-7190)
-    save_link: ../edit-set/edit-set--a--record-save.html
+    save_link: edit-set--record-save.html
     save_text: Save changes
     record_sets:
       - item:
