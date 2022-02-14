@@ -19,17 +19,15 @@
                             </div>
                         {% endfor %}
                     </div>
-                    <div class="d-flex align-items-center ms-auto">
+                    <div class="d-flex align-items-center justify-content-end ms-auto" style="min-width: 480px; max-width: 480px;">
                         {% if add.link %}
                             <div class="me-2">
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move.link %}
-                            <div class="me-2">
-                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
-                            </div>
-                        {% endif %}
+                        <div class="me-2">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Move edit set on</a>
+                        </div>
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
@@ -85,17 +83,15 @@
                             </ul>
                         </nav>
                     {% endif %}
-                    <div class="d-flex align-items-center ms-auto">
+                    <div class="d-flex align-items-center justify-content-end ms-auto" style="min-width: 480px; max-width: 480px;">
                         {% if add.link %}
                             <div class="me-2">
                                 <a href="{{ add.link }}" class="btn btn-outline-primary">Add record</a>
                             </div>
                         {% endif %}
-                        {% if move.link %}
-                            <div class="me-2">
-                                <a href="{{ move.link }}" class="btn btn-outline-primary">Move edit set on</a>
-                            </div>
-                        {% endif %}
+                        <div class="me-2">
+                            <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Move edit set on</a>
+                        </div>
                         {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
                     </div>
                 </div>
@@ -109,9 +105,10 @@
         {% include "patterns/organisms/modal/comment-modal.html" %}
         {% include "patterns/organisms/modal/time-modal.html" %}
         {% include "patterns/organisms/modal/add-comment-modal.html" %}
-        {% include "patterns/organisms/modal/abandon-modal.html" %}
+        {% include "patterns/organisms/modal/abandon-modal.html" with type="edit set" %}
         {% include "patterns/organisms/modal/move-modal.html" %}
         {% include "patterns/organisms/modal/search-replace-modal.html" %}
+        {% include "patterns/organisms/modal/access-modal.html" %}
 
         {% if toast %}
             {% include "patterns/molecules/toast/toast.html" with item=toast %}

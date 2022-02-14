@@ -1,0 +1,390 @@
+context:
+  toast:
+    message: Record saved
+  page:
+    title: 'FCO15(7168-7190)'
+    introduction: false
+    back_link: dashboard.html
+    back_title: Dashboard
+    records: 132
+    comments: 2
+    release_date: false
+    project:
+      title: Project name
+      link: project.html
+  add:
+    link: add-record.html
+  pagination: True
+  filterSearch:
+    label: 'Search edit set'
+    placeholder: Search edit set
+    id: search
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Access', id: access }
+      - { label: 'Open', id: access-2 }
+      - { label: 'Closed', id: access-3 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'Record set', id: record-set }
+      - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
+      - { label: 'South East Asia', id: record-set-3 }
+      - { label: 'Regional Cooperation', id: record-set-4 }
+      - { label: 'Myanmar', id: record-set-5 }
+      - { label: 'Cambodia', id: record-set-6 }
+      - { label: 'Singapore', id: record-set-7 }
+      - { label: 'Malaysia', id: record-set-8 }
+      - { label: 'Indonesia', id: record-set-9 }
+      - { label: 'Portuguese Timor East Timor', id: record-set-10 }
+  record_sets:
+    - item:
+      title: FCO
+      records: 25
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: South East Asia
+      records: 25
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Regional Cooperation
+      records: 5
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Myanmar
+      records: 4
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Cambodia
+      records: 6
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Singapore
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Malaysia
+      records: 3
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Indonesia
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Portuguese Timor East Timor
+      records: 3
+      modifier: btn-primary
+      link: 'record-set.html'
+  records:
+    - item:
+      title: FCO 15/17/7168
+      link: 'record--a8.html'
+      description: Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, January 1992.
+      last_edit: '-'
+      access: '-'
+      date: 1997 Jan 1
+      record_sets:
+        - item:
+          title: Regional Cooperation
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7168/1
+      link: 'record.html'
+      description: South East Asia visit minutes
+      last_edit: '-'
+      access: '-'
+      date: 1997 Jan 1
+      record_sets:
+        - item:
+          title: Regional Cooperation
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7169
+      link: 'record--a1.html'
+      description: Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991
+      last_edit: Yesterday
+      access: '-'
+      date: Undated
+      record_sets:
+        - item:
+          title: Regional Cooperation
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7170
+      link: 'record--a2.html'
+      description: Leading personalities in Burma (Myanmar)
+      last_edit: Yesterday
+      access: Restrictions
+      date: 1998 Jan 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7171
+      link: 'record--a3.html'
+      description: Internal political situation in Burma (Myanmar)
+      last_edit: '-'
+      access: Restrictions
+      date: 1998 Jan 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7172
+      link: 'record.html'
+      description: Internal political situation in Burma (Myanmar)
+      last_edit: '-'
+      access: Restrictions
+      date: 1998 Jan 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/18/7173
+      link: 'record.html'
+      description: Internal political situation in Burma (Myanmar)
+      last_edit: '-'
+      access: Restrictions
+      date: 1998 Jan 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/18/7174
+      link: 'record--a7.html'
+      description: Number not used
+      last_edit: '-'
+      access: '-'
+      date: '-'
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/18/7175
+      link: 'record.html'
+      description: Leading personalities in Cambodia, 1988
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/18/7176
+      link: 'record.html'
+      description: Internal political situation in Cambodia factional interplay
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/18/7177
+      link: 'record.html'
+      description: Soviet Union policy on Cambodia
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: Cambodia
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7178
+      link: 'record--a5.html'
+      description: UK policy on Cambodia
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: '?'
+          modifier: bg-secondary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7179
+      link: 'record.html'
+      description: UK policy on Cambodia
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: '?'
+          modifier: bg-secondary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7180
+      link: 'record.html'
+      description: Internal political situation in Singapore
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7181
+      link: 'record.html'
+      description: Singapore annual review for 1990
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7182
+      link: 'record.html'
+      description: Singapore annual review for 1990
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Singapore'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7183
+      link: 'record.html'
+      description: Leading personalities in Malaysia
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7184
+      link: 'record.html'
+      description: Malaysia environmental issues
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7185
+      link: 'record.html'
+      description: Malaysia and the BBC
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Malaysia'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7186
+      link: 'record--a4.html'
+      description: Relations between Indonesia '&' Japan. Missing at transfer
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Indonesia'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7187
+      link: 'record.html'
+      description: Relations between Indonesia and the UK
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'Indonesia'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7188
+      link: 'record.html'
+      description: East Timor
+      last_edit: '-'
+      access: Restrictions
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7189
+      link: 'record.html'
+      description: East Timor
+      last_edit: '-'
+      access: '-'
+      date: 1999 Dec 31
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/19/7190
+      link: 'record--a6.html'
+      description: Closed extracts Folios 1-30
+      last_edit: '-'
+      access: '-'
+      date: 1752
+      record_sets:
+        - item:
+          title: 'East Timor'
+          modifier: bg-primary
+          link: 'record-set.html'
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee

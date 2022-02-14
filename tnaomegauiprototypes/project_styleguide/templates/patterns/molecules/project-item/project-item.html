@@ -1,0 +1,12 @@
+<div class="project-item me-5 mb-5">
+    <a href="{{ item.link }}" class="text-decoration-none">
+        <div class="project-item__meta d-flex align-items-center">
+            <div class="project-item__chart me-3" id="{{ item.id }}" style="height: 100px; width: 100px"></div>
+            <div class="project-item__text">
+                {% if item.title %}<h3 class="h5 mb-2 text-decoration-underline">{{ item.title }}</h3>{% endif %}
+                <p class="mb-0">{{ item.status }}</p>
+                <p class="mb-0">{{ item.date }}</p>
+            </div>
+        </div>
+    </a>
+</div>

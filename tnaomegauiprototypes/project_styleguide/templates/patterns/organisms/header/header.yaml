@@ -3,3 +3,4 @@ context:
     full_name: Nick Lee
     modifier: avatar--medium
     tooltip: False
+  user_home_link: 'dashboard.html'

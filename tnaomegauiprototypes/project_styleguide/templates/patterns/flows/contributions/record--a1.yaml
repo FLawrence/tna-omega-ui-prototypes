@@ -1,0 +1,257 @@
+context:
+  page:
+    pac: res.7gh.15.fc.66.d
+    title: 'FCO 15/17/7169'
+    introduction: false
+    back_link: edit-set.html
+    back_title: FCO15(7168-7190)
+    save_link: edit-set--record-save.html
+    save_text: Save changes
+    record_sets:
+      - item:
+        title: FCO
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: South East Asia
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: Regional Cooperation
+        records: false
+        modifier: btn-primary
+        link: false
+    context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
+  history:
+    - item:
+      change: Date
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      change: Title
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      change: Title and description
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+  fieldOne:
+    label: 'Former reference - Department'
+    id: form-ref-dept
+    hint: (optional)
+    modifier: w-25
+    value: FA 027/6 PART B
+  fieldTwo:
+    label: 'Former Reference - PRO'
+    id: form-ref-pro
+    hint: (optional)
+    modifier: w-25
+  fieldThree:
+    label: Creator name(s)
+    id: creator
+    modifier: w-50
+    value: Foreign and Commonwealth Office
+    options:
+      - { label: 'Creator one' }
+      - { label: 'Creator two' }
+      - { label: 'Creator three' }
+      - { label: 'Foreign and Commonwealth Office' }
+  fieldFour:
+    label: 'Start date'
+    id: start-date
+    value: UNDATED
+  fieldFive:
+    label: 'End date'
+    id: end-date
+    value: UNDATED
+  fieldSix:
+    label: Legal status
+    id: legal-status
+    modifier: w-50
+    value: Public Record(s)
+    options:
+      - { label: 'Public record' }
+      - { label: 'Welsh public record' }
+  fieldSeven:
+    label: 'Physical description, extent'
+    id: physical-decription-extent
+  fieldEight:
+    label: 'Physical description, form'
+    id: physical-decription-form
+  fieldNine:
+    label: 'Physical condition'
+    id: physical-condition
+    hint: (optional)
+  fieldTen:
+    label: Language
+    id: language
+    hint: (optional)
+    modifier: w-50
+    options:
+      - { label: 'English (en)' }
+      - { label: 'Welsh (cym)' }
+      - { label: 'French (fr)' }
+      - { label: 'Spanish (es)' }
+  fieldEleven:
+    label: Held by
+    id: held-by
+    modifier: w-50
+    value: The National Archives, Kew
+    options:
+      - { label: 'The National Archives, Kew' }
+      - { label: 'Torchbox, Bristol' }
+      - { label: 'Torchbox, Charlbury' }
+      - { label: 'Torchbox, Devon' }
+      - { label: 'Torchbox, Cornwall' }
+  fieldTwelve:
+    label: 'Note'
+    id: note
+    hint: (optional)
+  mapFieldOne:
+    label: 'Map designation'
+    id: map-designation
+    hint: (optional)
+  mapFieldTwo:
+    label: 'Dimensions'
+    id: map-dimensions
+    hint: (optional)
+  mapFieldThree:
+    label: 'Map scale number'
+    id: map-designation
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: '1:1200' }
+      - { label: '1:200' }
+      - { label: '1:6000' }
+      - { label: '1:1' }
+  accessOne:
+    label: 'Access conditions'
+    id: access-1
+  accessTwo:
+    label: 'Closure type'
+    id: access-2
+    modifier: w-25
+  accessThree:
+    label: 'Closure code'
+    id: access-3
+    modifier: w-25
+  accessFour:
+    label: 'Record opening date'
+    id: access-4
+    modifier: w-25
+  accessFive:
+    label: 'Closure status'
+    id: access-5
+    modifier: w-25
+  accessSix:
+    label: 'Restrictions on use'
+    id: access-6
+    hint: (optional)
+  accessSeven:
+    label: 'Date of Accession'
+    id: access-7
+    hint: (optional)
+    modifier: w-25
+  accessEight:
+    label: 'Immediate source of acquisition'
+    id: access-8
+  accessNine:
+    label: 'Custodial history'
+    id: access-9
+    hint: (optional)
+  accessThirteen:
+    label: 'Location of originals'
+    hint: (optional)
+    id: access-13
+  accessFourteen:
+    label: 'Copies information'
+    hint: (optional)
+    id: access-14
+  fieldScope:
+    label: 'Scope and content'
+    id: scope
+    value: 'Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991'
+  fieldCoverageStart:
+    label: 'Record coverage start date'
+    id: scope
+    hint: (optional)
+  fieldCoverageEnd:
+    label: 'Record coverage end date'
+    id: scope
+    hint: (optional)
+  fieldArrangement:
+    label: 'Arrangement'
+    id: arrangement
+    hint: (optional)
+  fieldPublicationnote:
+    label: 'Publication note'
+    id: publication-note
+    hint: (optional)
+  fieldUnpublishedfindingaids:
+    label: 'Unpublished finding aids'
+    id: unpublished-finding-aids
+    hint: (optional)
+  fieldRelatedmaterial:
+    label: 'Related material'
+    id: related-material
+    hint: (optional)
+  fieldSeparatedmaterial:
+    label: 'Separated material'
+    id: separated-material
+    hint: (optional)
+  fieldAdminHistory:
+    label: 'Administrative / biographical background'
+    id: admin-history
+    hint: (optional)
+  fieldIndexTermsOne:
+    label: 'Corporate names'
+    id: corporate-names
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: 'Corporate name one' }
+      - { label: 'Corporate name two' }
+      - { label: 'Corporate name three' }
+      - { label: 'Corporate name four' }
+  fieldIndexTermsTwo:
+    label: 'Personal names'
+    id: personal-names
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: 'Personal name one' }
+      - { label: 'Personal name two' }
+      - { label: 'Personal name three' }
+      - { label: 'Personal name four' }
+  fieldIndexTermsThree:
+    label: 'Places'
+    id: places
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: 'London' }
+      - { label: 'Oxford' }
+      - { label: 'Cornwall' }
+      - { label: 'Devon' }
+  fieldIndexTermsFour:
+    label: 'Subjects'
+    id: subject
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: 'Subject name one' }
+      - { label: 'Subject name two' }
+      - { label: 'Subject name three' }
+      - { label: 'Subject name four' }

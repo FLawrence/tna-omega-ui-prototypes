@@ -1,7 +1,7 @@
 context:
   item:
     title: FCO15(7165-7287)
-    link: '../edit-set/edit-set.html'
+    link: 'edit-set.html'
     badge:
       title: Recent edit
       link: '#'
@@ -12,5 +12,5 @@ context:
       link: '#'
     records: 132
     last_edit: Yesterday
-    access: 2 sensitive records
+    access: 2 restricted
     comments: 2

@@ -3,7 +3,7 @@ context:
     pac: res.7gh.15.fc.66.d
     title: 'FCO 15/17/7169'
     introduction: false
-    back_link: ../edit-set/edit-set--a.html
+    back_link: edit-set.html
     back_title: FCO15(7168-7190)
     save_link: ../edit-set/edit-set--record-save.html
     save_text: Save changes
@@ -53,7 +53,7 @@ context:
     modifier: w-25
     value: FA 027/6 PART B
   fieldTwo:
-    label: 'Former Reference - Pro'
+    label: 'Former Reference - PRO'
     id: form-ref-pro
     hint: (optional)
     modifier: w-25
@@ -184,11 +184,11 @@ context:
     id: scope
     value: 'Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991'
   fieldCoverageStart:
-    label: 'Coverage start date'
+    label: 'Record coverage start date'
     id: scope
     hint: (optional)
   fieldCoverageEnd:
-    label: 'Coverage end date'
+    label: 'Record coverage end date'
     id: scope
     hint: (optional)
   fieldArrangement:

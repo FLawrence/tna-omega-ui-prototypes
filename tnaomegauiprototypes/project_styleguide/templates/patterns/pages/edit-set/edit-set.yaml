@@ -2,18 +2,16 @@ context:
   page:
     title: 'FCO15(7168-7190)'
     introduction: false
-    back_link: ../dashboard/contributor-dashboard.html
+    back_link: dashboard.html
     back_title: Dashboard
     records: 16
     comments: 1
     release_date: 24/02/22
     project:
       title: Project name
-      link: ../project/project.html
-  move:
-    link: ../edit-set/edit-set--move.html
+      link: project.html
   add:
-    link: ../record/add.html
+    link: add-record.html
   pagination: True
   filterSearch:
     label: 'Search edit set'
@@ -31,197 +29,182 @@ context:
     id: record-set
     options:
       - { label: 'Record set', id: record-set }
+      - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
+      - { label: 'South East Asia', id: record-set-3 }
+      - { label: 'Regional Cooperation', id: record-set-4 }
+      - { label: 'Myanmar', id: record-set-5 }
+      - { label: 'Cambodia', id: record-set-6 }
   record_sets:
     - item:
       title: FCO
       records: 25
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: 'record-set.html'
     - item:
       title: South East Asia
       records: 16
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: 'record-set.html'
     - item:
       title: Regional Cooperation
       records: 4
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: 'record-set.html'
     - item:
       title: Myanmar
       records: 5
       modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: 'record-set.html'
     - item:
       title: Cambodia
       records: 6
       modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Singapore
-      records: 2
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Malyasia
-      records: 3
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Indonesia
-      records: 2
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
-    - item:
-      title: Portuguese Timor East Timor
-      records: 3
-      modifier: btn-primary
-      link: '../record-set/record-set.html'
+      link: 'record-set.html'
   records:
     - item:
       title: FCO 15/17/7165
-      link: '../record/record.html'
+      link: 'record.html'
       description: South East Asia, meetings of the European Community Asia Working Group
-      last_edit: 
-      access: 
+      last_edit: '-'
+      access: '-'
       date: 1997 Jan 1
       record_sets:
         - item:
           title: Regional Cooperation
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7166
-      link: '../record/record.html'
+      link: 'record.html'
       description: South East Asia and the European Community
       last_edit: Regional Co-operation
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7167
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7168
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7169
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7170
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/18/7171
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/18/7172
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/18/7173
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/18/7174
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/18/7175
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: Cambodia
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/19/7177
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
-      access: 2 sensitive records
+      access: 2 restricted
       date: 1943 Oct 1
       record_sets:
         - item:
           title: '?'
           modifier: bg-secondary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
   history:
     - item:
       change: Date
@@ -235,6 +218,11 @@ context:
       change: Title and description
       date: 2020 December 4th - 4:21pm
       author: Nick Lee
+    - item:
+      change: Edit set added via file
+      date: 2020 December 1st - 5:32pm
+      author: Nick Lee
+      action: Download file
   comments:
     - item:
       comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
