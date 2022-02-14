@@ -1,7 +1,7 @@
 context:
   page:
     title: 'Edit sets'
-    introduction: "Last visit you were editing <a href='../edit-set/edit-set.html'>FCO16(102-205)</a>, you’ve had 10 edit sets assigned to you. View all <a href='#'>linked edit sets</a>"
+    introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had 10 edit sets assigned to you. View all <a href='#'>linked edit sets</a>"
   filterSearch:
     label: 'Search edit sets'
     id: search
@@ -59,7 +59,7 @@ context:
   edit_sets:
     - item:
       title: FCO16(102-205)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: Recent edit
         modifier: bg-secondary
@@ -67,7 +67,7 @@ context:
       stage: Editorial
       project:
         title: Census 1921
-        link: '../project/project.html'
+        link: 'project.html'
       records: 16
       last_edit: Yesterday
       access: 2 restricted
@@ -84,7 +84,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: AD Websites series 2
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: Overdue
         modifier: bg-danger
@@ -107,7 +107,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(7168-7190)
-      link: '../edit-set/edit-set--a.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -130,7 +130,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(6165-6287)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -153,7 +153,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(6288-6327)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -178,7 +178,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(6328-6427)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -196,7 +196,7 @@ context:
           tooltip: True
     - item:
       title: FCO16(102-205)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -204,7 +204,7 @@ context:
       stage: Editorial
       project:
         title: Census 1921
-        link: '../project/project.html'
+        link: 'project.html'
       records: 16
       last_edit: '-'
       access: 2 restricted
@@ -221,7 +221,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: AD Websites series 2
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge:
         title: New
         modifier: bg-secondary
@@ -239,7 +239,7 @@ context:
           tooltip: True
     - item:
       title: FCO15(7168-7190)
-      link: '../edit-set/edit-set--a.html'
+      link: 'edit-set.html'
       badge: false
       release_date: 24/02/22
       stage: Editorial
@@ -260,7 +260,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(7165-7287)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge: false
       release_date: 24/02/22
       stage: Editorial
@@ -281,7 +281,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(7288-7350)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge: false
       release_date: 24/02/22
       stage: Editorial
@@ -300,7 +300,7 @@ context:
           image: /static/images/avatar_2.jpg
     - item:
       title: FCO15(7351-7402)
-      link: '../edit-set/edit-set.html'
+      link: 'edit-set.html'
       badge: false
       release_date: false
       stage: Contribution

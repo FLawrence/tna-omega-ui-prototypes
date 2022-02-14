@@ -2,17 +2,17 @@ context:
   page:
     title: 'FCO15(7168-7190)'
     introduction: false
-    back_link: ../edit-set/edit-set--a.html
+    back_link: edit-set.html
     back_title: Edit set
-    reset_url: ../edit-set/edit-set--a.html
+    reset_url: edit-set.html
     records: 25
     comments: 2
     release_date: false
     project:
       title: Project name
-      link: ../project/project.html
+      link: project.html
   add:
-    link: ../record/add.html
+    link: add-record.html
   pagination: False
   filterSearch:
     label: 'Search edit set'
@@ -40,7 +40,7 @@ context:
   records:
     - item:
       title: FCO 15/17/7165
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: 1 hour ago
       access: Open
@@ -49,10 +49,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7166
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Closed
@@ -61,10 +61,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7167
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Open
@@ -73,10 +73,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7168
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Open
@@ -85,10 +85,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7169
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Open
@@ -97,10 +97,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7170
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Open
@@ -109,10 +109,10 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'
     - item:
       title: FCO 15/17/7171
-      link: '../record/record.html'
+      link: 'record.html'
       description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
       last_edit: Yesterday
       access: Open
@@ -121,4 +121,4 @@ context:
         - item:
           title: Myanmar
           modifier: bg-primary
-          link: '../record-set/record-set.html'
+          link: 'record-set.html'

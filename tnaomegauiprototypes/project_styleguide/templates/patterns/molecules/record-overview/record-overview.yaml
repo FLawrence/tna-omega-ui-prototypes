@@ -1,7 +1,7 @@
 context:
   item:
     title: FCO 15/17/7165
-    link: '../record/record.html'
+    link: 'record.html'
     description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
     last_edit: Yesterday
     access: 2 restricted
@@ -9,4 +9,4 @@ context:
     record_sets:
       - item:
         title: Myanmar
-        link: '../record-set/record-set.html'
+        link: 'record-set.html'

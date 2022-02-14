@@ -2,7 +2,7 @@ context:
   page:
     title: false
     introduction: False
-    nextURL: ../dashboard/contributor-dashboard.html
+    nextURL: dashboard.html
   questionOne:
     label: 'Username'
     id: username
