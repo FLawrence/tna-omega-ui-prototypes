@@ -765,6 +765,7 @@ PATTERN_LIBRARY = {
         ("atoms", ["patterns/atoms"]),
         ("molecules", ["patterns/molecules"]),
         ("pages", ["patterns/pages"]),
+        ("flows", ["patterns/flows"]),
     ),
     "TEMPLATE_SUFFIX": ".html",
     "PATTERN_BASE_TEMPLATE_NAME": "patterns/base.html",
