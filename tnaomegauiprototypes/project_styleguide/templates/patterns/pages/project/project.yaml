@@ -2,8 +2,8 @@ context:
   page:
     title: 'Census 2021'
     introduction: 'Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.'
-    back_link: dashboard.html
-    back_title: Dashboard
+    back_link: project-listing.html
+    back_title: All projects
   filterSearch:
     label: 'Search edit sets'
     id: search

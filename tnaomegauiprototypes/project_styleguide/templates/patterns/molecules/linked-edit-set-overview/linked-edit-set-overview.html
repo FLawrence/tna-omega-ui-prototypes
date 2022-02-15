@@ -1,0 +1,52 @@
+<tr class="edit-set-overview text-muted">
+    <td>
+        <div class="project-item__chart" id="{{ item.id }}" style="height: 90px; width: 90px"></div>
+    </td>
+    <td>
+        <div class="edit-set-overview__title d-flex align-items-center mb-2">
+            <h3 class="edit-set-overview__heading mb-0 me-1 h5">
+                {% if item.link %}<a class="edit-set-overview__link" href="{{ item.link }}">{% endif %}
+                    {{ item.title }}
+                {% if item.link %}</a>{% endif %}
+            </h3>
+            {% if item.badge %}{% include "patterns/atoms/badge/badge.html" with field=item.badge %}{% endif %}
+        </div>
+        {% if item.release_date or item.type %}
+            <div class="edit-set-overview__meta fs-6">
+                {% if item.type %}
+                    <div class="meta-item text-muted">{{ item.type }}</div>
+                {% endif %}
+                {% if item.release_date %}
+                    <div class="meta-item text-muted">Release on {{ item.release_date }}</div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </td>
+    <td>{{ item.edit_sets }}</td>
+    <td>{{ item.records }}</td>
+    <td>{{ item.last_edit }}</td>
+    <td><div class="d-flex align-items-center">{% for item in item.contributors %}<div class="me-2">{% include "patterns/atoms/avatar/avatar.html" with user=item %}</div>{% endfor %}</div></td>
+    <td>{% if item.comments %}<a href="#" data-bs-toggle="modal" data-bs-target="#commentModal">{{ item.comments }}</a>{% else %}0{% endif %}</td>
+    <td>
+        <ul class="d-flex align-items-center justify-content-end">
+            <li>
+                <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
+                    <span class="material-icons me-1" role="presentation">history</span>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="material-icons">more_vert</span>
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#addcommentModal">Add comment</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#addContributorModal">Add contributor</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#addEditProjectModal">Edit linked edit set</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#abandonModal">Abandon</a></li>
+                 </ul>
+            </li>
+        </ul>
+    </td>
+</tr>
+
+

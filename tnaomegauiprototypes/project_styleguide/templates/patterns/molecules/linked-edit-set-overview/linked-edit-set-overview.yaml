@@ -1,0 +1,27 @@
+context:
+  item:
+    title: FCO15(7165-7287)
+    link: 'edit-set.html'
+    badge:
+      title: Recent edit
+      link: '#'
+      modifier: bg-secondary
+    release_date: 24/02/22
+    project:
+      title: Census 1921
+      link: '#'
+    records: 132
+    last_edit: Yesterday
+    access: 2 restricted
+    comments: 2
+    contributors:
+      - user:
+        full_name: Nick Lee
+        modifier: avatar--small
+        tooltip: True
+        image: /static/images/avatar_1.jpg
+      - user:
+        full_name: Jay Spanton
+        modifier: avatar--small
+        image: /static/images/avatar_2.jpg
+        tooltip: True

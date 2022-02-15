@@ -5,7 +5,7 @@ context:
     introduction: false
     back_link: edit-set.html
     back_title: FCO159(7165-7287)
-    save_link: ../edit-set/edit-set--record-save.html
+    save_link: edit-set--record-save.html
     save_text: Add record
     record_sets: false
     context: '<p>WO Records created or inherited by the War Office, Armed Forces, Judge Advocate General and related bodies</p><p>Division within WA Welsh Assembly: Websites, and Websites of Associated Agencies and Bodies</p>'

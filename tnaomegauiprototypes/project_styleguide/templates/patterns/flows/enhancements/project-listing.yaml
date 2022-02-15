@@ -1,0 +1,210 @@
+context:
+  page:
+    title: 'Linked edit sets'
+    introduction: false
+    back_link: dashboard.html
+    back_title: Dashboard
+  filterSearch:
+    label: 'Search linked edit sets'
+    id: search
+    placeholder: Search linked edit sets
+  selectOne:
+    label: 'Assignee (me)'
+    id: assignee
+    options:
+      - { label: 'All users', id: assignee }
+      - { label: 'User 2', id: assignee-2 }
+      - { label: 'User 3', id: assignee-3 }
+      - { label: 'User 4', id: assignee-4 }
+      - { label: 'User 5', id: assignee-5 }
+  selectTwo: False
+  selectThree: False
+  filter_summary: 8 ongoing linked edit sets
+  projects:
+    - item:
+      id: chart-1
+      title: Census1921
+      link: 'project.html'
+      type: Uplift
+      badge:
+        title: Overdue
+        modifier: bg-danger
+      release_date: 15/02/22
+      edit_sets: 10
+      records: 12,890
+      last_edit: Yesterday
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+    - item:
+      id: chart-2
+      title: Exhibitions in London
+      link: 'project.html'
+      badge: false
+      type: Project
+      release_date: 25/02/22
+      edit_sets: 3
+      records: 13
+      last_edit: Yesterday
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+        - user:
+          full_name: Sue Smith
+          modifier: avatar--small
+          image: /static/images/avatar_3.jpg
+          tooltip: True
+    - item:
+      id: chart-3
+      title: 'London Museum: Letters & Books'
+      link: 'project.html'
+      badge: false
+      type: Project
+      release_date: 25/02/22
+      edit_sets: 7
+      records: 132
+      last_edit: Yesterday
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+    - item:
+      id: chart-4
+      title: British Army medal index cards
+      link: 'project.html'
+      badge: false
+      type: Project
+      release_date: 25/02/22
+      edit_sets: 10
+      records: 2,132
+      last_edit: Yesterday
+      comments: 5
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+    - item:
+      id: chart-5
+      title: Famous Wills
+      link: 'project.html'
+      badge: false
+      type: Project
+      release_date: 25/02/22
+      edit_sets: 23
+      records: 1,320
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+        - user:
+          full_name: Sue Smith
+          modifier: avatar--small
+          image: /static/images/avatar_3.jpg
+          tooltip: True
+    - item:
+      id: chart-6
+      title: Alien entry books
+      link: 'project.html'
+      badge: false
+      type: Project
+      edit_sets: 10
+      release_date: 25/02/22
+      records: 132
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Sue Smith
+          modifier: avatar--small
+          image: /static/images/avatar_3.jpg
+          tooltip: True
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+    - item:
+      id: chart-7
+      title: Government datasets
+      link: 'project.html'
+      badge: false
+      release_date: 25/02/22
+      type: Project
+      edit_sets: 10
+      records: 132
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: False
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg
+        - user:
+          full_name: Jay Spanton
+          modifier: avatar--small
+          image: /static/images/avatar_2.jpg
+          tooltip: True
+        - user:
+          full_name: Sue Smith
+          modifier: avatar--small
+          image: /static/images/avatar_3.jpg
+          tooltip: True
+    - item:
+      id: chart-8
+      title: Irish maps
+      link: 'project.html'
+      type: Project
+      badge: false
+      edit_sets: 10
+      release_date: 25/02/22
+      records: 132
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+          image: /static/images/avatar_1.jpg

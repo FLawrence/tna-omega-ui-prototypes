@@ -3,8 +3,8 @@ context:
   page:
     title: 'Census 1921'
     introduction: 'Aenean lacinia bibendum nulla sed consectetur. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.'
-    back_link: dashboard.html
-    back_title: Dashboard
+    back_link: project-listing.html
+    back_title: All projects
   ongoing_projects:
     - item:
       id: chart-1
