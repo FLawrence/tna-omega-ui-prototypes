@@ -86,7 +86,7 @@ context:
       link: 'record-set.html'
   records:
     - item:
-      title: FCO 15/17/7168
+      title: FCO 15/17/7168/1
       link: 'record--a8.html'
       description: Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, January 1992.
       last_edit: '-'
@@ -98,7 +98,7 @@ context:
           modifier: bg-primary
           link: 'record-set.html'
     - item:
-      title: FCO 15/17/7168/1
+      title: FCO 15/17/7168/2
       link: 'record.html'
       description: South East Asia visit minutes
       last_edit: '-'
@@ -147,7 +147,7 @@ context:
           link: 'record-set.html'
     - item:
       title: FCO 15/17/7172
-      link: 'record.html'
+      link: 'record--a4.html'
       description: Internal political situation in Burma (Myanmar)
       last_edit: '-'
       access: Restrictions
@@ -159,7 +159,7 @@ context:
           link: 'record-set.html'
     - item:
       title: FCO 15/18/7173
-      link: 'record.html'
+      link: 'record--a4.html'
       description: Internal political situation in Burma (Myanmar)
       last_edit: '-'
       access: Restrictions
@@ -178,8 +178,8 @@ context:
       date:
       record_sets:
         - item:
-          title: Myanmar
-          modifier: bg-primary
+          title: '-'
+          modifier: bg-secondary
           link: 'record-set.html'
     - item:
       title: FCO 15/18/7175
@@ -226,8 +226,8 @@ context:
       date: 1999 Dec 31
       record_sets:
         - item:
-          title: '?'
-          modifier: bg-secondary
+          title: Cambodia
+          modifier: bg-primary
           link: 'record-set.html'
     - item:
       title: FCO 15/19/7179
@@ -238,8 +238,8 @@ context:
       date: 1999 Dec 31
       record_sets:
         - item:
-          title: '?'
-          modifier: bg-secondary
+          title: Cambodia
+          modifier: bg-primary
           link: 'record-set.html'
     - item:
       title: FCO 15/19/7180
@@ -315,7 +315,7 @@ context:
           link: 'record-set.html'
     - item:
       title: FCO 15/19/7186
-      link: 'record--a4.html'
+      link: 'record--a12.html'
       description: Relations between Indonesia '&' Japan. Missing at transfer
       last_edit: '-'
       access: '-'

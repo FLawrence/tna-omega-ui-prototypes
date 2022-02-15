@@ -1,7 +1,7 @@
 context:
   page:
-    pac: res.7gh.15.fc.66.d
-    title: 'FCO 15/17/7170'
+    pac: res.7gh.15.fc.67.d
+    title: 'FCO 15/17/7186'
     introduction: false
     back_link: edit-set.html
     back_title: FCO15(7168-7190)
@@ -19,7 +19,7 @@ context:
         modifier: btn-primary
         link: false
       - item:
-        title: Myanmar
+        title: Regional Cooperation
         records: false
         modifier: btn-primary
         link: false
@@ -51,7 +51,7 @@ context:
     id: form-ref-dept
     hint: (optional)
     modifier: w-25
-    value: FA 027/6 PART B
+    value: FAG 020/8
   fieldTwo:
     label: 'Former Reference - PRO'
     id: form-ref-pro
@@ -70,11 +70,11 @@ context:
   fieldFour:
     label: 'Start date'
     id: start-date
-    value: 1998 Dec 31
+    value: 1998 Jan 1
   fieldFive:
     label: 'End date'
     id: end-date
-    value: 1998 Dec 31
+    value: 1999 Dec 31
   fieldSix:
     label: Legal status
     id: legal-status
@@ -182,7 +182,7 @@ context:
   fieldScope:
     label: 'Scope and content'
     id: scope
-    value: 'Leading personalities in Burma (Myanmar)'
+    value: 'Relations between Indonesia & Japan. Missing at transfer'
   fieldCoverageStart:
     label: 'Record coverage start date'
     id: scope
