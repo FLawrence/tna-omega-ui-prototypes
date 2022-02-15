@@ -1,7 +1,7 @@
 context:
   page:
     title: 'Edit sets'
-    introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had <a href='edit-set.html'>AD Websites series 2</a> assigned to you. View all <a href='project_listing.html'>linked edit sets</a>"
+    introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had <a href='edit-set.html'>AD Websites series 2</a> assigned to you. View all <a href='project-listing.html'>linked edit sets</a>"
   filterSearch:
     label: 'Search edit sets'
     id: search
