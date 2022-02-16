@@ -23,14 +23,12 @@
             <span class="text-decoration-underline">{% if page.release_date %} Release on {{ page.release_date }}{% else %} Add a release/target date{% endif %}</span>
         </a>
     </div>
-    {% if page.project %}
-        <div class="me-4">
-            <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">
-                <span class="material-icons me-1" role="presentation">folder_special</span>
-                <span class="text-decoration-underline">Part of {{ page.project.title }}</span>
-            </a>
-        </div>
-    {% endif %}
+    <div class="me-4">
+        <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">
+            <span class="material-icons me-1" role="presentation">folder_special</span>
+            <span class="text-decoration-underline">{% if page.project %}Part of {{ page.project.title }}{% else %}Add to a project{% endif %}</span>
+        </a>
+    </div>
     <div class="me-4">
         <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
             <span class="material-icons me-1" role="presentation">delete</span>

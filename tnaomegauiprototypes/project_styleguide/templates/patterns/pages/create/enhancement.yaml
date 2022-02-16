@@ -11,7 +11,11 @@ context:
     options:
       - { label: 'Browse records', id: data-source }
       - { label: 'From a file', id: data-source-2, checked: true }
-      - { label: 'None (empty edit set)', id: data-source-2 }
+      - {
+          label: 'None (empty edit set)',
+          value: 'edit-set-empty.html',
+          id: data-source-2,
+        }
   action:
     label: Continue
     modifier: btn-primary
