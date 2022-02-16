@@ -1,6 +1,6 @@
 context:
   toast:
-    message: NAME HERE added to your dashboard
+    message: Enhancement 1 added to your dashboard
   edit_sets:
     - item:
       title: FCO16(102-205)
@@ -51,7 +51,7 @@ context:
           tooltip: True
           image: /static/images/avatar_2.jpg
     - item:
-      title: NAME HERE
+      title: Enhancement 1
       link: 'edit-set-empty.html'
       badge:
         title: New

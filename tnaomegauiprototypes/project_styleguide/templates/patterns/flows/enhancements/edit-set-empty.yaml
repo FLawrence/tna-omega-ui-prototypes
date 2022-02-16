@@ -1,6 +1,6 @@
 context:
   page:
-    title: 'NAME HERE'
+    title: 'Enhancement 1'
     introduction: false
     back_link: dashboard--new-empty-editset.html
     back_title: Dashboard
