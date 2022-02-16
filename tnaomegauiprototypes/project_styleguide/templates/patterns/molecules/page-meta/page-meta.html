@@ -17,14 +17,12 @@
             <span class="text-decoration-underline">History</span>
         </a>
     </div>
-    {% if page.release_date %}
-        <div class="me-4">
-            <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
-                <span class="material-icons me-1" role="presentation">timelapse</span>
-                <span class="text-decoration-underline">Release on {{ page.release_date }}</span>
-            </a>
-        </div>
-    {% endif %}
+    <div class="me-4">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
+            <span class="material-icons me-1" role="presentation">timelapse</span>
+            <span class="text-decoration-underline">{% if page.release_date %} Release on {{ page.release_date }}{% else %} Add a release/target date{% endif %}</span>
+        </a>
+    </div>
     {% if page.project %}
         <div class="me-4">
             <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">

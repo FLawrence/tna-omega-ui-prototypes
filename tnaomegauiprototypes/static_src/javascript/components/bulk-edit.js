@@ -6,9 +6,12 @@ class BulkEdit {
     constructor(node) {
         this.node = node;
         this.checkboxes = document.querySelectorAll('[data-bulk-update]');
-        this.bulkMenu = document.querySelectorAll('[data-bulk-menu]');
-        this.hiddenClass = 'd-none';
+        this.selectMenu = document.querySelectorAll('[data-bulk-action]');
+        this.selectOptions = document
+            .querySelector('[data-bulk-action]')
+            .querySelector('option');
         this.bindEvents(node);
+        this.defaultSelectText = 'Bulk update';
     }
 
     atLeastOneCheckboxIsChecked() {
@@ -25,14 +28,28 @@ class BulkEdit {
     }
 
     displayBulkEdit() {
-        this.bulkMenu.forEach((el) => {
-            el.classList.remove(this.hiddenClass);
+        this.selectMenu.forEach((el) => {
+            el.disabled = false;
+            this.addCount();
         });
     }
 
     hideBulkEdit() {
-        this.bulkMenu.forEach((el) => {
-            el.classList.add(this.hiddenClass);
+        this.selectMenu.forEach((el) => {
+            el.disabled = true;
+            this.removeCount();
+        });
+    }
+
+    addCount() {
+        this.selectMenu.forEach((el) => {
+            el.querySelector('option').text = 'Bulk update (5)';
+        });
+    }
+
+    removeCount() {
+        this.selectMenu.forEach((el) => {
+            el.querySelector('option').text = this.defaultSelectText;
         });
     }
 
