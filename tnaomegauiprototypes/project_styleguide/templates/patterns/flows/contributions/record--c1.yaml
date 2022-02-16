@@ -1,28 +1,43 @@
 context:
   page:
     pac: res.7gh.15.fc.66.d
-    title: 'FCO 15/17/7168'
+    title: 'HCA32/111/F/1'
     introduction: false
-    back_link: edit-set.html
-    back_title: FCO15(7168-7190)
+    back_link: edit-set--c.html
+    back_title: HCA32/111/F/1
     save_link: edit-set--record-save.html
     save_text: Save changes
     record_sets:
       - item:
-        title: FCO
+        title: Admiralty courts
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: South East Asia
+        title: Records of the Instance and Prize Courts
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: Regional Cooperation
+        title: Prize Papers
         records: false
         modifier: btn-primary
         link: false
+      - item:
+        title: War of the Austrian Succession, 1739-1748
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: Ships captured as prizes, with names beginning F
+        records: false
+        modifier: btn-primary
+        link: false
+      - item:
+        title: Le Fort de Nantes
+        records: false
+        modifier: btn-primary
+        link: false        
     context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
   history:
     - item:
@@ -51,7 +66,7 @@ context:
     id: form-ref-dept
     hint: (optional)
     modifier: w-25
-    value: FA 026/1
+    value: HCA 026/1
   fieldTwo:
     label: 'Former Reference - PRO'
     id: form-ref-pro
@@ -70,11 +85,11 @@ context:
   fieldFour:
     label: 'Start date'
     id: start-date
-    value: 1997 Jan 1
+    value: 1695
   fieldFive:
     label: 'End date'
     id: end-date
-    value: 1999 Dec 31
+    value: 1695
   fieldSix:
     label: Legal status
     id: legal-status
@@ -182,7 +197,7 @@ context:
   fieldScope:
     label: 'Scope and content'
     id: scope
-    value: 'Visit by Lord Caithnesss, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, Jan 1992'
+    value: 'Captured ship - Le Fort de Nantes or El Fuerte (master Jean le Depancier). History - a French merchant ship with a French letter of marque and a Spanish register (700 tons, 32 guns, 120 men plus 60 passengers), bound from Vera Cruz via Havana to Cadiz, laden with 320,000 Spanish dollars, vanilla, cochineal, indigo, cocoa, logwood, sugar, tobacco, snuff, hides, jollop and sundry other goods; taken in fight on 25 December 1746 - 5 January 1747 in Latitude 35, Longitude 350 [3 W] from Tenerife (30 or 40 leagues from Madeira), by HMS Gloucester (Charles Saunders commanding) and HMS Lark (David Cheap commanding), and brought into Plymouth. The ship was owned by Antoine Wailsh of Nantes, and freighted by the Marques de Casa Madrid for a fee of 20,000 dollars. A great number of papers were thrown overboard before the capture, but what such papers related to [Depancier] cannot set forth, they throwing overboard in their hurry the first that came to hand.The ship sailed from Cadiz 16-27 February 1746, arriving at Vera Cruz 26 May - 6 June in company with the Princessa and several smaller vessels and convoyed by two men-of-war and two frigates, one of which was carrying the Governor of Havana to take over as viceroy of Mexico. On the return voyage, she sailed from Vera Cruz on or after 29 August (although there is one packet of letters dated Mexico, 9 September) to Havana, arriving 19-30 September, in company with El Dragon and three other ships, leaving there 7-18 November. The former viceroy of Mexico was a passenger in one of the escorting men-of-war.The papers are mostly in Spanish, with some French, Italian, Latin and English. Subjectively, the impression is that there is a relatively high proportion of letters to women, and from women, and some between women. There are also several references to Spanish people of Irish extraction (Pedro Murphy, etc). Decision- condemned as prize, 16 February 1747.'
   fieldCoverageStart:
     label: 'Record coverage start date'
     id: scope
