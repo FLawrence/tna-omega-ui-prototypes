@@ -1,0 +1,106 @@
+context:
+  page:
+    title: 'HCA 32 Spanish Succession extra F ships'
+    introduction: false
+    back_link: dashboard.html
+    back_title: Dashboard
+    records: 2
+    comments: 2
+    release_date: false
+    project:
+      title: Project name
+      link: project.html
+  add:
+    link: add-record.html
+  pagination: False
+  filterSearch:
+    label: 'Search edit set'
+    placeholder: Search edit set
+    id: search
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Access', id: access }
+      - { label: 'Open', id: access-2 }
+      - { label: 'Closed', id: access-3 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'Record set', id: record-set }
+      - { label: 'Admiralty courts', id: record-set-2 }
+      - { label: 'Records of the Instance and Prize Courts', id: record-set-3 }
+      - { label: 'Prize Papers', id: record-set-4 }
+      - { label: 'War of the Austrian Succession, 1739-1748', id: record-set-5 }
+      - { label: 'Ships captured as prizes, with names beginning F', id: record-set-6 }
+      - { label: 'Le Fort de Nantes', id: record-set-7 }
+  record_sets:
+    - item:
+      title: Admiralty courts
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Records of the Instance and Prize Courts
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Prize Papers
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: War of the Austrian Succession, 1739-1748
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Ships captured as prizes, with names beginning F
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Le Fort de Nantes
+      records: 2
+      modifier: btn-primary
+      link: 'record-set.html'
+  records:
+    - item:
+      title: HCA32/111/F/1
+      link: 'record--c1.html'
+      description: Ships papers
+      last_edit: '-'
+      access: '-'
+      date: 1695
+      record_sets:
+        - item:
+          title: Le Fort de Nantes
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: HCA32/111/F/2
+      link: 'record--c2.html'
+      description: Court papers.
+      last_edit: '-'
+      access: '-'
+      date: 1748
+      record_sets:
+        - item:
+          title: Le Fort de Nantes
+          modifier: bg-primary
+          link: 'record-set.html'
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee
