@@ -1,5 +1,5 @@
 context:
-  toast:
+  alert:
     message: Record duplicated
 
   records:

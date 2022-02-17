@@ -1,5 +1,5 @@
 context:
-  toast:
+  alert:
     message: Record saved
   page:
     title: 'FCO15(7168-7190)'

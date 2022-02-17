@@ -1,4 +1,6 @@
 context:
+  alert:
+    message: test
   page:
     title: 'Linked edit sets'
     introduction: false

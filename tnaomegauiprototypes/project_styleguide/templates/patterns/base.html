@@ -34,8 +34,15 @@
 
         {% block header %}{% endblock %}
 
+        {% if alert %}
+            <div class="container">
+                {% include "patterns/molecules/alert/alert.html" with item=alert %}
+            </div>
+        {% endif %}
+
         <main class="app__content px-3 py-2" id="main-content">
             <div class="container">
+
                 {% block content %}
                     {{ pattern_library_rendered_pattern }}
                 {% endblock %}
