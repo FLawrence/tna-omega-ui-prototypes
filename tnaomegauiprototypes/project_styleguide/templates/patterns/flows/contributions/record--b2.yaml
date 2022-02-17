@@ -46,7 +46,7 @@ context:
     id: form-ref-dept
     hint: (optional)
     modifier: w-25
-    value: 
+    value:
   fieldTwo:
     label: 'Former Reference - PRO'
     id: form-ref-pro
@@ -72,7 +72,7 @@ context:
       - { label: 'Northern Ireland Office' }
       - { label: 'Office for National Statistics' }
       - { label: 'Ministry of Defence' }
-      - { label: 'Prime Ministers Office' }      
+      - { label: 'Prime Ministers Office' }
       - { label: 'Supreme Court of the United Kingdom' }
       - { label: 'Treasury' }
       - { label: 'War Office' }
@@ -233,7 +233,9 @@ context:
     modifier: w-50
     hint: (optional)
     options:
-      - { label: 'Air Ministry, Department of the Air Member for Personnel, 1922-1964' }
+      - {
+          label: 'Air Ministry, Department of the Air Member for Personnel, 1922-1964',
+        }
       - { label: 'Board of Trade, Companies Registration Office, 1844-1970' }
       - { label: 'Cabinet Office, 1916-' }
       - { label: 'Chancery, 1066-1875' }
@@ -253,10 +255,12 @@ context:
       - { label: 'Prime Ministers Office, 1916-' }
       - { label: 'Supreme Court of the United Kingdom, 2009-' }
       - { label: 'Treasury, 1667-' }
-      - { label: 'Treasury, Overseas Finance Sector, International Monetary Division, 1975-1980' }
+      - {
+          label: 'Treasury, Overseas Finance Sector, International Monetary Division, 1975-1980',
+        }
       - { label: 'War Office, 1857-1964' }
       - { label: 'Welsh Assembly Government, 2006-2011' }
-      - { label: 'Welsh Government, 2011-  ' }    
+      - { label: 'Welsh Government, 2011-  ' }
   fieldIndexTermsTwo:
     label: 'Personal names'
     id: personal-names
