@@ -10,7 +10,7 @@
     </th>
     <td style="max-width: 35%; min-width: 35%">{{ item.description }}</td>
     <td>{{ item.last_edit }}</td>
-    <td>{{ item.access }}</td>
+    <td>{% if item.access == "Restrictions" %}<span class="material-icons" role="presentation" aria-label="Restrictions" title="Restrictions">lock</span>{% else %}-{% endif %}</td>
     <td>{{ item.date }}</td>
     <td>
         {% for item in item.record_sets %}

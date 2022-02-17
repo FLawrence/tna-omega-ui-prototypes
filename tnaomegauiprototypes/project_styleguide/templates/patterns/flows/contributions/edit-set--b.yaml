@@ -4,7 +4,7 @@ context:
     introduction: false
     back_link: dashboard.html
     back_title: Dashboard
-    records: 25
+    records: 2
     comments: 2
     release_date: false
     project:
@@ -32,20 +32,30 @@ context:
       - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
       - { label: 'South East Asia', id: record-set-3 }
       - { label: 'Regional Cooperation', id: record-set-4 }
+      - {
+          label: 'Inquiry into the Culture, Practices and Ethics of the Press',
+          id: record-set-5,
+        }
+      - { label: ' Transcripts and Evidence', id: record-set-6 }
   record_sets:
     - item:
       title: Foreign & Commonwealth Office
-      records: 25
+      records: 1
       modifier: btn-primary
       link: 'record-set.html'
     - item:
       title: South East Asia
-      records: 25
+      records: 1
       modifier: btn-primary
       link: 'record-set.html'
     - item:
-      title: Portuguese Timor East Timor
-      records: 3
+      title: Inquiry into the Culture, Practices and Ethics of the Press
+      records: 1
+      modifier: btn-primary
+      link: 'record-set.html'
+    - item:
+      title: Transcripts and Evidence
+      records: 1
       modifier: btn-primary
       link: 'record-set.html'
   records:
@@ -71,7 +81,7 @@ context:
       record_sets:
         - item:
           title: Inquiry into the Culture, Practices and Ethics of the Press
-          modifier: bg-secondary
+          modifier: bg-primary
           link: 'record-set.html'
   comments:
     - item:
