@@ -10,7 +10,7 @@ context:
     label: 'Assignee (me)'
     id: assignee
     options:
-      - { label: 'Assignee (me)', id: assignee }
+      - { label: 'Assignee: me', id: assignee }
       - { label: 'User 2', id: assignee-2 }
       - { label: 'User 3', id: assignee-3 }
       - { label: 'User 4', id: assignee-4 }
