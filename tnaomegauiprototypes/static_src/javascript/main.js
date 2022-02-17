@@ -3,6 +3,7 @@ import '@babel/polyfill';
 import BulkSelectAll from './components/bulk-select-all';
 import BulkEdit from './components/bulk-edit';
 import BulkAction from './components/bulk-action';
+import StagesRedirect from './components/stages-redirect';
 
 import './components/autocomplete';
 
@@ -23,5 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (const bulkaction of document.querySelectorAll(BulkAction.selector())) {
         new BulkAction(bulkaction);
+    }
+
+    for (const stagesredirect of document.querySelectorAll(
+        StagesRedirect.selector(),
+    )) {
+        new StagesRedirect(stagesredirect);
     }
 });

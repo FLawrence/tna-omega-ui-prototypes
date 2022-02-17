@@ -29,9 +29,10 @@ context:
     label: '-'
     id: Stage
     options:
-      - { label: 'All stages', id: stage }
-      - { label: 'Editorial', id: stage-2 }
-      - { label: 'Contribution', id: stage-3 }
+      - { label: 'All stages', id: '#' }
+      - { label: 'Editorial', id: '#' }
+      - { label: 'Contribution', id: '#' }
+      - { label: 'Pending release', id: dashboard--pending-release.html }
       - { label: 'Release', id: stage-4 }
   selectThree: False
   filter_summary: 15 edit sets

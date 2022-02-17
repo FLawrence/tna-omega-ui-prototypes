@@ -24,8 +24,8 @@ context:
     label: 'Assignee (me)'
     id: assignee
     options:
-      - { label: 'Assignee (me)', id: assignee }
-      - { label: 'User 2', id: assignee-2 }
+      - { label: 'All Assignees', id: assignee }
+      - { label: 'Nick Lee (me)', id: assignee-2 }
       - { label: 'User 3', id: assignee-3 }
       - { label: 'User 4', id: assignee-4 }
       - { label: 'User 5', id: assignee-5 }
@@ -40,11 +40,12 @@ context:
     label: 'Stage'
     id: stage
     options:
-      - { label: 'All stages', id: '#' }
+      - { label: 'Stage: Pending release', id: '#' }
       - { label: 'Editorial', id: '#' }
       - { label: 'Contribution', id: '#' }
       - { label: 'Pending release', id: dashboard--pending-release.html }
-  filter_summary: <b>12</b> edit sets with you as <b>the manager</b> at <b>all stages</b>
+      - { label: 'All stages', id: dashboard.html }
+  filter_summary: <b>6</b> edit sets <b>pending release</b>
   history:
     - item:
       change: Date
@@ -78,8 +79,8 @@ context:
       badge:
         title: Recent edit
         modifier: bg-secondary
-      release_date: 24/02/22
-      stage: Editorial
+      release_date: 21/02/22
+      stage: Pending release
       project:
         title: Census 1921
         link: 'project.html'
@@ -100,11 +101,8 @@ context:
     - item:
       title: AD Websites series 2
       link: 'edit-set.html'
-      badge:
-        title: Overdue
-        modifier: bg-danger
-      release_date: false
-      stage: Editorial
+      release_date: 21/02/22
+      stage: Pending release
       project: false
       records: 13
       last_edit: 07/02/22
@@ -123,14 +121,11 @@ context:
     - item:
       title: FCO15(7168-7190)
       link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: false
-      stage: Editorial
+      release_date: 21/02/22
+      stage: Pending release
       project: false
       records: 25
-      last_edit: '-'
+      last_edit: 06/01/22
       access: 2 restricted
       comments: 2
       contributors:
@@ -146,14 +141,11 @@ context:
     - item:
       title: FCO15(6165-6287)
       link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: false
-      stage: Contribution
+      release_date: 22/02/22
+      stage: Pending release
       project: false
       records: 180
-      last_edit: '-'
+      last_edit: 05/11/21
       access: '-'
       comments: 5
       contributors:
@@ -169,16 +161,13 @@ context:
     - item:
       title: FCO15(6288-6327)
       link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: 24/02/22
-      stage: Editorial
+      release_date: 24/04/22
+      stage: Pending release
       project:
         title: Project name
         link: '#'
       records: 132
-      last_edit: '-'
+      last_edit: 26/10/21
       access: 2 restricted
       comments: False
       contributors:
@@ -194,14 +183,11 @@ context:
     - item:
       title: FCO15(6328-6427)
       link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: false
-      stage: Contribution
+      release_date: 12/07/22
+      stage: Pending release
       project: false
       records: 132
-      last_edit: '-'
+      last_edit: 01/07/21
       access: '-'
       comments: 2
       contributors:
@@ -209,124 +195,3 @@ context:
           full_name: Nick Lee
           modifier: avatar--small
           tooltip: True
-    - item:
-      title: FCO16(102-205)
-      link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: 24/02/22
-      stage: Editorial
-      project:
-        title: Census 1921
-        link: 'project.html'
-      records: 16
-      last_edit: '-'
-      access: 2 restricted
-      comments: 2
-      contributors:
-        - user:
-          full_name: Nick Lee
-          modifier: avatar--small
-          tooltip: True
-        - user:
-          full_name: Jay Spanton
-          modifier: avatar--small
-          tooltip: True
-          image: /static/images/avatar_2.jpg
-    - item:
-      title: AD Websites series 2
-      link: 'edit-set.html'
-      badge:
-        title: New
-        modifier: bg-secondary
-      release_date: false
-      stage: Editorial
-      project: false
-      records: 13
-      last_edit: '-'
-      access: 1 restricted
-      comments: False
-      contributors:
-        - user:
-          full_name: Nick Lee
-          modifier: avatar--small
-          tooltip: True
-    - item:
-      title: FCO15(7168-7190)
-      link: 'edit-set.html'
-      badge: false
-      release_date: 24/02/22
-      stage: Editorial
-      project: false
-      records: 13
-      last_edit: '-'
-      access: 2 restricted
-      comments: 2
-      contributors:
-        - user:
-          full_name: Nick Lee
-          modifier: avatar--small
-          tooltip: True
-        - user:
-          full_name: Jay Spanton
-          modifier: avatar--small
-          tooltip: True
-          image: /static/images/avatar_2.jpg
-    - item:
-      title: FCO15(7165-7287)
-      link: 'edit-set.html'
-      badge: false
-      release_date: 24/02/22
-      stage: Editorial
-      project: false
-      records: 132
-      last_edit: '-'
-      access: '-'
-      comments: 5
-      contributors:
-        - user:
-          full_name: Nick Lee
-          modifier: avatar--small
-          tooltip: True
-        - user:
-          full_name: Jay Spanton
-          modifier: avatar--small
-          tooltip: True
-          image: /static/images/avatar_2.jpg
-    - item:
-      title: FCO15(7288-7350)
-      link: 'edit-set.html'
-      badge: false
-      release_date: 24/02/22
-      stage: Editorial
-      project:
-        title: Project name
-        link: '#'
-      records: 62
-      last_edit: '-'
-      access: 2 restricted
-      comments: False
-      contributors:
-        - user:
-          full_name: Jay Spanton
-          modifier: avatar--small
-          tooltip: True
-          image: /static/images/avatar_2.jpg
-    - item:
-      title: FCO15(7351-7402)
-      link: 'edit-set.html'
-      badge: false
-      release_date: false
-      stage: Contribution
-      project: false
-      records: 259
-      last_edit: '-'
-      access: '-'
-      comments: 2
-      contributors:
-        - user:
-          full_name: Jay Spanton
-          modifier: avatar--small
-          tooltip: True
-          image: /static/images/avatar_2.jpg
