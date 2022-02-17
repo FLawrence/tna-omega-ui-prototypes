@@ -20,7 +20,7 @@ context:
     label: 'Assignee (me)'
     id: assignee
     options:
-      - { label: 'All users', id: assignee }
+      - { label: 'Users: All', id: assignee }
       - { label: 'User 2', id: assignee-2 }
       - { label: 'User 3', id: assignee-3 }
       - { label: 'User 4', id: assignee-4 }
@@ -29,7 +29,7 @@ context:
     label: '-'
     id: Stage
     options:
-      - { label: 'All stages', id: '#' }
+      - { label: 'Stage: All', id: '#' }
       - { label: 'Editorial', id: '#' }
       - { label: 'Contribution', id: '#' }
       - { label: 'Pending release', id: dashboard--pending-release.html }

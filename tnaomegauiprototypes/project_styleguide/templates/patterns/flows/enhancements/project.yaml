@@ -29,7 +29,7 @@ context:
     label: '-'
     id: Stage
     options:
-      - { label: 'All stages', id: '#' }
+      - { label: 'Stages: All', id: '#' }
       - { label: 'Editorial', id: '#' }
       - { label: 'Contribution', id: '#' }
       - { label: 'Pending release', id: dashboard--pending-release.html }

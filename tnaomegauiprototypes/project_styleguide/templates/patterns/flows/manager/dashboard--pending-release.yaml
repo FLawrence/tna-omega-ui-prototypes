@@ -24,7 +24,7 @@ context:
     label: 'Assignee (me)'
     id: assignee
     options:
-      - { label: 'All Assignees', id: assignee }
+      - { label: 'Assignees: All', id: assignee }
       - { label: 'Nick Lee (me)', id: assignee-2 }
       - { label: 'User 3', id: assignee-3 }
       - { label: 'User 4', id: assignee-4 }
@@ -44,7 +44,7 @@ context:
       - { label: 'Editorial', id: '#' }
       - { label: 'Contribution', id: '#' }
       - { label: 'Pending release', id: dashboard--pending-release.html }
-      - { label: 'All stages', id: dashboard.html }
+      - { label: 'Stages: All', id: dashboard.html }
   filter_summary: <b>6</b> edit sets <b>pending release</b>
   history:
     - item:
