@@ -34,12 +34,6 @@
         </div>
     {% endif %}
     <div class="me-4">
-        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
-            <span class="material-icons me-1" role="presentation">delete</span>
-            <span class="text-decoration-underline">Abandon</span>
-        </a>
-    </div>
-    <div class="me-4">
         <div class="dropdown">
             <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="material-icons">more_vert</span>
@@ -48,6 +42,7 @@
                 <li><a class="dropdown-item" href="#">Change edit set name</a></li>
                 {% if not page.release_date %}<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#timeModal">Add a release/target date</a></li>{% endif %}
                 {% if not page.project %}<li><a class="dropdown-item" href="#">Add to a project</a></li>{% endif %}
+                <li><a href="#" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#abandonModal">Abandon</a></li>
              </ul>
         </div>
     </div>
