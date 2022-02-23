@@ -4,4 +4,4 @@ context:
     introduction: false
     back_link: dashboard.html
     back_title: Dashboard
-    next_page: create-edit-set.html
+    next_page: file-upload-success.html

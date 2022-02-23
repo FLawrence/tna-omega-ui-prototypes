@@ -1,0 +1,7 @@
+context:
+  page:
+    title: File uploaded successfully
+    introduction: Imported 42 records
+    back_link: accession.html
+    back_title: Create from accession
+    next_page: create-edit-set.html

@@ -1,0 +1,7 @@
+context:
+  page:
+    title: File uploaded successfully
+    introduction: Imported 42 records
+    back_link: dashboard.html
+    back_title: Dashboard
+    next_page: create-edit-set.html
