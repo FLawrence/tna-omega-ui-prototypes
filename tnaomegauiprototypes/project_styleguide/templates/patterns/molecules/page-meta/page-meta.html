@@ -17,23 +17,39 @@
             <span class="text-decoration-underline">History</span>
         </a>
     </div>
-    <div class="me-4">
-        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
-            <span class="material-icons me-1" role="presentation">timelapse</span>
-            <span class="text-decoration-underline">{% if page.release_date %} Release on {{ page.release_date }}{% else %} Add a release/target date{% endif %}</span>
-        </a>
-    </div>
-    <div class="me-4">
-        <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">
-            <span class="material-icons me-1" role="presentation">folder_special</span>
-            <span class="text-decoration-underline">{% if page.project %}Part of {{ page.project.title }}{% else %}Add to a project{% endif %}</span>
-        </a>
-    </div>
+    {% if page.release_date %}
+        <div class="me-4">
+            <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#timeModal">
+                <span class="material-icons me-1" role="presentation">timelapse</span>
+                <span class="text-decoration-underline"> Release on {{ page.release_date }}</span>
+            </a>
+        </div>
+    {% endif %}
+    {% if page.project %}
+        <div class="me-4">
+            <a href="{{ page.project.link }}" class="d-flex align-items-center me-2 text-decoration-none">
+                <span class="material-icons me-1" role="presentation">folder_special</span>
+                <span class="text-decoration-underline">Part of {{ page.project.title }}</span>
+            </a>
+        </div>
+    {% endif %}
     <div class="me-4">
         <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
             <span class="material-icons me-1" role="presentation">delete</span>
             <span class="text-decoration-underline">Abandon</span>
         </a>
+    </div>
+    <div class="me-4">
+        <div class="dropdown">
+            <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="material-icons">more_vert</span>
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">Change edit set name</a></li>
+                {% if not page.release_date %}<li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#timeModal">Add a release/target date</a></li>{% endif %}
+                {% if not page.project %}<li><a class="dropdown-item" href="#">Add to a project</a></li>{% endif %}
+             </ul>
+        </div>
     </div>
 </div>
 
