@@ -8,12 +8,11 @@ context:
     options:
       - { label: 'Bulk update', id: '' }
       - { label: '---', id: '' }
-      - { label: 'Duplicate record', id: 'edit-set--duplicate.html' }
-      - { label: 'Change access', id: 'edit-set--access.html' }
       - { label: 'Search & replace', id: 'edit-set--search-replace.html' }
-      - { label: 'Add/edit record sets', id: 'edit-record-set.html' }
+      - { label: 'Change closure', id: 'edit-set--access.html' }
+      - { label: 'Edit record sets', id: 'edit-record-set.html' }
       - { label: 'Split and move to new edit set', id: '' }
-      - { label: 'Move records to next stage', id: '' }
-      - { label: 'Export records', id: '' }
-      - { label: 'Abandon records', id: 'edit-set--abandon-confirm.html' }
-      - { label: 'Create project', id: '' }
+      - { label: 'Move record(s) to next stage', id: '' }
+      - { label: 'Duplicate record(s)', id: 'edit-set--duplicate.html' }
+      - { label: 'Export record(s)', id: '' }
+      - { label: 'Abandon record(s)', id: 'edit-set--abandon-confirm.html' }
