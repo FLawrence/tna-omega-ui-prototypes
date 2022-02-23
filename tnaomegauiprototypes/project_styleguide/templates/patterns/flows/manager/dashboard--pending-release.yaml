@@ -3,6 +3,7 @@ context:
   page:
     title: 'Projects & edit sets'
     introduction: "Last visit you were editing <a href='edit-set.html'>FCO16(102-205)</a>, you’ve had 10 edit sets assigned to you. View all <a href='project-listing.html'>linked edit sets</a>"
+    reset_url: dashboard.html
   ongoing_projects:
     - item:
       id: chart-1
