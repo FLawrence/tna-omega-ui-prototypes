@@ -9,7 +9,7 @@ context:
       - { label: 'Bulk update', id: '' }
       - { label: '---', id: '' }
       - { label: 'Search & replace', id: 'edit-set--search-replace.html' }
-      - { label: 'Change closure', id: 'edit-set--access.html' }
+      - { label: 'Update closure', id: 'edit-set--access.html' }
       - { label: 'Edit record sets', id: 'edit-record-set.html' }
       - { label: 'Split and move to new edit set', id: '' }
       - { label: 'Move record(s) to next stage', id: '' }
