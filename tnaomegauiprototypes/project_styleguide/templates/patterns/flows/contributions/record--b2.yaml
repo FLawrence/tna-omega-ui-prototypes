@@ -6,7 +6,7 @@ context:
     back_link: edit-set--b.html
     back_title: Mispelled names in inquiries
     save_link: edit-set--record-save.html
-    save_text: Save changes
+    save_text: Save & return to edit set
     record_sets:
       - item:
         title: Inquiry into the Culture, Practices and Ethics of the Press

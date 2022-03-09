@@ -43,6 +43,7 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldSeven %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldNine %}
+                            {% include "patterns/atoms/text-input/text-input.html" with field=mapFieldTwo %}
                             {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldTen %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
                             <div class="row">
@@ -69,7 +70,6 @@
                                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#maps">
                                         <div class="accordion-body">
                                             {% include "patterns/atoms/text-input/text-input.html" with field=mapFieldOne %}
-                                            {% include "patterns/atoms/text-input/text-input.html" with field=mapFieldTwo %}
                                             {% include "patterns/atoms/datalist/datalist.html" with field=mapFieldThree %}
                                         </div>
                                     </div>
@@ -125,12 +125,17 @@
 
                         {% include "patterns/molecules/record-meta/record-meta.html" %}
 
-                        <a class="btn btn-outline-primary" href="{{ page.save_link }}">{{ page.save_text }}</a>
+                        <button class="btn btn-primary mb-2" id="save">Save</button>
+                        <a class="d-block" href="{{ page.save_link }}">{{ page.save_text }}</a>
                     </div>
                 </div>
             </div>
 
         </div>
+
+        {% if toast %}
+            {% include "patterns/molecules/toast/toast.html" with item=toast %}
+        {% endif %}
 
         {% if history %}
             {% include "patterns/organisms/modal/history-modal.html" %}
@@ -158,6 +163,16 @@
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#record-index'
         });
+
+        var toastTrigger = document.getElementById('save')
+        var toastLiveExample = document.getElementById('toast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
 
         tinymce.init({
             selector: '#scope',

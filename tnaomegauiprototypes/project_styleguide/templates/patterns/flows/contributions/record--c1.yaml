@@ -6,7 +6,7 @@ context:
     back_link: edit-set--c.html
     back_title: HCA32/111/F/1
     save_link: edit-set--record-save.html
-    save_text: Save changes
+    save_text: Save & return to edit set
     record_sets:
       - item:
         title: Admiralty courts
