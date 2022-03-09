@@ -1,0 +1,40 @@
+<div class="{% if field.small_margin %}mb-4{% else %}mb-5{% endif %}">
+    <fieldset class="govuk-fieldset" aria-describedby="{{ id }}-hint">
+        <legend class="govuk-fieldset__legend">
+            <h2 class="{% if field.heading %}{{ field.heading }}{% else %}h3{% endif %}">{{ field.label }}</h2>
+        </legend>
+        {% if field.hint %}
+        <span id="{{ id }}-hint" class="fs-6">
+            {{ field.hint }}
+        </span>
+        {% endif %}
+        <div class="{% if field.modifier %}{{ field.modifier }}{% endif %}">
+            {% for option in field.options %}
+            <div class="form-check" data-conditional-field>
+                <input class="form-check-input me-1" id="{{ option.id }}" name="{{ field.id }}" type="radio" value="{% if field.value %}{{ field.value }}{% else %}yes{% endif %}"
+                    {% if option.checked %}checked{% endif %}>
+                <label class="form-check-label" for="{{ option.id }}">
+                    {{ option.label }}
+                </label>
+                {% if option.children %}
+                    <div class="conditional-field d-none mt-1 mb-2">
+                        {% for option in option.children %}
+                            {% if option.type == "checkbox" %}
+                                <div class="form-check">
+                                    <input class="form-check-input me-1" id="{{ option.id }}" name="{{ option.groupid }}" type="radio" value="{% if field.value %}{{ field.value }}{% else %}yes{% endif %}"
+                                        {% if option.checked %}checked{% endif %}>
+                                    <label class="form-check-label" for="{{ option.groupid }}">
+                                        {{ option.label }}
+                                    </label>
+                                </div>
+                            {% else %}
+                                {% include "patterns/atoms/text-input/text-input.html" with field=option %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </fieldset>
+</div>

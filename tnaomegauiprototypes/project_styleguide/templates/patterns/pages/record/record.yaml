@@ -142,6 +142,52 @@ context:
       - { label: '1:200' }
       - { label: '1:6000' }
       - { label: '1:1' }
+  accessDescription:
+    label: 'Description'
+    small_margin: True
+    id: access-description
+    heading: h4
+    options:
+      - { label: 'Open description', id: access-description, checked: true }
+      - { label: 'Closed description', id: access-description-2 }
+  accessRecord:
+    label: 'Record'
+    id: access-record
+    heading: h4
+    options:
+      - item:
+        label: Open record
+        id: access-record
+        checked: true
+      - item:
+        label: Retained record
+        id: access-record-2
+        children:
+          - {
+              label: 'Temporary retention ',
+              id: access-record-retained,
+              groupid: access-record-retained,
+              checked: true,
+              type: checkbox,
+            }
+          - {
+              label: 'Retained under section 3.4',
+              id: access-record-retained-2,
+              groupid: access-record-retained,
+              checked: true,
+              type: checkbox,
+            }
+      - item:
+        label: Closed record
+        id: access-record-3
+        children:
+          - {
+              type: input,
+              label: 'Enter the closure period in years',
+              id: access-record-closed,
+              modifier: w-25,
+              hint: 'Based on record end date, opening date will be 31 12 2102',
+            }
   accessOne:
     label: 'Access conditions'
     id: access-1

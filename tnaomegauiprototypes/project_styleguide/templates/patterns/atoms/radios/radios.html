@@ -1,7 +1,7 @@
-<div class="mb-5">
+<div class="{% if field.small_margin %}mb-4{% else %}mb-5{% endif %}">
     <fieldset class="govuk-fieldset" aria-describedby="{{ id }}-hint">
         <legend class="govuk-fieldset__legend">
-            <h2 class="h3">{{ field.label }}</h2>
+            <h2 class="{% if field.heading %}{{ field.heading }}{% else %}h3{% endif %}">{{ field.label }}</h2>
         </legend>
         {% if field.hint %}
         <span id="{{ id }}-hint" class="fs-6">

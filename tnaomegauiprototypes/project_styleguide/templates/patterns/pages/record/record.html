@@ -79,7 +79,9 @@
 
                         <div id="access" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
                             <h2 class="mb-5">Access</h2>
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessOne %}
+                            {% include "patterns/atoms/radios/radios.html" with field=accessDescription %}
+                            {% include "patterns/atoms/radios/radios-conditional.html" with field=accessRecord %}
+                            <!-- {% include "patterns/atoms/text-input/text-input.html" with field=accessOne %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessTwo %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThree %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFour %}
@@ -89,7 +91,7 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessEight %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessNine %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThirteen %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %}
+                            {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %} -->
                         </div>
 
                         {% if page.context %}
