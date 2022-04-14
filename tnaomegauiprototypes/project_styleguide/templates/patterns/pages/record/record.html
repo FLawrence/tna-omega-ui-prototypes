@@ -94,10 +94,27 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %} -->
                         </div>
 
-                        {% if page.context %}
-                            <div id="context" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                                <h2 class="mb-5">Context</h2>
-                                {{ page.context }}
+                        {% if page.realisations %}
+                            <div id="realisations" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                                <h2 class="mb-5">Realisation(s)</h2>
+                                <div>
+                                    {% for item in page.realisations %}
+                                        <div class="mb-lg-4">
+                                            <h3 class="mb-4"><a href="">{{ item.title }}</a></h3>
+                                            <p class="mb-4">{{ item.description }}</p>
+                                            <h4 class="mb-4">Digital files:</h4>
+                                            <div class="d-flex align-items-center flex-wrap">
+                                                {% for file in item.files %}
+                                                    <div class="file-card mb-4 border me-2 p-3">
+                                                        <h5 class="mb-1"><a href="">{{ file.title }}</a></h5>
+                                                        {% if file.filesize or file.format %}<p class="mb-0">{% if file.filesize %}{{ file.filesize }} - {% endif %}{% if file.format %}{{ file.format }}{% endif %}</p>{% endif %}
+                                                        <p class="mb-0">{{ file.date_added }}</p>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                </div>
                             </div>
                         {% endif %}
 
@@ -120,7 +137,7 @@
                         <div id="record-index" class="list-group mb-4">
                             <a class="list-group-item list-group-item-action" href="#content">Content</a>
                             <a class="list-group-item list-group-item-action" href="#access">Access</a>
-                            {% if page.context %}<a class="list-group-item list-group-item-action" href="#context">Context</a>{% endif %}
+                            {% if page.realisations %}<a class="list-group-item list-group-item-action" href="#realisations">Realisation(s)</a>{% endif %}
                             <a class="list-group-item list-group-item-action" href="#history">Admin History</a>
                             <a class="list-group-item list-group-item-action" href="#terms">Index terms</a>
                         </div>
