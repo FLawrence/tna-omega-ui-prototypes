@@ -81,6 +81,12 @@ context:
     label: 'End date'
     id: end-date
     value: 1999 Dec 31
+  fieldCoveringdates:
+    label: 'Covering dates'
+    id: covering-date
+    hint: (optional)
+    value:
+    modifier: w-50
   fieldSix:
     label: Legal status
     id: legal-status
@@ -89,6 +95,10 @@ context:
     options:
       - { label: 'Public record' }
       - { label: 'Welsh public record' }
+  fieldHistory:
+    label: Custodial history
+    id: custodial-history
+    value:
   fieldSeven:
     label: 'Physical description, extent'
     id: physical-decription-extent
