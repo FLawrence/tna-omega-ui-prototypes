@@ -4,7 +4,7 @@ context:
     title: 'WO 95/24/1'
     introduction: false
     back_link: edit-set.html
-    back_title: WO 95/24
+    back_title: An array of different record types
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:

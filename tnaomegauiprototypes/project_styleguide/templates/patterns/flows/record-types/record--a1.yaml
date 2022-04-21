@@ -4,7 +4,7 @@ context:
     title: 'FCO 15/17/7169'
     introduction: false
     back_link: edit-set.html
-    back_title: FCO15(7168-7190)
+    back_title: An array of different record types
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:

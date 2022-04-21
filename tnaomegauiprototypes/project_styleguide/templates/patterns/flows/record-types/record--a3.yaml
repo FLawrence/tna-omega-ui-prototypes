@@ -4,7 +4,7 @@ context:
     title: 'Worthing.doc'
     introduction: false
     back_link: edit-set.html
-    back_title: ILB 2/CSL/Z
+    back_title: An array of different record types
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:
