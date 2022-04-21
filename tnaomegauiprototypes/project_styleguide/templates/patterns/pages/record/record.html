@@ -62,25 +62,59 @@
 
                         {% if page.realisations %}
                             <div id="realisations" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                                <h2 class="mb-5">Realisation{% if page.realisations|length > "1" %}(s){% endif %}</h2>
-                                <div>
+                                <h2 class="mb-5">Realisation{% if page.realisations|length > 1 %}(s){% endif %}</h2>
+
+                                <div class="accordion accordion-flush mb-5" id="accordionExample">
                                     {% for item in page.realisations %}
-                                        <div class="mb-lg-4 border-start ps-4" style="border-width: 4px !important;">
-                                            <h3 class="mb-4"><a href="" data-bs-toggle="modal" data-bs-target="#realisationModal">{{ item.title }}</a></h3>
-                                            <p class="mb-4 fs-5">{{ item.description }}</p>
-                                            <!-- <ul class="mb-4 d-flex align-items-center">
-                                                <li class="me-3">Added {{ item.added }}</li>
-                                                {% if item.versions %}<li>{{ item.versions }} versions</li>{% endif %}
-                                            </ul> -->
-                                            {% if item.files %}<h4 class="mb-4 h5">Digital files:</h4>{% endif %}
-                                            <div class="d-flex align-items-center flex-wrap">
-                                                {% for file in item.files %}
-                                                    <div class="file-card mb-4 border me-2 p-3 bg-light rounded" style="width: 30%;">
-                                                        <h5 class="mb-1 h6 text-decoration-underline"><a data-bs-toggle="modal" data-bs-target="#realisationFileModal">{{ file.title }}</a></h5>
-                                                        {% if file.filesize or file.format %}<p class="mb-0">{% if file.filesize %}{{ file.filesize }} - {% endif %}{% if file.format %}{{ file.format }}{% endif %}</p>{% endif %}
-                                                        <p class="mb-0">{{ file.date_added }}</p>
+                                        <div class="accordion-item">
+                                            <div class="accordion-header" id="heading-{{ forloop.counter }}">
+                                                <button class="accordion-button border-start ps-4 {% if page.realisations|length > 1 %}collapsed{% endif %}" style="border-width: 4px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ forloop.counter }}" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div>
+                                                        <h3 class="mb-4">{{ item.title }}</h3>
+                                                        <p class="mb-4 me-5">{{ item.description }}</p>
+                                                        {% if item.files %}<h4 class="mb-4 h5">{{ item.files|length }} digital file{% if item.files|length > 1 %}s{% endif %}</h4>{% endif %}
                                                     </div>
-                                                {% endfor %}
+                                                </button>
+                                            </div>
+                                            <div id="collapse-{{ forloop.counter }}" class="accordion-collapse {% if page.realisations|length > 1 %}collapse{% endif %}" aria-labelledby="heading-{{ forloop.counter }}" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body pt-4">
+                                                    <div class="bg-light p-4 mb-4 sticky-top">
+                                                        {% include "patterns/molecules/realisation-meta/realisation-meta.html" %}
+                                                    </div>
+
+                                                    <div class="realistion-files me-4 ps-4">
+                                                        {% if item.files %}<h4 class="mb-4 h5">Digital files ({{ item.files|length }}):</h4>{% endif %}
+                                                        <div class="d-flex align-items-center flex-wrap">
+                                                            {% for file in item.files %}
+                                                                <div class="file-card mb-4 border me-2 p-3 bg-light rounded" style="width: 30%;">
+                                                                    <h5 class="mb-1 h6 text-decoration-underline"><a data-bs-toggle="modal" data-bs-target="#realisationFileModal">{{ file.title }}</a></h5>
+                                                                    {% if file.filesize or file.format %}<p class="mb-0">{% if file.filesize %}{{ file.filesize }} - {% endif %}{% if file.format %}{{ file.format }}{% endif %}</p>{% endif %}
+                                                                    <p class="mb-0">{{ file.date_added }}</p>
+                                                                </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="realisation-form-fields ps-4">
+                                                        {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldScope %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationmapFieldOne %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationmapFieldTwo %}
+                                                        {% include "patterns/atoms/datalist/datalist.html" with field=realisationmapFieldThree %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldSeven %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldEight %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldNine %}
+                                                        {% include "patterns/atoms/autocomplete/autocomplete.html" with field=realisationfieldTen %}
+                                                        {% include "patterns/atoms/autocomplete/autocomplete.html" with field=realisationfieldThree %}
+                                                        {% include "patterns/atoms/datalist/datalist.html" with field=realisationfieldEleven %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessEight %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessNine %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessThirteen %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessFourteen %}
+                                                        {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldArrangement %}
+                                                        {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldPublicationnote %}
+                                                        {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldSeparatedmaterial %}
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     {% endfor %}
@@ -123,7 +157,7 @@
                     <div class="sticky-top" style="top: 30px;">
                         <div id="record-index" class="list-group mb-4">
                             <a class="list-group-item list-group-item-action" href="#content">Content</a>
-                            {% if page.realisations %}<a class="list-group-item list-group-item-action" href="#realisations">Realisation(s)</a>{% endif %}
+                            {% if page.realisations %}<a class="list-group-item list-group-item-action" href="#realisations">Realisation{% if page.realisations|length > 1 %}(s){% endif %}</a>{% endif %}
                             <a class="list-group-item list-group-item-action" href="#access">Access</a>
                             <a class="list-group-item list-group-item-action" href="#history">Admin History</a>
                             <a class="list-group-item list-group-item-action" href="#terms">Index terms</a>

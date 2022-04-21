@@ -314,3 +314,93 @@ context:
       - { label: 'Subject name two' }
       - { label: 'Subject name three' }
       - { label: 'Subject name four' }
+  realisationfieldScope:
+    label: 'Scope and content'
+    id: realistionscope
+    value: 'This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  realisationmapFieldOne:
+    label: 'Map designation'
+    id: map-designation
+    hint: (optional)
+  realisationmapFieldTwo:
+    label: 'Dimensions'
+    id: map-dimensions
+    hint: (optional)
+  realisationmapFieldThree:
+    label: 'Map scale number'
+    id: map-designation
+    modifier: w-50
+    hint: (optional)
+    options:
+      - { label: '1:1200' }
+      - { label: '1:200' }
+      - { label: '1:6000' }
+      - { label: '1:1' }
+  realisationfieldSeven:
+    label: 'Physical description, extent'
+    id: physical-decription-extent
+  realisationfieldEight:
+    label: 'Physical description, form'
+    id: physical-decription-form
+  realisationfieldNine:
+    label: 'Physical condition'
+    id: physical-condition
+    hint: (optional)
+  realisationfieldTen:
+    label: Language
+    id: language
+    hint: (optional)
+    modifier: w-50
+    options:
+      - { label: 'English (en)', selected: True }
+      - { label: 'Welsh (cym)' }
+      - { label: 'French (fr)' }
+      - { label: 'Spanish (es)' }
+  realisationfieldThree:
+    label: Creator name(s)
+    id: creator
+    modifier: w-50
+    value: National Assembly for Wales, 1999-
+    options:
+      - { label: 'Creator one' }
+      - { label: 'Creator two' }
+      - { label: 'Creator three' }
+      - { label: 'National Assembly for Wales, 1999-', selected: True }
+  realisationfieldEleven:
+    label: Held by
+    id: held-by
+    modifier: w-50
+    value: The National Archives, Kew
+    options:
+      - { label: 'The National Archives, Kew' }
+      - { label: 'Torchbox, Bristol' }
+      - { label: 'Torchbox, Charlbury' }
+      - { label: 'Torchbox, Devon' }
+      - { label: 'Torchbox, Cornwall' }
+  realisationaccessEight:
+    label: 'Immediate source of acquisition'
+    id: access-8
+  realisationaccessNine:
+    label: 'Custodial history'
+    id: access-9
+    hint: (optional)
+  realisationaccessThirteen:
+    label: 'Location of originals'
+    hint: (optional)
+    id: access-13
+  realisationaccessFourteen:
+    label: 'Copies information'
+    hint: (optional)
+    id: access-14
+  realisationfieldArrangement:
+    label: 'Arrangement'
+    id: arrangement
+    hint: (optional)
+  realisationfieldPublicationnote:
+    label: 'Publication note'
+    id: publication-note
+    hint: (optional)
+  realisationfieldSeparatedmaterial:
+    label: 'Separated material'
+    id: separated-material
+    hint: (optional)
