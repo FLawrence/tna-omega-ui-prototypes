@@ -1,0 +1,8 @@
+context:
+  page:
+    records: 16
+    comments: 1
+    release_date: 24/02/22
+    project:
+      title: Project name
+      link: project.html

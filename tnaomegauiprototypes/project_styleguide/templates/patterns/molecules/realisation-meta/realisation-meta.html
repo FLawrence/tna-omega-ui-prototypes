@@ -1,0 +1,27 @@
+<div class="meta d-none d-lg-flex align-items-center mb-4">
+    <div class="user me-4">
+        Added {{ page.date }}
+    </div>
+    <div class="user me-4">
+        {{ page.realisations.files|length }} files
+    </div>
+    <div class="me-4">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">
+            <span class="material-icons me-1" role="presentation">history</span>
+            <span class="text-decoration-underline">History</span>
+        </a>
+    </div>
+</div>
+
+<button class="btn btn-primary d-sm-block d-lg-none mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Realisation options
+</button>
+
+<div class="collapse" id="collapseExample">
+    <div class="me-4">
+        <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#abandonModal">
+            <span class="material-icons me-1" role="presentation">delete</span>
+            <span class="text-decoration-underline">Abandon</span>
+        </a>
+    </div>
+</div>

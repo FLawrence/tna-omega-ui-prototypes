@@ -1,0 +1,66 @@
+<div class="modal fade" id="realisationModal" tabindex="-1" aria-labelledby="History" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h1 class="modal-title h3">Res.7GH.19.wa.66.d.r1</h1>
+                    {% include "patterns/molecules/realisation-meta/realisation-meta.html" %}
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldScope %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationmapFieldOne %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationmapFieldTwo %}
+                {% include "patterns/atoms/datalist/datalist.html" with field=realisationmapFieldThree %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldSeven %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldEight %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldNine %}
+                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=realisationfieldTen %}
+                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=realisationfieldThree %}
+                {% include "patterns/atoms/datalist/datalist.html" with field=realisationfieldEleven %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessEight %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessNine %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessThirteen %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationaccessFourteen %}
+                {% include "patterns/atoms/text-input/text-input.html" with field=realisationfieldArrangement %}
+                {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldPublicationnote %}
+                {% include "patterns/atoms/textarea/textarea.html" with field=realisationfieldSeparatedmaterial %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#record-index'
+        });
+
+        var toastTrigger = document.getElementById('save')
+        var toastLiveExample = document.getElementById('toast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+
+        tinymce.init({
+            selector: '#realistionscope',
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table paste code help wordcount autoresize'
+            ],
+            toolbar: 'undo redo | formatselect | ' +
+            'bold italic backcolor | alignleft aligncenter ' +
+            'alignright alignjustify | bullist numlist outdent indent | ' +
+            'removeformat | help',
+        });
+    </script>
+</div>

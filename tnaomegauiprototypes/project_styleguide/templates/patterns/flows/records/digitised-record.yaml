@@ -1,6 +1,6 @@
 context:
   page:
-    pac: res.7gh.15.fc.66.d
+    pac: res.7gh.15.wo.66.d
     title: 'WO 95/24/1'
     introduction: false
     back_link: edit-set.html
@@ -41,8 +41,11 @@ context:
     context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
     realisations:
       - item:
-        title: WO 95/24/1 Reducated realisation
+        title: res.7gh.15.wo.66.d.r1
+        added: 4/01/22
+        versions: 1
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        languages: en
         files:
           - {
               title: '24_1_0001_redacted.jp2',
@@ -69,7 +72,9 @@ context:
               date_added: '4/01/22',
             }
       - item:
-        title: WO 95/24/1 realisation
+        title: res.7gh.15.wo.66.d.r2
+        added: 4/01/22
+        versions: 2
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         files:
           - {

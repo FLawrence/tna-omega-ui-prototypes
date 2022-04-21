@@ -6,14 +6,14 @@
             <span class="text-decoration-underline">{% if comments %}Comments ({{ page.comments }}){% else %}Add comment{% endif %}</span>
         </a>
     </div>
-    {% if page.access %}
+    <!-- {% if page.access %}
     <div class="mb-2">
         <a href="#access" class="d-flex align-items-center me-2 text-decoration-none">
             <span class="material-icons me-1" role="presentation">key</span>
             <span class="text-decoration-underline">{{ page.access }}</span>
         </a>
     </div>
-    {% endif %}
+    {% endif %} -->
     {% if history %}
         <div class="mb-2">
             <a href="#" class="d-flex align-items-center me-2 text-decoration-none" data-bs-toggle="modal" data-bs-target="#historyModal">

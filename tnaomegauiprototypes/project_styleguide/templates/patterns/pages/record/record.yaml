@@ -99,16 +99,6 @@ context:
     label: Custodial history
     id: custodial-history
     value:
-  fieldSeven:
-    label: 'Physical description, extent'
-    id: physical-decription-extent
-  fieldEight:
-    label: 'Physical description, form'
-    id: physical-decription-form
-  fieldNine:
-    label: 'Physical condition'
-    id: physical-condition
-    hint: (optional)
   fieldTen:
     label: Language
     id: language
@@ -134,24 +124,6 @@ context:
     label: 'Note'
     id: note
     hint: (optional)
-  mapFieldOne:
-    label: 'Map designation'
-    id: map-designation
-    hint: (optional)
-  mapFieldTwo:
-    label: 'Dimensions'
-    id: map-dimensions
-    hint: (optional)
-  mapFieldThree:
-    label: 'Map scale number'
-    id: map-designation
-    modifier: w-50
-    hint: (optional)
-    options:
-      - { label: '1:1200' }
-      - { label: '1:200' }
-      - { label: '1:6000' }
-      - { label: '1:1' }
   accessDescription:
     label: 'Description'
     small_margin: True
@@ -209,6 +181,7 @@ context:
     label: 'Closure code'
     id: access-3
     modifier: w-25
+    value: 30
   accessFour:
     label: 'Record opening date'
     id: access-4
