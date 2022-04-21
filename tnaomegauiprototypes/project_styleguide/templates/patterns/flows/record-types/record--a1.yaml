@@ -1,106 +1,29 @@
 context:
   page:
-    pac: res.7gh.15.wo.66.d
-    title: 'WO 95/24/1'
+    pac: res.7gh.15.fc.66.d
+    title: 'FCO 15/17/7169'
     introduction: false
     back_link: edit-set.html
-    back_title: WO 95/24
+    back_title: FCO15(7168-7190)
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:
       - item:
-        title: War Office
+        title: FCO
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: Records created…related bodies
+        title: South East Asia
         records: false
         modifier: btn-primary
         link: false
       - item:
-        title: Records of…and corps
+        title: Regional Cooperation
         records: false
         modifier: btn-primary
         link: false
-      - item:
-        title: War Office…War Diaries
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: 'PART I: … AND GERMANY'
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: GENERAL HEADQUARTERS
-        records: false
-        modifier: btn-primary
-        link: false
-    context: '<p>South East Asia visit minutes</p>'
-    realisations:
-      - item:
-        title: res.7gh.15.wo.66.d.r1
-        added: 4/01/22
-        versions: 1
-        description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        languages: en
-        files:
-          - {
-              title: '24_1_0001_redacted.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0002_redacted.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0003_redacted.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0004_redacted.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-      - item:
-        title: res.7gh.15.wo.66.d.r2
-        added: 4/01/22
-        versions: 2
-        description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        files:
-          - {
-              title: '24_1_0001.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0002.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0003.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
-          - {
-              title: '24_1_0004.jp2',
-              format: 'JP2',
-              filesize: '156kb',
-              date_added: '4/01/22',
-            }
+    context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
   history:
     - item:
       change: Date
@@ -276,7 +199,7 @@ context:
   fieldScope:
     label: 'Scope and content'
     id: scope
-    value: 'South East Asia visit minutes'
+    value: 'Visit by Lord Caithnesss, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991'
   fieldCoverageStart:
     label: 'Record coverage start date'
     id: scope

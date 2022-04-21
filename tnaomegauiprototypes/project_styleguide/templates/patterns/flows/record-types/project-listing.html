@@ -1,0 +1,473 @@
+{% extends "patterns/base_page.html" %}
+
+{% block content %}
+    <div>
+
+        {% include "patterns/molecules/page-heading/page-heading.html" %}
+
+        <div class="bg-white border mb-5 rounded-1 overflow-hidden">
+            {% include "patterns/molecules/page-filters/page-filters.html" with selectTwo=selectTwo selectThree=selectThree %}
+            {% if filter_summary %}
+            <div class="d-flex align-items-center mb-3 pt-3 pb-3 ps-4 pe-4 border-bottom">
+                <h2 class="filter-summary h5 m-0">{{ filter_summary }}</h2>
+            </div>
+            {% endif %}
+
+            <div class="mb-5">
+                <table class="table table-hover table--edge-to-edge table--space table--sticky-header">
+                    <thead>
+                        <tr>
+                            <th scope="col">Overview</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Edit sets</th>
+                            <th scope="col">Total records</th>
+                            <th scope="col">Last edited</th>
+                            <th scope="col">Contributor(s)</th>
+                            <th scope="col">Comments</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in projects %}
+                            {% include "patterns/molecules/linked-edit-set-overview/linked-edit-set-overview.html" with item=item %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        {% include "patterns/organisms/modal/history-modal.html" %}
+        {% include "patterns/organisms/modal/comment-modal.html" %}
+        {% include "patterns/organisms/modal/add-comment-modal.html" %}
+        {% include "patterns/organisms/modal/move-modal.html" %}
+        {% include "patterns/organisms/modal/abandon-modal.html" with type="edit set" %}
+        {% include "patterns/organisms/modal/add-contributor-modal.html" %}
+        {% include "patterns/organisms/modal/add-edit-project-modal.html" %}
+
+        {% if toast %}
+            {% include "patterns/molecules/toast/toast.html" with item=toast %}
+        {% endif %}
+
+</div>
+
+{% endblock %}
+
+{% block extra_js %}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/variable-pie.js"></script>
+    <script type="text/javascript">
+
+        // Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        Highcharts.chart('chart-1', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 3
+                }, {
+                    name: 'Editorial',
+                    y: 10
+                }, {
+                    name: 'Contribution',
+                    y: 2
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-2', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 6
+                }, {
+                    name: 'Editorial',
+                    y: 21
+                }, {
+                    name: 'Contribution',
+                    y: 60
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-3', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 12
+                }, {
+                    name: 'Editorial',
+                    y: 2
+                }, {
+                    name: 'Contribution',
+                    y: 1
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-4', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 6
+                }, {
+                    name: 'Editorial',
+                    y: 21
+                }, {
+                    name: 'Contribution',
+                    y: 60
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-5', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 6
+                }, {
+                    name: 'Editorial',
+                    y: 21
+                }, {
+                    name: 'Contribution',
+                    y: 60
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-6', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 2
+                }, {
+                    name: 'Editorial',
+                    y: 5
+                }, {
+                    name: 'Contribution',
+                    y: 4
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-7', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 6
+                }, {
+                    name: 'Editorial',
+                    y: 21
+                }, {
+                    name: 'Contribution',
+                    y: 60
+                }]
+            }]
+        });
+
+        Highcharts.chart('chart-8', {
+            chart: {
+                type: 'variablepie',
+                plotBackgroundColor: '#ffffff',
+                plotBorderWidth: null,
+                plotShadow: false,
+                margin: [0, 0, 0, 0]
+            },
+            title: false,
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '{point.y} in {point.name}'
+            },
+            plotOptions: {
+                variablepie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false,
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            xAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            yAxis: {
+                title: {
+                    enabled: false
+                }
+            },
+            series: [{
+                minPointSize: 10,
+                innerSize: '40%',
+                name: 'stages',
+                data: [{
+                    name: 'Release',
+                    y: 60
+                }, {
+                    name: 'Editorial',
+                    y: 2
+                }, {
+                    name: 'Contribution',
+                    y: 1
+                }]
+            }]
+        });
+    </script>
+{% endblock %}

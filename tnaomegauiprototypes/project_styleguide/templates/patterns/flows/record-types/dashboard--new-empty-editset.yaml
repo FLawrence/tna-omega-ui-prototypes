@@ -1,0 +1,200 @@
+context:
+  alert:
+    message: Enhancement 1 added to your dashboard
+
+  edit_sets:
+    - item:
+      title: FCO16(102-205)
+      link: 'edit-set.html'
+      badge:
+        title: Recent edit
+        modifier: bg-secondary
+      release_date: 24/02/22
+      project:
+        title: Census 1921
+        link: 'project.html'
+      records: 16
+      last_edit: Yesterday
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: AD Websites series 2
+      link: 'edit-set.html'
+      badge:
+        title: Overdue
+        modifier: bg-danger
+      release_date: false
+      project: false
+      records: 13
+      last_edit: 07/02/22
+      access: 1 restricted
+      comments: False
+    - item:
+      title: Enhancement 1
+      link: 'edit-set-empty.html'
+      badge:
+        title: New
+        modifier: bg-secondary
+      release_date: false
+      stage: Editorial
+      project: false
+      records: 0
+      last_edit: '-'
+      access: '-'
+      comments: 0
+      contributors:
+        - user:
+          full_name: Nick Lee
+          modifier: avatar--small
+          tooltip: True
+    - item:
+      title: FCO15(7168-7190)
+      link: 'edit-set.html'
+      badge:
+        title: New
+        modifier: bg-secondary
+      release_date: false
+      project: false
+      records: 25
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: PF290(1-16)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 180
+      last_edit: '-'
+      access: '-'
+      comments: 5
+    - item:
+      title: HCA 32 Spanish Succession extra F ships
+      link: 'edit-set--c.html'
+      badge: false
+      release_date: false
+      badge: false
+      project: false
+      records: 132
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: DEFE70(3035-3440)
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 132
+      last_edit: '-'
+      access: '-'
+      comments: 2
+    - item:
+      title: AIR 28/2880 - 2906 Various prev retained
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project:
+        title: Census 1921
+        link: 'project.html'
+      records: 16
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: AD Websites series 2
+      link: 'edit-set.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 1 restricted
+      comments: False
+    - item:
+      title: JA 418/CHQ/Z
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 13
+      last_edit: '-'
+      access: 2 restricted
+      comments: 2
+    - item:
+      title: BT 98/1
+      link: 'edit-set.html'
+      badge: false
+      release_date: 24/02/22
+      project: false
+      records: 1032
+      last_edit: '-'
+      access: '-'
+      comments: 5
+    - item:
+      title: MAF639(14-43)
+      link: 'edit-set.html'
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      moved_to: Jenna Bellchambers
+      project:
+        title: Project name
+        link: '#'
+      records: 29
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: MAF639(44-79)
+      link: 'edit-set.html'
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      moved_to: Jenna Bellchambers
+      project:
+        title: Project name
+        link: '#'
+      records: 35
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: MAF639(80-143)
+      link: 'edit-set.html'
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      moved_to: Jenna Bellchambers
+      project:
+        title: Project name
+        link: '#'
+      records: 63
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: MAF639(144-243)
+      link: 'edit-set.html'
+      badge:
+        title: Moved on
+        modifier: bg-secondary
+      moved_to: Jenna Bellchambers
+      project:
+        title: Project name
+        link: '#'
+      records: 99
+      last_edit: '-'
+      access: 2 restricted
+      comments: False
+    - item:
+      title: Mispelled names in inquiries
+      link: 'edit-set--b.html'
+      badge: false
+      release_date: false
+      project: false
+      records: 2
+      last_edit: '-'
+      access: '-'
+      comments: 1

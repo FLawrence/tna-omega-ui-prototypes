@@ -1,0 +1,7 @@
+context:
+  page:
+    title: File uploaded successfully
+    introduction: Imported 42 records
+    back_link: enhancement-file-upload.html
+    back_title: Create from accession
+    next_page: enhancement-edit-set.html

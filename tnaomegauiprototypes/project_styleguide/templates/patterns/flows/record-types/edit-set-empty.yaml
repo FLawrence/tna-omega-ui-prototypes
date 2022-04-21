@@ -1,0 +1,44 @@
+context:
+  page:
+    title: 'Enhancement 1'
+    introduction: false
+    back_link: dashboard--new-empty-editset.html
+    back_title: Dashboard
+    records: 0
+    comments: 0
+    release_date: false
+    project: false
+  add:
+    link: add-record.html
+  pagination: False
+  filterSearch:
+    label: 'Search edit set'
+    placeholder: Search edit set
+    id: search
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Access', id: access }
+      - { label: 'Open', id: access-2 }
+      - { label: 'Closed', id: access-3 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'No Record sets', id: record-set }
+  record_sets: false
+  records: false
+  comments:
+    - item:
+      comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+      date: 20mins ago
+      author: Nick Lee
+    - item:
+      comment: Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Maecenas sed diam eget risus varius blandit sit amet non magna. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod semper.
+      date: 2021 January 4th - 9:02am
+      author: Jay Spanton
+    - item:
+      comment: Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+      date: 2020 December 4th - 4:21pm
+      author: Nick Lee

@@ -1,0 +1,117 @@
+context:
+  page:
+    title: 'FCO159(7165-7287)'
+    introduction: false
+    back_link: edit-set.html
+    back_title: Edit set
+  move: True
+  add: True
+  pagination: False
+  filterSearch:
+    label: 'Search edit set'
+    placeholder: Search edit set
+    id: search
+    modifier: govuk-input--width-20
+  selectOne:
+    label: 'Access'
+    id: access
+    options:
+      - { label: 'Access', id: access }
+      - { label: 'Open', id: access-2 }
+      - { label: 'Closed', id: access-3 }
+  selectTwo:
+    label: 'Record set'
+    id: record-set
+    options:
+      - { label: 'Record set: Myanmar', id: record-set }
+      - { label: 'Foreign & Commonwealth Office', id: record-set-2 }
+      - { label: 'South East Asia', id: record-set-3 }
+      - { label: 'Myanmar', id: record-set-4 }
+      - { label: 'Cambodia', id: record-set-5 }
+  filter_summary: 7 records in <span>FCO / South East Asia /</span> <b>Myanmar</b>
+  filter_summary_action: True
+  records:
+    - item:
+      title: FCO 15/17/7165
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: 1 hour ago
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7166
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Closed
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7167
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7168
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7169
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7170
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'
+    - item:
+      title: FCO 15/17/7171
+      link: 'record.html'
+      description: Fusce dapibus, tellus ac cursus commodo, tortor mauris…
+      last_edit: Yesterday
+      access: Open
+      date: 1943 Oct 1
+      record_sets:
+        - item:
+          title: Myanmar
+          modifier: bg-primary
+          link: 'record-set.html'

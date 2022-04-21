@@ -1,0 +1,8 @@
+{% extends "patterns/pages/edit-set/edit-set.html" %}
+
+{% block extra_js %}
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('searchReplaceModal'), {})
+    myModal.show()
+</script>
+{% endblock %}
