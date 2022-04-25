@@ -9,7 +9,7 @@ context:
     save_text: Save & return to edit set
     record_sets:
       - item:
-        title: FCO
+        title: Foreign & Commonwealth Office
         records: false
         modifier: btn-primary
         link: false
@@ -22,6 +22,48 @@ context:
         title: Regional Cooperation
         records: false
         modifier: btn-primary
+        link: false
+    directories:
+      - item:
+        title: Foreign & Commonwealth Office
+        records: false
+        modifier: btn-secondary
+        link: false
+      - item:
+        title: Some Directory
+        records: false
+        modifier: btn-secondary
+        link: false
+      - item:
+        title: Another Directory
+        records: false
+        modifier: btn-secondary
+        link: false
+      - item:
+        title: Going Deeper
+        records: false
+        modifier: btn-secondary
+        link: false
+      - item:
+        title: Even Deeper
+        records: false
+        modifier: btn-secondary
+        link: false
+      - item:
+        title: Files
+        records: false
+        modifier: btn-secondary
+        link: false
+    labels:
+      - item:
+        title: Email
+        records: false
+        modifier: btn-info
+        link: false
+      - item:
+        title: Important message
+        records: false
+        modifier: btn-info
         link: false
     context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
     realisations:

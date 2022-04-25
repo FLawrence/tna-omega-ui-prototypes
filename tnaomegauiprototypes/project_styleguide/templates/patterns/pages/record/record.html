@@ -4,15 +4,39 @@
     <div class="page">
 
         <div class="page__header">
-            {% if page.record_sets %}
-            <div class="d-flex align-items-center mb-4">
-                {% for item in page.record_sets %}
-                    <div class="me-2">
-                        {% include "patterns/atoms/badge/badge.html" with field=item %}
-                    </div>
-                {% endfor %}
+
+            <div class="record-sets mb-4">
+                {% if page.record_sets %}
+                <div class="d-flex align-items-center mb-1 record-sets--inline record-sets--heirarchy">
+                    {% for item in page.record_sets %}
+                        <div class="record-sets__item">
+                            {% include "patterns/atoms/badge/badge.html" with field=item %}
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% if page.directories %}
+                <div class="d-flex align-items-center mb-1 record-sets--inline record-sets--directories">
+                    {% for item in page.directories %}
+                        <div class="record-sets__item">
+                            {% include "patterns/atoms/badge/badge.html" with field=item %}
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% if page.labels %}
+                <div class="d-flex align-items-center mb-1 record-sets--labels">
+                    {% for item in page.labels %}
+                        <div class="me-1">
+                            {% include "patterns/atoms/badge/badge.html" with field=item %}
+                        </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
             </div>
-            {% endif %}
+
             <div class="page-heading mb-4">
                 {% if page.title %}<h1 class="page-heading__heading">{{ page.title }}</h1>{% else %}<h1>Add a record</h1>{% endif %}
             </div>
