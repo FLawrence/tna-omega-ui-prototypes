@@ -8,36 +8,45 @@ context:
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:
-      - item:
-        title: War Office
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: Records created…related bodies
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: Records of…and corps
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: War Office…War Diaries
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: 'PART I: … AND GERMANY'
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: GENERAL HEADQUARTERS
-        records: false
-        modifier: btn-primary
-        link: false
+      - set:
+        title: WO set
+        heirarchy:
+          - {
+              title: War Office,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: Records created…related bodies,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: Records of…and corps,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: War Office…War Diaries,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: 'PART I: … AND GERMANY',
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: GENERAL HEADQUARTERS,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
     directories:
       - item:
         title: War Office

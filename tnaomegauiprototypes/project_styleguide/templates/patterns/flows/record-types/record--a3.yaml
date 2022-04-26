@@ -8,21 +8,48 @@ context:
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:
-      - item:
-        title: 'Board of Trade: Import Licensing Branch'
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: South East Asia
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: Regional Cooperation
-        records: false
-        modifier: btn-primary
-        link: false
+      - set:
+        title: FCO set
+        heirarchy:
+          - {
+              title: 'Board of Trade: Import Licensing Branch',
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: South East Asia,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: Regional Cooperation,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+      - set:
+        title: FCO set
+        heirarchy:
+          - {
+              title: 'Board of Trade: Import Licensing Branch',
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: South East Asia,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: Cameroon,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
     directories:
       - item:
         title: 'Board of Trade: Import Licensing Branch'

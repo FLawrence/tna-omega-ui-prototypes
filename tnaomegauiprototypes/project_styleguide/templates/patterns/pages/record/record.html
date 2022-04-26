@@ -7,10 +7,14 @@
 
             <div class="record-sets mb-4">
                 {% if page.record_sets %}
-                <div class="d-flex align-items-center mb-1 record-sets--inline record-sets--heirarchy">
+                <div class="record-sets--inline record-sets--heirarchy mb-1">
                     {% for item in page.record_sets %}
-                        <div class="record-sets__item">
-                            {% include "patterns/atoms/badge/badge.html" with field=item %}
+                        <div class="record-sets__container d-flex align-items-center mb-0">
+                            {% for item in item.heirarchy %}
+                                <div class="record-sets__item">
+                                    {% include "patterns/atoms/badge/badge.html" with field=item %}
+                                </div>
+                            {% endfor %}
                         </div>
                     {% endfor %}
                 </div>

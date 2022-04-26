@@ -8,21 +8,45 @@ context:
     save_link: edit-set--record-save.html
     save_text: Save & return to edit set
     record_sets:
-      - item:
-        title: Foreign & Commonwealth Office
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: South East Asia
-        records: false
-        modifier: btn-primary
-        link: false
-      - item:
-        title: Regional Cooperation
-        records: false
-        modifier: btn-primary
-        link: false
+      - set:
+        title: FCO set
+        heirarchy:
+          - {
+              title: Foreign & Commonwealth Office,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: South East Asia,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: Regional Cooperation,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: War Office…War Diaries,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: 'PART I: … AND GERMANY',
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
+          - {
+              title: GENERAL HEADQUARTERS,
+              records: false,
+              modifier: btn-primary,
+              link: false,
+            }
     labels:
       - item:
         title: Email
