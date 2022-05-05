@@ -409,3 +409,7 @@ context:
     label: 'Realisation separated material'
     id: separated-material
     hint: (optional)
+  realisationfieldNote:
+    label: 'Realisation note'
+    id: realisation-note
+    hint: (optional)
