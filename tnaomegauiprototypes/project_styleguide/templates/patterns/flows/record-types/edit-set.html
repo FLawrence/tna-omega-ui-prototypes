@@ -1,1 +1,383 @@
-{% extends "patterns/pages/edit-set/revised-edit-set.html" %}
+{% extends "patterns/base_page.html" %}
+
+{% block content %}
+    <div>
+        {% include "patterns/molecules/page-heading/page-heading.html" %}
+        {% include "patterns/molecules/page-meta/page-meta.html" %}
+
+        <div class="bg-white border mb-5 rounded-1">
+
+            {% include "patterns/molecules/page-filters/page-filters.html" %}
+
+            {% if filter_summary %}
+                <div class="mb-4">
+                    <h2 class="filter-summary">{{ filter_summary }}</h2>
+                    {% if filter_summary_action %}
+                        <button type="button" class="btn btn-primary">Edit record set</button>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <div class="record-set-viewer p-4">
+
+                <div class="record-set-viewer__container border rounded-1">
+
+                    <div class="record-set-items d-flex flex-wrap align-items-center mb-3 mb-lg-0 border-bottom">
+
+                        <div class="record-set-viewer__unfold border-end p-3 d-flex align-items-centre" style="cursor: pointer;">
+                            <span class="material-icons">unfold_more</span>
+                        </div>
+
+                        {% if record_sets %}
+                                {% for item in record_sets %}
+                                <div class="record-sets__container d-flex align-items-center mb-0 p-3">
+                                    {% for item in item.heirarchy %}
+                                        {% if forloop.last %}
+                                            <!-- don't show last item, this is exposed further down the page -->
+                                        {% else %}
+                                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                                {{ item.title }} <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            No record sets
+                        {% endif %}
+
+                    </div>
+
+
+                    <div class="bg-white">
+                        <table class="table table-hover table--sticky-header table--edge-to-edge table-responsive-md mb-0">
+                            <thead class="visually-hidden">
+                                <tr>
+                                    <th scope="col">Reference</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Last edited</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">
+                                        <div>
+                                            <input id="select-all" name="select-all" type="checkbox"
+                                                value="select-all" data-bulk-select-all data-bulk-update>
+                                            <label class="mb-2 visually-hidden" for="select-all">
+                                                Select all
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="vertical-align: middle;">
+                                    <td>
+                                        {% for item in record_sets %}
+                                            {% for item in item.heirarchy %}
+                                                {% if forloop.last %}
+                                                    <h4 class="mb-3 mt-3">{{ item.title }}</h4>
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endfor %}
+                                    </td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-icons">more_vert</span>
+                                            </a>
+                                            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                                                <li><a class="dropdown-item" href="#">Edit record set</a></li>
+                                                <li><a class="dropdown-item" data-bulk-select-all href="#">Select all records under this record set</a></li>
+                                                {% if add.link %}<li><a class="dropdown-item" href="add-record.html">Add record</a></li>{% endif %}
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="edit-set-overview text-muted">
+                                    <th scope="row" style="min-width: 25%;">
+                                        <div class="edit-set-overview__title">
+                                            <h3 class="edit-set-overview__heading h5">
+                                                <a class="edit-set-overview__link" href="record--a1.html">
+                                                    FCO 15/17/7169
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </th>
+                                    <td style="max-width: 35%; min-width: 30%; font-size: 14px;" >Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991.</td>
+                                    <td style="font-size: 14px;">-</td>
+                                    <td style="font-size: 14px;">1997 Jan 1</td>
+                                    <td>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="select-all-1" name="select-all" type="checkbox"
+                                            value="select-all"
+                                            data-bulk-update>
+                                            <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                            Select
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="edit-set-overview text-muted">
+                                    <th scope="row" style="min-width: 25%;">
+                                        <div class="edit-set-overview__title">
+                                            <h3 class="edit-set-overview__heading h5">
+                                                <a class="edit-set-overview__link" href="record--a1.html">
+                                                    FCO 15/17/7170
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </th>
+                                    <td style="max-width: 35%; min-width: 30%; font-size: 14px;" >Visit by Lord Caithness, Minister of State for Foreign and Commonwealth Affairs, to South East Asia, April-May 1991.</td>
+                                    <td style="font-size: 14px;">-</td>
+                                    <td style="font-size: 14px;">1997 Jan 2</td>
+                                    <td>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="select-all-1" name="select-all" type="checkbox"
+                                            value="select-all"
+                                            data-bulk-update>
+                                            <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                            Select
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div> <!-- /record-set__container -->
+            </div> <!-- /record-set-viewer -->
+
+            <div class="record-set-viewer p-4">
+
+                <div class="record-set-viewer__container border rounded-1">
+
+                    <div class="record-set-items d-flex flex-wrap align-items-center mb-3 mb-lg-0 border-bottom">
+
+                        <div class="record-set-viewer__unfold border-end p-3 d-flex align-items-centre" style="cursor: pointer;">
+                            <span class="material-icons">unfold_more</span>
+                        </div>
+
+                        <div class="record-sets__container d-flex align-items-center mb-0 p-3">
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                War Office <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                Records created…related bodies <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                Records of…and corps <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                War Office…War Diaries <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                Part I: … Germany <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bg-white">
+                        <table class="table table-hover table--sticky-header table--edge-to-edge table-responsive-md mb-0">
+                            <thead class="visually-hidden">
+                                <tr>
+                                    <th scope="col">Reference</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Last edited</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">
+                                        <div>
+                                            <input id="select-all" name="select-all" type="checkbox"
+                                                value="select-all" data-bulk-select-all data-bulk-update>
+                                            <label class="mb-2 visually-hidden" for="select-all">
+                                                Select all
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="vertical-align: middle;">
+                                    <td>
+                                        <h4 class="mb-3 mt-3">General headquarters</h4>
+                                    </td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-icons">more_vert</span>
+                                            </a>
+                                            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                                                <li><a class="dropdown-item" href="#">Edit record set</a></li>
+                                                <li><a class="dropdown-item" data-bulk-select-all href="#">Select all records under this record set</a></li>
+                                                {% if add.link %}<li><a class="dropdown-item" href="add-record.html">Add record</a></li>{% endif %}
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="edit-set-overview text-muted">
+                                    <th scope="row" style="min-width: 25%;">
+                                        <div class="edit-set-overview__title">
+                                            <h3 class="edit-set-overview__heading h5">
+                                                <a class="edit-set-overview__link" href="record--a2.html">
+                                                    WO 95/24/1
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </th>
+                                    <td style="max-width: 35%; min-width: 30%; font-size: 14px;" >South East Asia visit minutes</td>
+                                    <td style="font-size: 14px;">-</td>
+                                    <td style="font-size: 14px;">1997 Jan 1</td>
+                                    <td>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="select-all-1" name="select-all" type="checkbox"
+                                            value="select-all"
+                                            data-bulk-update>
+                                            <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                            Select
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div> <!-- /record-set__container -->
+            </div> <!-- /record-set-viewer -->
+
+            <div class="record-set-viewer p-4">
+
+                <div class="record-set-viewer__container border rounded-1">
+
+                    <div class="record-set-items d-flex flex-wrap align-items-center mb-3 mb-lg-0 border-bottom">
+
+                        <div class="record-set-viewer__unfold border-end p-3 d-flex align-items-centre" style="cursor: pointer;">
+                            <span class="material-icons">unfold_more</span>
+                        </div>
+
+                        <div class="record-sets__container d-flex align-items-center mb-0 p-3">
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                Board of Trade: Import Licensing Branch <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                            <div class="d-flex align-items-center" style="font-size: 14px;">
+                                South East Asia <span class="material-icons" style="opacity: 0.6">chevron_right</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bg-white">
+                        <table class="table table-hover table--sticky-header table--edge-to-edge table-responsive-md mb-0">
+                            <thead class="visually-hidden">
+                                <tr>
+                                    <th scope="col">Reference</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Last edited</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">
+                                        <div>
+                                            <input id="select-all" name="select-all" type="checkbox"
+                                                value="select-all" data-bulk-select-all data-bulk-update>
+                                            <label class="mb-2 visually-hidden" for="select-all">
+                                                Select all
+                                            </label>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="vertical-align: middle;">
+                                    <td>
+                                        <h4 class="mb-3 mt-3">Regional Cooperation</h4>
+                                    </td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a href="#" class="d-flex align-items-center text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <span class="material-icons">more_vert</span>
+                                            </a>
+                                            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                                                <li><a class="dropdown-item" href="#">Edit record set</a></li>
+                                                <li><a class="dropdown-item" data-bulk-select-all href="#">Select all records under this record set</a></li>
+                                                {% if add.link %}<li><a class="dropdown-item" href="add-record.html">Add record</a></li>{% endif %}
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="edit-set-overview text-muted">
+                                    <th scope="row" style="min-width: 25%;">
+                                        <div class="edit-set-overview__title">
+                                            <h3 class="edit-set-overview__heading h5">
+                                                <a class="edit-set-overview__link" href="record--a3.html">
+                                                    Worthing.doc
+                                                </a>
+                                            </h3>
+                                        </div>
+                                    </th>
+                                    <td style="max-width: 35%; min-width: 30%; font-size: 14px;" >Worthing.doc To see an open redacted version of this record go to ILB 2/CSP/Z/1.</td>
+                                    <td style="font-size: 14px;">-</td>
+                                    <td style="font-size: 14px;">1997 Jan 1</td>
+                                    <td>
+                                        <div class="govuk-checkboxes__item">
+                                            <input class="govuk-checkboxes__input" id="select-all-1" name="select-all" type="checkbox"
+                                            value="select-all"
+                                            data-bulk-update>
+                                            <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+                                            Select
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div> <!-- /record-set__container -->
+            </div> <!-- /record-set-viewer -->
+
+            <div class="footer-actions d-flex flex-column flex-lg-row justify-content-between mt-4 ms-4 me-4 mb-5">
+                <div class="d-flex align-items-start align-items-lg-center justify-content-end ms-lg-auto" style="min-width: 480px; max-width: 480px;">
+                    <div class="me-2">
+                        <a href="#" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#moveModal">Move edit set on</a>
+                    </div>
+                    {% include "patterns/atoms/bulk-menu/bulk-menu.html" %}
+                </div>
+            </div>
+
+        </div>
+
+        {% include "patterns/organisms/modal/history-modal.html" %}
+        {% include "patterns/organisms/modal/comment-modal.html" %}
+        {% include "patterns/organisms/modal/time-modal.html" %}
+        {% include "patterns/organisms/modal/add-comment-modal.html" %}
+        {% include "patterns/organisms/modal/abandon-modal.html" with type="edit set" %}
+        {% include "patterns/organisms/modal/move-modal.html" %}
+        {% include "patterns/organisms/modal/search-replace-modal.html" %}
+        {% include "patterns/organisms/modal/access-modal.html" %}
+
+    </div>
+
+{% endblock %}
+
+
+{% block extra_js %}
+    <script>
+        // Tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+{% endblock %}

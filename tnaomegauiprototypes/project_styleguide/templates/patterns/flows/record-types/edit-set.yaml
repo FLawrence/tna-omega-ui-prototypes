@@ -4,7 +4,7 @@ context:
     introduction: false
     back_link: dashboard.html
     back_title: Dashboard
-    records: 3
+    records: 4
     comments: 2
     release_date: false
     project:
@@ -39,51 +39,33 @@ context:
       - { label: 'Indonesia', id: record-set-9 }
       - { label: 'Portuguese Timor East Timor', id: record-set-10 }
   record_sets:
-    - item:
-      title: Foreign & Commonwealth Office
-      records: 25
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: South East Asia
-      records: 25
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Regional Cooperation
-      records: 5
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Myanmar
-      records: 4
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Cambodia
-      records: 6
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Singapore
-      records: 2
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Malaysia
-      records: 3
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Indonesia
-      records: 2
-      modifier: btn-primary
-      link: 'record-set.html'
-    - item:
-      title: Portuguese Timor East Timor
-      records: 3
-      modifier: btn-primary
-      link: 'record-set.html'
+    - set:
+      title: FCO set
+      heirarchy:
+        - {
+            title: Foreign & Commonwealth Office,
+            records: false,
+            modifier: btn-primary,
+            link: false,
+          }
+        - {
+            title: South East Asia,
+            records: false,
+            modifier: btn-primary,
+            link: false,
+          }
+        - {
+            title: Regional Cooperation,
+            records: false,
+            modifier: btn-primary,
+            link: false,
+          }
+        - {
+            title: Cambodia,
+            records: false,
+            modifier: btn-primary,
+            link: false,
+          }
   records:
     - item:
       title: FCO 15/17/7169
