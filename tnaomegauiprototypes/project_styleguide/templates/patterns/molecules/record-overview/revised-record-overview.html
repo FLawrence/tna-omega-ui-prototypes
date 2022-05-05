@@ -1,0 +1,24 @@
+<tr class="edit-set-overview text-muted">
+    <th scope="row" style="min-width: 25%;">
+        <div class="edit-set-overview__title">
+            <h3 class="edit-set-overview__heading h5">
+                {% if item.link %}<a class="edit-set-overview__link" href="{{ item.link }}">{% endif %}
+                    {{ item.title }}
+                {% if item.link %}</a>{% endif %}
+            </h3>
+        </div>
+    </th>
+    <td style="max-width: 35%; min-width: 30%; font-size: 14px;" >{{ item.description }}</td>
+    <td style="font-size: 14px;">{{ item.last_edit }}</td>
+    <td style="font-size: 14px;">{{ item.date }}</td>
+    <td>
+        <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="select-all-{{ item.count }}" name="select-all" type="checkbox"
+            value="select-all"
+            data-bulk-update>
+            <label class="mb-2 govuk-checkboxes__label visually-hidden" for="select-all">
+            Select
+            </label>
+        </div>
+    </td>
+</tr>
