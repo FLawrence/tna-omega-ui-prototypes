@@ -2,6 +2,7 @@ context:
   page:
     pac: res.7gh.15.ilb.66.bd
     title: 'Worthing.doc'
+    type: Born-digital record
     introduction: false
     back_link: edit-set.html
     back_title: An array of different record types
@@ -95,7 +96,8 @@ context:
     context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
     realisations:
       - item:
-        title: res.7gh.15.ilb.66.bd.r1
+        title: Digital realisation
+        pacid: res.7gh.15.ilb.66.bd.r1
         added: 4/01/22
         versions: 1
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -108,10 +110,11 @@ context:
               date_added: '4/01/22',
             }
       - item:
-        title: res.7gh.15.ilb.66.bd.r2
+        title: Redacted digital realisation
+        pacid: res.7gh.15.ilb.66.bd.r2
         added: 4/01/22
         versions: 2
-        description: Redacted verison
+        description: Redacted verison of the digital realisation
         files:
           - {
               title: 'Worthing.doc (redacted)',

@@ -2,6 +2,7 @@ context:
   page:
     pac: res.2gh.56.fco.66.p
     title: 'FCO 15/17/7169'
+    type: Physical record
     introduction: false
     back_link: edit-set.html
     back_title: An array of different record types
@@ -61,7 +62,8 @@ context:
     context: '<p>This series contains records of the South East Asia Department of the Foreign Office to October 1968 dealing with UK relations with Burma, Laos, Indonesia, the Philippines, Thailand, Cambodia, Vietnam, the South East Asia Treaty Organisation (SEATO) and the International Control Commissions in Indo-China, as well as Foreign Office correspondence on matters relating to Commonwealth states in the area from January 1967. From October 1968, the records are those of the Foreign and Commonwealth Office South East Asian Department, covering the same states and organisations with the exception of Indonesia, for which responsibility passed to the South West Pacific Department.</p>'
     realisations:
       - item:
-        title: res.2gh.56.fco.66.p.r1
+        title: Physical realisation
+        pacid: res.2gh.56.fco.66.p.r1
         added: 4/01/22
         versions: 1
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -79,6 +81,7 @@ context:
         change: Title and description
         date: 2020 December 4th - 4:21pm
         author: Nick Lee
+    index_terms: true
   comments:
     - item:
       comment: Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
@@ -113,7 +116,7 @@ context:
       - { label: 'DEFRA' }
       - { label: 'Department for Culture, Media and Sport' }
       - { label: 'Dept of Health' }
-      - { label: 'Foreign and Commonwealth Office' }
+      - { label: 'Foreign and Commonwealth Office', selected: True }
       - { label: 'High Court of Admiralty, Prize Court' }
       - { label: 'Ministry of Justice' }
       - { label: 'Northern Ireland Office' }
@@ -123,7 +126,6 @@ context:
       - { label: 'Supreme Court of the United Kingdom' }
       - { label: 'Treasury' }
       - { label: 'War Office' }
-      - { label: 'Foreign and Commonwealth Office' }
       - { label: 'Welsh Assembly' }
       - { label: 'various' }
   fieldFour:
@@ -157,8 +159,9 @@ context:
     id: language
     hint: (optional)
     modifier: w-50
+    value: English (en)
     options:
-      - { label: 'English (en)' }
+      - { label: 'English (en)', selected: True }
       - { label: 'Welsh (cym)' }
       - { label: 'French (fr)' }
       - { label: 'Spanish (es)' }
@@ -286,11 +289,14 @@ context:
       - { label: 'Board of Trade, Companies Registration Office, 1844-1970' }
       - { label: 'Cabinet Office, 1916-' }
       - { label: 'Chancery, 1066-1875' }
-      - { label: 'Department for Culture, Media and Sport, 1997-2017' }
+      - {
+          label: 'Department for Culture, Media and Sport, 1997-2017',
+          selected: True,
+        }
       - { label: 'Department for Environment, Food and Rural Affairs, 2001-' }
       - { label: 'Department of Health, 1988-' }
       - { label: 'Department of Health and Social Security, 1968-1988' }
-      - { label: 'Foreign and Commonwealth Office, 1968-' }
+      - { label: 'Foreign and Commonwealth Office, 1968-', selected: True }
       - { label: 'High Court of Admiralty, 1340-1875' }
       - { label: 'Home Office, 1782-' }
       - { label: 'Milk Marketing Board, 1933-1994' }
@@ -314,9 +320,9 @@ context:
     modifier: w-50
     hint: (optional)
     options:
-      - { label: 'Personal name one' }
+      - { label: 'Personal name one', selected: True }
       - { label: 'Personal name two' }
-      - { label: 'Personal name three' }
+      - { label: 'Personal name three', selected: True }
       - { label: 'Personal name four' }
   fieldIndexTermsThree:
     label: 'Places'
@@ -324,7 +330,7 @@ context:
     modifier: w-50
     hint: (optional)
     options:
-      - { label: 'London' }
+      - { label: 'London', selected: True }
       - { label: 'Oxford' }
       - { label: 'Cornwall' }
       - { label: 'Devon' }
@@ -334,7 +340,7 @@ context:
     modifier: w-50
     hint: (optional)
     options:
-      - { label: 'Subject name one' }
+      - { label: 'Subject name one', selected: True }
       - { label: 'Subject name two' }
       - { label: 'Subject name three' }
       - { label: 'Subject name four' }

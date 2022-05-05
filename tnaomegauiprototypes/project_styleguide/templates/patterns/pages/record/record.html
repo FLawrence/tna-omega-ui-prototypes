@@ -44,16 +44,22 @@
             <div class="page-heading mb-4">
                 {% if page.title %}<h1 class="page-heading__heading">{{ page.title }}</h1>{% else %}<h1>Add a record</h1>{% endif %}
             </div>
-            {% if page.pac %}<p class="mb-4 fw">PAC-ID: {{ page.pac }}</p>{% endif %}
+            {% if page.pac or page.type %}
+                <div class="d-flex align-items-center">
+                    {% if page.pac %}<p class="mb-4 me-4 fw">PAC-ID: {{ page.pac }}</p>{% endif %}
+                    {% if page.type %}<p class="mb-4 fw">{{ page.type }}</p>{% endif %}
+                </div>
+            {% endif %}
         </div>
 
         <div class="page__content">
 
             <div class="row">
-                <div class="col-10">
+                <div class="col-9">
                     <div data-bs-spy="scroll" data-bs-target="#record-index" data-bs-offset="0" class="scrollspy-example" tabindex="0">
                         <div id="content" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2 class="mb-5">Content</h2>
+                            <h2>Intellectual properties</h2>
+                            <p class="mb-5">Describes the records abstract information, information that is the same for physical and digital items.</p>
 
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldScope %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldOne %}
@@ -70,22 +76,23 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoveringdates %}
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldSix %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldHistory %}
-                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldTen %}
+                            <!-- language no longer in IP {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldTen %} -->
                             {% include "patterns/atoms/datalist/datalist.html" with field=fieldEleven %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldTwelve %}
-                            <div class="row">
+                            <!-- Coverage start and end date no longer in IP <div class="row">
                                 <div class="col-4">
                                     {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageStart %}
                                 </div>
                                 <div class="col-4">
                                     {% include "patterns/atoms/text-input/text-input.html" with field=fieldCoverageEnd %}
                                 </div>
-                            </div>
+                            </div> -->
                             {% include "patterns/atoms/text-input/text-input.html" with field=fieldArrangement %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldPublicationnote %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldUnpublishedfindingaids %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldRelatedmaterial %}
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldSeparatedmaterial %}
+                            {% include "patterns/atoms/textarea/textarea.html" with field=fieldArchivistNote %}
                         </div>
 
                         {% if page.realisations %}
@@ -98,9 +105,9 @@
                                             <div class="accordion-header" id="heading-{{ forloop.counter }}">
                                                 <button class="accordion-button border-start ps-4 {% if page.realisations|length > 1 %}collapsed{% endif %}" style="border-width: 4px !important;" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ forloop.counter }}" aria-expanded="true" aria-controls="collapseOne">
                                                     <div>
-                                                        <h3 class="mb-4">{{ item.title }}</h3>
-                                                        <p class="mb-4 me-5">{{ item.description }}</p>
-                                                        {% if item.files %}<h4 class="mb-4 h5">{{ item.files|length }} digital file{% if item.files|length > 1 %}s{% endif %}</h4>{% endif %}
+                                                        <h3 class="mb-3">{{ item.title }}</h3>
+                                                        <p class="{% if item.files %}mb-3{% else %}mb-2{% endif %} me-5">{{ item.description }}</p>
+                                                        {% if item.files %}<h4 class="mb-2 h5">{{ item.files|length }} digital file{% if item.files|length > 1 %}s{% endif %}</h4>{% endif %}
                                                     </div>
                                                 </button>
                                             </div>
@@ -161,8 +168,8 @@
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFive %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessSix %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessSeven %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessEight %}
-                            {% include "patterns/atoms/text-input/text-input.html" with field=accessNine %}
+                            <!-- Source of acquisition now in realisation {% include "patterns/atoms/text-input/text-input.html" with field=accessEight %} -->
+                            <!-- Custodial history now in realisation {% include "patterns/atoms/text-input/text-input.html" with field=accessNine %} -->
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessThirteen %}
                             {% include "patterns/atoms/text-input/text-input.html" with field=accessFourteen %}
                         </div>
@@ -172,23 +179,25 @@
                             {% include "patterns/atoms/textarea/textarea.html" with field=fieldAdminHistory %}
                         </div>
 
-                        <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
-                            <h2 class="mb-5">Index terms</h2>
-                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsOne %}
-                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsTwo %}
-                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsThree %}
-                            {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsFour %}
-                        </div>
+                        {% if page.index_terms %}
+                            <div id="terms" class="mb-5 bg-white mb-4 rounded-1 p-4 pb-0 border">
+                                <h2 class="mb-5">Index terms</h2>
+                                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsOne %}
+                                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsTwo %}
+                                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsThree %}
+                                {% include "patterns/atoms/autocomplete/autocomplete.html" with field=fieldIndexTermsFour %}
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-3">
                     <div class="sticky-top" style="top: 30px;">
                         <div id="record-index" class="list-group mb-4">
-                            <a class="list-group-item list-group-item-action" href="#content">Content</a>
+                            <a class="list-group-item list-group-item-action" href="#content">Intellectual properties</a>
                             {% if page.realisations %}<a class="list-group-item list-group-item-action" href="#realisations">Realisation{% if page.realisations|length > 1 %}(s){% endif %}</a>{% endif %}
                             <a class="list-group-item list-group-item-action" href="#access">Access</a>
                             <a class="list-group-item list-group-item-action" href="#history">Admin History</a>
-                            <a class="list-group-item list-group-item-action" href="#terms">Index terms</a>
+                            {% if page.index_terms %}<a class="list-group-item list-group-item-action" href="#terms">Index terms</a>{% endif %}
                         </div>
 
                         {% include "patterns/molecules/record-meta/record-meta.html" %}

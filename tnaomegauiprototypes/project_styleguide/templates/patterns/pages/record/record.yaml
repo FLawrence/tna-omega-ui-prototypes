@@ -3,6 +3,7 @@ context:
     message: Record saved
   page:
     pac: res.7gh.19.wa.66.d
+    type: Physical record
     title: 'WA 19/103'
     introduction: false
     back_link: edit-set.html
@@ -246,6 +247,10 @@ context:
     label: 'Separated material'
     id: separated-material
     hint: (optional)
+  fieldArchivistNote:
+    label: 'Archivist note'
+    id: archivist-note
+    hint: (optional)
   fieldAdminHistory:
     label: 'Administrative / biographical background'
     id: admin-history
@@ -315,19 +320,19 @@ context:
       - { label: 'Subject name three' }
       - { label: 'Subject name four' }
   realisationfieldScope:
-    label: 'Scope and content'
+    label: 'Realisation description'
     id: realistionscope
     value: 'This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
   realisationmapFieldOne:
-    label: 'Map designation'
+    label: 'Realisation map designation'
     id: map-designation
     hint: (optional)
   realisationmapFieldTwo:
-    label: 'Dimensions'
+    label: 'Realisation dimensions'
     id: map-dimensions
     hint: (optional)
   realisationmapFieldThree:
-    label: 'Map scale number'
+    label: 'Realisation map scale number'
     id: map-designation
     modifier: w-50
     hint: (optional)
@@ -337,17 +342,17 @@ context:
       - { label: '1:6000' }
       - { label: '1:1' }
   realisationfieldSeven:
-    label: 'Physical description, extent'
+    label: 'Realisation physical description, extent'
     id: physical-decription-extent
   realisationfieldEight:
-    label: 'Physical description, form'
+    label: 'Realisation physical description, form'
     id: physical-decription-form
   realisationfieldNine:
-    label: 'Physical condition'
+    label: 'Realisation physical condition'
     id: physical-condition
     hint: (optional)
   realisationfieldTen:
-    label: Language
+    label: Realisation language
     id: language
     hint: (optional)
     modifier: w-50
@@ -357,7 +362,7 @@ context:
       - { label: 'French (fr)' }
       - { label: 'Spanish (es)' }
   realisationfieldThree:
-    label: Creator name(s)
+    label: Realisation creator name(s)
     id: creator
     modifier: w-50
     value: National Assembly for Wales, 1999-
@@ -367,7 +372,7 @@ context:
       - { label: 'Creator three' }
       - { label: 'National Assembly for Wales, 1999-', selected: True }
   realisationfieldEleven:
-    label: Held by
+    label: Realisation held by
     id: held-by
     modifier: w-50
     value: The National Archives, Kew
@@ -378,29 +383,29 @@ context:
       - { label: 'Torchbox, Devon' }
       - { label: 'Torchbox, Cornwall' }
   realisationaccessEight:
-    label: 'Immediate source of acquisition'
+    label: 'Realisation immediate source of acquisition'
     id: access-8
   realisationaccessNine:
-    label: 'Custodial history'
+    label: 'Realisation custodial history'
     id: access-9
     hint: (optional)
   realisationaccessThirteen:
-    label: 'Location of originals'
+    label: 'Realisation location of originals'
     hint: (optional)
     id: access-13
   realisationaccessFourteen:
-    label: 'Copies information'
+    label: 'Realisation copies information'
     hint: (optional)
     id: access-14
   realisationfieldArrangement:
-    label: 'Arrangement'
+    label: 'Realisation arrangement'
     id: arrangement
     hint: (optional)
   realisationfieldPublicationnote:
-    label: 'Publication note'
+    label: 'Realisation publication note'
     id: publication-note
     hint: (optional)
   realisationfieldSeparatedmaterial:
-    label: 'Separated material'
+    label: 'Realisation separated material'
     id: separated-material
     hint: (optional)

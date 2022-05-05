@@ -2,6 +2,7 @@ context:
   page:
     pac: res.7gh.15.wo.66.d
     title: 'WO 95/24/1'
+    type: Digitised record
     introduction: false
     back_link: edit-set.html
     back_title: An array of different record types
@@ -92,7 +93,8 @@ context:
     context: '<p>South East Asia visit minutes</p>'
     realisations:
       - item:
-        title: res.7gh.15.wo.66.d.r1
+        title: First digital realisation
+        pacid: res.7gh.15.wo.66.d.r1
         added: 4/01/22
         versions: 1
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -123,7 +125,8 @@ context:
               date_added: '4/01/22',
             }
       - item:
-        title: res.7gh.15.wo.66.d.r2
+        title: Second digital realisation
+        pacid: res.7gh.15.wo.66.d.r2
         added: 4/01/22
         versions: 2
         description: This is the realisation description donec ullamcorper nulla non metus auctor fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit.

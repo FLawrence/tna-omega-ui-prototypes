@@ -1,5 +1,10 @@
 <div class="meta d-none d-lg-flex align-items-center">
-    <div class="user me-4">
+    {% if item.pacid %}
+        <div class="me-4">
+            PAC-ID: {{ item.pacid }}
+        </div>
+    {% endif %}
+    <div class="me-4">
         Added 12/01/21
     </div>
     <div class="me-4">
